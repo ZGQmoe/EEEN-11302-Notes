@@ -79,11 +79,25 @@ The total energy is:
 E_{\text{total}}=KE+PE
 ```
 
-For a Coulomb-bound electron:
+For a Coulomb-bound electron, the kinetic energy is half the magnitude of the potential energy:
+
+```math
+KE=\frac{1}{2}|PE|
+```
+
+Since the potential energy of an electron bound to a positive nucleus is negative:
+
+```math
+PE<0
+```
+
+we can also write:
 
 ```math
 KE=-\frac{1}{2}PE
 ```
+
+This form is used because it gives a positive kinetic energy.
 
 Substitute:
 
@@ -108,11 +122,11 @@ PE=2(-13.6)=-27.2\ \text{eV}
 Then:
 
 ```math
-KE=E_{\text{total}}-PE
+KE=-\frac{1}{2}PE
 ```
 
 ```math
-KE=-13.6-(-27.2)=13.6\ \text{eV}
+KE=-\frac{1}{2}(-27.2)=13.6\ \text{eV}
 ```
 
 Final results:
@@ -243,6 +257,24 @@ Related concepts:
 
 - [Energy Levels in Hydrogen](./concept.md#8-energy-levels-in-hydrogen)
 - [Photon Absorption and Emission](./concept.md#10-photon-absorption-and-emission)
+
+Before using the energy-level formula, remember the difference between `Z` and `n`:
+
+```math
+Z=\text{atomic number}=\text{number of protons}
+```
+
+```math
+n=\text{principal quantum number}=\text{shell / energy level}
+```
+
+For hydrogen:
+
+```math
+Z=1
+```
+
+The transition `n = 3` to `n = 2` means the electron moves from the third energy level to the second energy level.
 
 Hydrogen energy levels are given by:
 

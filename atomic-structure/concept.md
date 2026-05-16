@@ -212,17 +212,47 @@ The total energy of a bound electron is:
 E_{\text{total}}=KE+PE
 ```
 
-For a Coulomb-bound electron:
+For an electron bound to a positive nucleus by Coulomb attraction, the potential energy is negative:
+
+```math
+PE=-\frac{k_e e^2}{r}
+```
+
+Kinetic energy must always be positive because:
+
+```math
+KE=\frac{1}{2}mv^2
+```
+
+Therefore, for a Coulomb-bound electron:
+
+```math
+KE=\frac{1}{2}|PE|
+```
+
+Since the potential energy is negative, this is often written as:
 
 ```math
 KE=-\frac{1}{2}PE
 ```
 
-This means:
+because when:
 
-- potential energy is negative
-- kinetic energy is positive
-- total energy is negative
+```math
+PE<0
+```
+
+then:
+
+```math
+|PE|=-PE
+```
+
+So the two forms are equivalent:
+
+```math
+KE=\frac{1}{2}|PE|=-\frac{1}{2}PE
+```
 
 For the hydrogen ground state:
 
@@ -239,6 +269,10 @@ PE=-27.2\ \text{eV}
 ```math
 KE=+13.6\ \text{eV}
 ```
+
+Key idea:
+
+> The negative sign in `KE = -1/2 PE` is not double-counting the electron's negative charge. It appears because `PE` is already negative, while `KE` must be positive.
 
 📘 Example: [Bound electron energy: PE, KE and Bohr radius](./examples.md#2-bound-electron-energy-pe-ke-and-bohr-radius)
 
@@ -335,6 +369,84 @@ E_{\infty}=0
 ```
 
 📘 Example: [Hydrogen energy-level transition and emission wavelength](./examples.md#4-hydrogen-energy-level-transition-and-emission-wavelength)
+
+---
+
+## 8.1 Atomic Number vs Principal Quantum Number
+
+Do not confuse atomic number `Z` with principal quantum number `n`.
+
+### Atomic Number
+
+The atomic number is:
+
+```math
+Z=\text{number of protons}
+```
+
+It determines the element.
+
+Examples:
+
+| Element | Atomic number `Z` |
+|---|---:|
+| Hydrogen | 1 |
+| Carbon | 6 |
+| Silicon | 14 |
+
+---
+
+### Principal Quantum Number
+
+The principal quantum number is:
+
+```math
+n=1,2,3,\dots
+```
+
+It tells which main shell or energy level an electron is in.
+
+| Principal quantum number | Shell | Meaning |
+|---:|---|---|
+| `n = 1` | K shell | first shell / lowest energy level |
+| `n = 2` | L shell | second shell |
+| `n = 3` | M shell | third shell |
+| `n = 4` | N shell | fourth shell |
+
+Important distinction:
+
+```math
+Z=\text{number of protons}
+```
+
+```math
+n=\text{electron shell / main energy level}
+```
+
+So `n` is not the total number of shells in the atom. It describes the shell occupied by a particular electron.
+
+For hydrogen energy levels:
+
+```math
+E_n=-\frac{13.6Z^2}{n^2}\ \text{eV}
+```
+
+where:
+
+- `Z` is the atomic number
+- `n` is the principal quantum number
+
+For hydrogen:
+
+```math
+Z=1
+```
+
+so:
+
+```math
+E_n=-\frac{13.6}{n^2}\ \text{eV}
+```
 
 ---
 
