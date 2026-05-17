@@ -1,18 +1,14 @@
 # Atomic Structure
 
-This file contains core concepts, rules, and formulas for atomic structure.
-
-For selected worked examples based on Week 3 questions, see:
+For selected worked examples, see:
 
 ➡️ [Atomic Structure Examples](./examples.md)
 
 ---
 
-## 1. Why Atomic Structure Matters
+## 1. Atomic Structure and Electrical Behaviour
 
-Atomic structure explains why different materials behave as conductors, semiconductors, or insulators.
-
-The key chain is:
+Atomic structure controls electron configuration.
 
 ```math
 \text{Atomic structure}
@@ -26,13 +22,11 @@ The key chain is:
 \text{Electrical behaviour}
 ```
 
-In electronic materials, the most important particle is the electron because electron movement determines electrical conductivity.
+The electron is the key particle for electronic materials.
 
 ---
 
 ## 2. Fundamental Particles
-
-Atoms are made from electrons, protons and neutrons.
 
 | Particle | Charge | Relative charge | Role |
 |---|---:|---:|---|
@@ -64,8 +58,6 @@ q_p=+e
 
 ### 3.1 Atomic Number
 
-The atomic number is the number of protons.
-
 ```math
 Z=\text{number of protons}
 ```
@@ -76,22 +68,18 @@ The atomic number determines the element.
 
 ### 3.2 Mass Number
 
-The mass number is the total number of protons and neutrons.
-
 ```math
 A=Z+N
 ```
 
 where:
 
-- `Z` = number of protons
-- `N` = number of neutrons
+- $begin:math:text$Z$end:math:text$: number of protons
+- $begin:math:text$N$end:math:text$: number of neutrons
 
 ---
 
 ### 3.3 Neutral Atom
-
-For a neutral atom:
 
 ```math
 \text{number of electrons}=\text{number of protons}
@@ -101,8 +89,6 @@ For a neutral atom:
 
 ### 3.4 Isotope
 
-Isotopes have the same number of protons but different numbers of neutrons.
-
 ```math
 \text{same }Z,\quad \text{different }N
 ```
@@ -111,25 +97,18 @@ Isotopes have the same number of protons but different numbers of neutrons.
 
 ### 3.5 Ion
 
-An ion is an atom with net charge due to losing or gaining electrons.
+Ion = atom with net charge.
 
-If an atom loses electrons:
-
-```math
-\text{positive ion / cation}
-```
-
-If an atom gains electrons:
-
-```math
-\text{negative ion / anion}
-```
+| Process | Ion formed |
+|---|---|
+| loses electrons | positive ion / cation |
+| gains electrons | negative ion / anion |
 
 ---
 
-## 4. Planetary / Bohr Model of the Atom
+## 4. Bohr Model
 
-In the planetary model, an electron orbits a positive nucleus.
+In the Bohr model, electrons occupy discrete energy levels around a positive nucleus.
 
 For hydrogen:
 
@@ -141,42 +120,37 @@ For hydrogen:
 \text{electron charge}=-e
 ```
 
-The electron is attracted to the nucleus by electrostatic force.
+The electron is bound by electrostatic attraction.
 
-This model is simplified, but it is useful for calculating:
+Energy levels are labelled by the principal quantum number:
 
-- electron potential energy
-- total energy
-- orbit radius
-- ionisation energy
-- photon wavelength
+```math
+n=1,2,3,\dots
+```
 
-📘 Example: [Coulomb potential energy of a bound electron](./examples.md#1-coulomb-potential-energy-of-a-bound-electron)
+Higher $begin:math:text$n$end:math:text$ means:
+
+```math
+\text{larger orbit}
+```
+
+and:
+
+```math
+\text{higher energy}
+```
 
 ---
 
 ## 5. Coulomb Potential Energy
 
-The electrostatic potential energy between two point charges is:
+Electrostatic potential energy between two point charges:
 
 ```math
 PE=\frac{k_e q_1q_2}{r}
 ```
 
-where:
-
-- `PE` = electrostatic potential energy
-- `k_e` = Coulomb constant
-- `q_1`, `q_2` = charges
-- `r` = separation between charges
-
-Coulomb constant:
-
-```math
-k_e=8.99\times10^9\ \text{N m}^2\text{C}^{-2}
-```
-
-For an electron orbiting a positive nucleus:
+For an electron bound to a positive nucleus:
 
 ```math
 q_1=+e
@@ -189,140 +163,84 @@ q_2=-e
 Therefore:
 
 ```math
-PE=\frac{k_e(+e)(-e)}{r_0}
+PE=-\frac{k_e e^2}{r}
 ```
 
-So:
+Key meaning:
 
 ```math
-PE=-\frac{k_e e^2}{r_0}
+PE<0
+\Rightarrow
+\text{electron is bound}
 ```
-
-The negative sign means the electron is bound to the nucleus.
-
-📘 Example: [Coulomb potential energy of a bound electron](./examples.md#1-coulomb-potential-energy-of-a-bound-electron)
 
 ---
 
 ## 6. Bound Electron Energy
 
-The total energy of a bound electron is:
+Total energy:
 
 ```math
 E_{\text{total}}=KE+PE
 ```
 
-For an electron bound to a positive nucleus by Coulomb attraction, the potential energy is negative:
-
-```math
-PE=-\frac{k_e e^2}{r}
-```
-
-Kinetic energy must always be positive because:
+Kinetic energy is always positive:
 
 ```math
 KE=\frac{1}{2}mv^2
 ```
 
-Therefore, for a Coulomb-bound electron:
+For a Coulomb-bound electron:
 
 ```math
 KE=\frac{1}{2}|PE|
 ```
 
-Since the potential energy is negative, this is often written as:
+Since $begin:math:text$PE\<0$end:math:text$:
 
 ```math
 KE=-\frac{1}{2}PE
 ```
 
-because when:
-
-```math
-PE<0
-```
-
-then:
-
-```math
-|PE|=-PE
-```
-
-So the two forms are equivalent:
+Equivalent form:
 
 ```math
 KE=\frac{1}{2}|PE|=-\frac{1}{2}PE
 ```
 
-For the hydrogen ground state:
+Key reminder:
 
-```math
-E_{\text{total}}=-13.6\ \text{eV}
-```
-
-Then:
-
-```math
-PE=-27.2\ \text{eV}
-```
-
-```math
-KE=+13.6\ \text{eV}
-```
-
-Key idea:
-
-> The negative sign in `KE = -1/2 PE` is not double-counting the electron's negative charge. It appears because `PE` is already negative, while `KE` must be positive.
-
-📘 Example: [Bound electron energy: PE, KE and Bohr radius](./examples.md#2-bound-electron-energy-pe-ke-and-bohr-radius)
+> The negative sign in $begin:math:text$KE\=\-\\frac\{1\}\{2\}PE$end:math:text$ is used because $begin:math:text$PE$end:math:text$ is negative while $begin:math:text$KE$end:math:text$ must be positive.
 
 ---
 
 ## 7. Bohr Radius
 
-The radius of the hydrogen ground-state orbit can be found from:
+Bohr radius is the ground-state orbital radius of hydrogen.
+
+From Coulomb potential energy:
 
 ```math
 PE=-\frac{k_e e^2}{r_0}
 ```
 
-Rearrange:
+Rearranged form:
 
 ```math
 r_0=\frac{k_e e^2}{|PE|}
 ```
 
-For the hydrogen ground state:
+Key idea:
 
 ```math
-|PE|=27.2\ \text{eV}
+r_0=\text{stable ground-state radius}
 ```
-
-Convert electron-volts to joules:
-
-```math
-1\ \text{eV}=1.6\times10^{-19}\ \text{J}
-```
-
-The result is:
-
-```math
-r_0\approx5.29\times10^{-11}\ \text{m}
-```
-
-This is the Bohr radius.
-
-```math
-r_0\approx0.529\ \text{\AA}
-```
-
-📘 Example: [Bound electron energy: PE, KE and Bohr radius](./examples.md#2-bound-electron-energy-pe-ke-and-bohr-radius)
 
 ---
 
-## 8. Energy Levels in Hydrogen
+## 8. Energy Levels
 
-Electron energy levels in hydrogen are quantised.
+### 8.1 Energy Levels for Hydrogen-Like Atoms
 
 For hydrogen-like atoms:
 
@@ -332,9 +250,10 @@ E_n=-\frac{13.6Z^2}{n^2}\ \text{eV}
 
 where:
 
-- `E_n` = energy level
-- `Z` = atomic number
-- `n` = principal quantum number
+- $begin:math:text$E\_n$end:math:text$: energy of shell $begin:math:text$n$end:math:text$
+- $begin:math:text$Z$end:math:text$: atomic number
+- $begin:math:text$n$end:math:text$: principal quantum number / shell number
+- $begin:math:text$13\.6\\\,\\text\{eV\}$end:math:text$: magnitude of hydrogen ground-state binding energy
 
 For hydrogen:
 
@@ -342,170 +261,116 @@ For hydrogen:
 Z=1
 ```
 
-so:
+The ground state is:
 
 ```math
-E_n=-\frac{13.6}{n^2}\ \text{eV}
+n=1
 ```
 
-Important hydrogen levels:
+The ionisation limit is:
 
 ```math
-E_1=-13.6\ \text{eV}
+n=\infty
 ```
 
+At the ionisation limit:
+
 ```math
-E_2=-3.4\ \text{eV}
+E_\infty=0
 ```
 
+Meaning of $begin:math:text$13\.6\\\,\\text\{eV\}$end:math:text$:
+
 ```math
-E_3=-1.51\ \text{eV}
+13.6\,\text{eV}
+=
+\text{energy required to ionise hydrogen from }n=1
 ```
 
-As `n` increases, the energy becomes less negative and approaches zero.
+As $begin:math:text$n$end:math:text$ increases:
 
 ```math
-E_{\infty}=0
-```
-
-📘 Example: [Hydrogen energy-level transition and emission wavelength](./examples.md#4-hydrogen-energy-level-transition-and-emission-wavelength)
-
----
-
-## 8.1 Atomic Number vs Principal Quantum Number
-
-Do not confuse atomic number `Z` with principal quantum number `n`.
-
-### Atomic Number
-
-The atomic number is:
-
-```math
-Z=\text{number of protons}
-```
-
-It determines the element.
-
-Examples:
-
-| Element | Atomic number `Z` |
-|---|---:|
-| Hydrogen | 1 |
-| Carbon | 6 |
-| Silicon | 14 |
-
----
-
-### Principal Quantum Number
-
-The principal quantum number is:
-
-```math
-n=1,2,3,\dots
-```
-
-It tells which main shell or energy level an electron is in.
-
-| Principal quantum number | Shell | Meaning |
-|---:|---|---|
-| `n = 1` | K shell | first shell / lowest energy level |
-| `n = 2` | L shell | second shell |
-| `n = 3` | M shell | third shell |
-| `n = 4` | N shell | fourth shell |
-
-Important distinction:
-
-```math
-Z=\text{number of protons}
-```
-
-```math
-n=\text{electron shell / main energy level}
-```
-
-So `n` is not the total number of shells in the atom. It describes the shell occupied by a particular electron.
-
-For hydrogen energy levels:
-
-```math
-E_n=-\frac{13.6Z^2}{n^2}\ \text{eV}
-```
-
-where:
-
-- `Z` is the atomic number
-- `n` is the principal quantum number
-
-For hydrogen:
-
-```math
-Z=1
-```
-
-so:
-
-```math
-E_n=-\frac{13.6}{n^2}\ \text{eV}
+E_n\rightarrow0
 ```
 
 ---
 
-## 9. Ionisation Energy
+### 8.2 Atomic Number vs Principal Quantum Number
 
-Ionisation means removing an electron completely from the atom.
+Do not confuse $begin:math:text$Z$end:math:text$ and $begin:math:text$n$end:math:text$.
 
-For the hydrogen ground state:
+```math
+Z=\text{atomic number}=\text{number of protons}
+```
+
+```math
+n=\text{principal quantum number}=\text{energy level / shell}
+```
+
+Key distinction:
+
+| Symbol | Meaning |
+|---|---|
+| $begin:math:text$Z$end:math:text$ | identifies the element |
+| $begin:math:text$n$end:math:text$ | identifies the electron energy level |
+
+---
+
+### 8.3 Energy Levels from Ionisation Energy
+
+Ionisation means:
 
 ```math
 n=1\rightarrow n=\infty
 ```
 
-Energy at infinity:
+At infinity:
 
 ```math
-E_{\infty}=0
+E_\infty=0
 ```
 
-Ground state energy:
+Ionisation energy:
 
 ```math
-E_1=-13.6\ \text{eV}
+E_{\text{ionisation}}=E_\infty-E_1
 ```
 
-So the ionisation energy is:
+Since $begin:math:text$E\_\\infty\=0$end:math:text$:
 
 ```math
-E_{\text{ionisation}}=0-(-13.6)=13.6\ \text{eV}
+E_1=-E_{\text{ionisation}}
 ```
 
-📘 Example: [Ionisation energy and required photon wavelength](./examples.md#3-ionisation-energy-and-required-photon-wavelength)
+If a question treats a given photon energy as the ionisation threshold:
+
+```math
+E_n=-\frac{E_{\text{ionisation}}}{n^2}
+```
+
+Key rule:
+
+> Use $begin:math:text$13\.6Z\^2$end:math:text$ for hydrogen-like atoms when $begin:math:text$Z$end:math:text$ is given.  
+> Use $begin:math:text$E\_\{\\text\{ionisation\}\}$end:math:text$ if the question gives or implies a different ionisation threshold.
 
 ---
 
-## 10. Photon Absorption and Emission
+### 8.4 Photon Energy and Ionisation
 
-A photon has energy:
+Photon energy:
 
 ```math
 E=hf
 ```
 
-Since:
-
 ```math
 f=\frac{c}{\lambda}
-```
-
-we get:
-
-```math
-E=\frac{hc}{\lambda}
 ```
 
 Therefore:
 
 ```math
-\lambda=\frac{hc}{E}
+E=\frac{hc}{\lambda}
 ```
 
 Useful shortcut:
@@ -514,64 +379,111 @@ Useful shortcut:
 E(\text{eV})=\frac{1240}{\lambda(\text{nm})}
 ```
 
-or:
+If photon energy equals the ionisation threshold:
 
 ```math
-\lambda(\text{nm})=\frac{1240}{E(\text{eV})}
+E_{\text{photon}}=E_{\text{ionisation}}
+```
+
+If photon energy is larger than ionisation energy:
+
+```math
+K=E_{\text{photon}}-E_{\text{ionisation}}
+```
+
+where $begin:math:text$K$end:math:text$ is kinetic energy of the emitted electron.
+
+---
+
+### 8.5 Common Confusion
+
+Hydrogen has one electron, but many possible energy levels.
+
+```math
+n=1,2,3,\dots
+```
+
+Ground state:
+
+```math
+\text{electron in }n=1
+```
+
+Excited state:
+
+```math
+\text{electron in }n=2,3,4,\dots
+```
+
+Ionised state:
+
+```math
+n=\infty
+```
+
+So $begin:math:text$n$end:math:text$ labels possible energy levels, not the number of electrons.
+
+---
+
+## 9. Photon Absorption and Emission
+
+### 9.1 Absorption
+
+Electron moves from lower to higher energy level.
+
+```math
+\text{lower energy}
+\rightarrow
+\text{higher energy}
+```
+
+Photon energy required:
+
+```math
+E_{\text{photon}}=E_{\text{higher}}-E_{\text{lower}}
 ```
 
 ---
 
-### 10.1 Absorption
+### 9.2 Emission
 
-If an electron moves from a lower energy level to a higher energy level, it absorbs energy.
-
-```math
-\text{lower energy level}
-\rightarrow
-\text{higher energy level}
-```
-
----
-
-### 10.2 Emission
-
-If an electron moves from a higher energy level to a lower energy level, it emits a photon.
+Electron moves from higher to lower energy level.
 
 ```math
-\text{higher energy level}
+\text{higher energy}
 \rightarrow
-\text{lower energy level}
+\text{lower energy}
 ```
 
-Photon energy:
+Photon energy emitted:
 
 ```math
 E_{\text{photon}}=E_{\text{initial}}-E_{\text{final}}
 ```
 
-📘 Examples:
+---
 
-- [Ionisation energy and required photon wavelength](./examples.md#3-ionisation-energy-and-required-photon-wavelength)
-- [Hydrogen energy-level transition and emission wavelength](./examples.md#4-hydrogen-energy-level-transition-and-emission-wavelength)
+## 10. Quantum View of Electrons
+
+Bohr model is useful but incomplete.
+
+In the quantum model:
+
+- electrons are not fixed particles in circular paths
+- electrons are described by wavefunctions
+- orbitals are probability clouds
+
+Orbital:
+
+```math
+\text{region where electron is likely to be found}
+```
 
 ---
 
-## 11. Quantum View of Electrons
+## 11. De Broglie Wavelength
 
-The Bohr model is useful but incomplete.
-
-In the quantum model, electrons are not particles moving in fixed circular paths.
-
-Instead, electrons are described by wavefunctions and orbitals.
-
-An orbital gives the probability of finding an electron in a region of space.
-
----
-
-## 12. De Broglie Wavelength
-
-A moving particle has an associated wavelength:
+A moving particle has wavelength:
 
 ```math
 \lambda=\frac{h}{mv}
@@ -579,17 +491,17 @@ A moving particle has an associated wavelength:
 
 where:
 
-- `h` = Planck constant
-- `m` = particle mass
-- `v` = particle velocity
+- $begin:math:text$h$end:math:text$: Planck constant
+- $begin:math:text$m$end:math:text$: particle mass
+- $begin:math:text$v$end:math:text$: particle velocity
 
-For electrons in atoms, this wavelength is comparable to atomic dimensions, so quantum behaviour is important.
+Electron wavelengths in atoms are comparable to atomic dimensions.
 
 ---
 
-## 13. Schrödinger Equation
+## 12. Schrödinger Equation
 
-The quantum behaviour of electrons is described by:
+Quantum behaviour of electrons:
 
 ```math
 \hat{H}|\psi\rangle=E|\psi\rangle
@@ -597,24 +509,22 @@ The quantum behaviour of electrons is described by:
 
 where:
 
-- `\hat{H}` = Hamiltonian operator
-- `|\psi\rangle` = wavefunction
-- `E` = allowed energy level
-
-The wavefunction describes electron probability distribution.
+- $begin:math:text$\\hat\{H\}$end:math:text$: Hamiltonian operator
+- $begin:math:text$\|\\psi\\rangle$end:math:text$: wavefunction
+- $begin:math:text$E$end:math:text$: allowed energy level
 
 ---
 
-## 14. Quantum Numbers
+## 13. Quantum Numbers
 
 An electron state is described by four quantum numbers.
 
 | Symbol | Name | Meaning |
 |---|---|---|
-| `n` | principal quantum number | shell / main energy level |
-| `l` | orbital quantum number | orbital shape |
-| `m` | magnetic quantum number | orbital orientation |
-| `s` | spin quantum number | electron spin |
+| $begin:math:text$n$end:math:text$ | principal quantum number | shell / energy level |
+| $begin:math:text$l$end:math:text$ | orbital quantum number | orbital shape |
+| $begin:math:text$m$end:math:text$ | magnetic quantum number | orbital orientation |
+| $begin:math:text$s$end:math:text$ | spin quantum number | electron spin |
 
 Allowed values:
 
@@ -636,7 +546,7 @@ s=\pm\frac{1}{2}
 
 Orbital labels:
 
-| `l` | Orbital type |
+| $begin:math:text$l$end:math:text$ | Orbital type |
 |---:|---|
 | 0 | s |
 | 1 | p |
@@ -645,32 +555,27 @@ Orbital labels:
 
 ---
 
-## 15. Maximum Electrons Per Shell
+## 14. Maximum Electrons Per Shell
 
-Each orbital can hold two electrons with opposite spin.
+Each orbital holds two electrons with opposite spin.
 
-The maximum number of electrons in shell `n` is:
+Maximum electrons in shell $begin:math:text$n$end:math:text$:
 
 ```math
 N=2n^2
 ```
 
-Examples:
-
-| Shell `n` | Maximum electrons |
-|---:|---:|
-| 1 | 2 |
-| 2 | 8 |
-| 3 | 18 |
-| 4 | 32 |
-
 ---
 
-## 16. Valence Electrons
+## 15. Electron Filling and Valence Electrons
 
-Electrons fill the lowest available energy levels first.
+Electrons fill lowest available energy levels first.
 
-The outermost electrons are called valence electrons.
+Valence electrons:
+
+```math
+\text{outermost electrons}
+```
 
 Valence electrons determine:
 

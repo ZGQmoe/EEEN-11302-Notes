@@ -1,751 +1,390 @@
 # Atomic Bonding — Examples
 
-This file contains selected representative examples and discussion-style answers.
-
 Back to concepts:
 
 ⬅️ [Atomic Bonding Concepts](./concept.md)
 
 ---
 
-## 1. Comparing Bonding Types
+## 1. Interatomic Force Curve
 
-**Why this example matters:**  
-This example helps distinguish the main bonding types by focusing on electron behaviour. This is the foundation for explaining why metals, insulators and semiconductors behave differently.
+**Use when:** asked to draw attractive, repulsive and net force curves.
 
-Related concept: [Bonding Type Comparison](./concept.md#19-key-summary)
+Related concept:
 
-| Bonding type | What happens to electrons? | Typical examples | Conductivity |
-|---|---|---|---|
-| Ionic | electrons are transferred | NaCl, MgO | usually poor in solid form |
-| Covalent | electrons are shared | diamond, Si, Ge | poor or semiconducting |
-| Metallic | electrons are delocalised | Cu, Al, Fe | good |
-| Van der Waals | weak dipole attraction | molecular solids, layered materials | usually poor |
+- [Interatomic Force and Potential Energy](./concept.md#2-interatomic-force-and-potential-energy)
 
-The most important distinction is whether electrons are mobile.
+---
+
+### Key Formula
 
 ```math
-\text{mobile electrons}
-\rightarrow
-\text{good electrical conductivity}
+F_N=F_A+F_R
 ```
 
+Attractive force:
+
 ```math
-\text{localised electrons}
-\rightarrow
-\text{poor electrical conductivity}
+F_A=-\frac{A}{r^2}
+```
+
+Repulsive force:
+
+```math
+F_R=\frac{B}{r^m}
+```
+
+where:
+
+```math
+m>2
 ```
 
 ---
 
-## 2. Why NaCl Is an Ionic Insulator
+### Drawing Rules
 
-**Why this example matters:**  
-This example connects electron transfer, ionic crystal formation and insulating behaviour.
+- At large $begin:math:text$r$end:math:text$, both forces approach zero.
+- Attraction dominates at intermediate distance.
+- Repulsion dominates at very small $begin:math:text$r$end:math:text$.
+- Net force crosses zero at $begin:math:text$r\_0$end:math:text$.
+
+At stable separation:
+
+```math
+F_N=0
+```
+
+```math
+r=r_0
+```
+
+---
+
+### Explanation Pattern
+
+At large separation, the atoms interact weakly. As they approach, electron-nucleus attraction pulls them together. At very small separation, electron cloud overlap and Pauli exclusion create strong repulsion. The stable separation $begin:math:text$r\_0$end:math:text$ occurs where attraction and repulsion balance, so the net force is zero.
+
+---
+
+## 2. Potential Energy Curve
+
+**Use when:** asked to draw attractive energy, repulsive energy and net energy.
+
+Related concept:
+
+- [Potential Energy Curve](./concept.md#24-potential-energy-curve)
+
+---
+
+### Key Ideas
+
+Potential energy reference:
+
+```math
+U(\infty)=0
+```
+
+Stable bond length:
+
+```math
+r=r_0
+```
+
+At $begin:math:text$r\_0$end:math:text$:
+
+```math
+U=U_{\min}
+```
+
+Bond energy:
+
+```math
+E_0=U(\infty)-U(r_0)
+```
+
+---
+
+### Drawing Rules
+
+- Attractive energy is negative.
+- Repulsive energy is positive and rises sharply at small $begin:math:text$r$end:math:text$.
+- Net energy forms a potential well.
+- Stable $begin:math:text$r\_0$end:math:text$ is at the minimum of the net energy curve.
+- $begin:math:text$r\_0$end:math:text$ is not where $begin:math:text$U\=0$end:math:text$.
+
+---
+
+### Explanation Pattern
+
+The zero of potential energy is chosen at infinite separation. As atoms approach, attraction lowers the potential energy. At very small separation, repulsion dominates and energy rises sharply. The stable bond length $begin:math:text$r\_0$end:math:text$ occurs at the minimum of the net potential energy curve. The energy difference between this minimum and $begin:math:text$U\(\\infty\)\=0$end:math:text$ is the bond energy.
+
+---
+
+## 3. Why Attractive and Repulsive Equations Differ
+
+**Use when:** confused why both forces are electromagnetic but have different equations.
 
 Related concepts:
 
-- [Ionic Bonding](./concept.md#7-ionic-bonding)
-- [Ionic Crystal Structure: Rock Salt](./concept.md#15-ionic-crystal-structure-rock-salt)
+- [Attractive Force](./concept.md#21-attractive-force)
+- [Repulsive Force](./concept.md#22-repulsive-force)
 
-Sodium tends to lose one electron.
+---
+
+### Key Point
+
+Both interactions are ultimately electromagnetic.
+
+But they represent different effective behaviours:
+
+| Interaction | Approximate form | Reason |
+|---|---|---|
+| Attraction | $begin:math:text$\-A\/r\^2$end:math:text$ | long-range Coulomb electron-nucleus attraction |
+| Repulsion | $begin:math:text$B\/r\^m$end:math:text$ | short-range electron cloud overlap + Pauli exclusion |
+
+Repulsion rises faster because:
 
 ```math
-\text{Na}\rightarrow \text{Na}^+ + e^-
+m>2
 ```
 
-Chlorine tends to gain one electron.
+---
+
+### Explanation Pattern
+
+The attractive force is mainly long-range Coulomb attraction between electrons and neighbouring nuclei, so it can be approximated by a $begin:math:text$1\/r\^2$end:math:text$ term. The repulsive force is an effective short-range atomic force caused by electron cloud overlap, electron-electron repulsion, nucleus-nucleus repulsion and Pauli exclusion. Therefore it is modelled using a sharper term such as $begin:math:text$B\/r\^m$end:math:text$.
+
+---
+
+## 4. Ionic Bonding and NaCl
+
+**Use when:** asked to explain ionic bonding or why NaCl is insulating.
+
+Related concepts:
+
+- [Ionic Bonding](./concept.md#4-ionic-bonding)
+- [Rock Salt Structure](./concept.md#12-rock-salt-structure)
+
+---
+
+### Formation
 
 ```math
-\text{Cl}+e^-\rightarrow \text{Cl}^-
+\text{Na}\rightarrow\text{Na}^+ + e^-
 ```
 
-The resulting ions attract.
-
 ```math
-\text{Na}^+ + \text{Cl}^- \rightarrow \text{NaCl}
+\text{Cl}+e^-\rightarrow\text{Cl}^-
 ```
 
-When many ions come together, they form an ionic crystal.
+```math
+\text{Na}^+ + \text{Cl}^-\rightarrow\text{NaCl}
+```
 
-In NaCl:
+---
 
-- Na+ and Cl- alternate
-- each ion has 6 nearest neighbours of opposite charge
-- the structure is rock salt
-- the structure can be described as FCC with a two-ion basis
+### Rock Salt Structure
 
-The reason NaCl is an electrical insulator in solid form is:
+NaCl forms a rock salt structure.
+
+Key features:
+
+- alternating cations and anions
+- FCC with two-ion basis
+- coordination number $begin:math:text$6$end:math:text$
+
+---
+
+### Conductivity
+
+Solid NaCl is a poor conductor because:
 
 ```math
-\text{electrons are fixed in ions}
+\text{electrons fixed in ions}
 \rightarrow
 \text{no free electrons}
-\rightarrow
-\text{poor electrical conductivity}
 ```
-
-Final idea:
-
-> Ionic bonding creates strong electrostatic attraction, but it does not provide mobile electrons for conduction.
 
 ---
 
-## 3. Why Metals Conduct Electricity and Form Close-Packed Structures
+## 5. Metallic Bonding and Metal Structures
 
-**Why this example matters:**  
-This example links metallic bonding directly to electrical conductivity, thermal conductivity, mechanical behaviour and crystal structure.
+**Use when:** asked why metals conduct or why they form BCC/FCC/HCP.
 
 Related concepts:
 
-- [Metallic Bonding](./concept.md#9-metallic-bonding)
-- [Cubic Crystal Structures](./concept.md#12-cubic-crystal-structures)
-- [Hexagonal Close-Packed Structure](./concept.md#13-hexagonal-close-packed-structure)
+- [Metallic Bonding](./concept.md#6-metallic-bonding)
+- [Cubic Crystal Structures](./concept.md#9-cubic-crystal-structures)
+- [Hexagonal Close-Packed / HCP](./concept.md#10-hexagonal-close-packed--hcp)
 
-In metals, valence electrons are delocalised.
+---
+
+### Key Chain
 
 ```math
-\text{metal atoms}
+\text{metallic bonding}
 \rightarrow
-\text{positive ion cores}
-+
-\text{delocalised electrons}
-```
-
-The delocalised electrons form an electron sea.
-
-The metallic bond is the attraction between:
-
-```math
-\text{positive ion cores}
-```
-
-and:
-
-```math
-\text{delocalised electron sea}
-```
-
-Because the electrons are mobile, metals conduct electricity well.
-
-```math
 \text{delocalised electrons}
 \rightarrow
-\text{mobile carriers}
-\rightarrow
-\text{high electrical conductivity}
+\text{conductivity}
 ```
 
-Because metallic bonding is non-directional, metal ions can pack closely together.
-
 ```math
+\text{metallic bonding}
+\rightarrow
 \text{non-directional bonding}
 \rightarrow
 \text{close-packed structures}
 ```
 
-Common metal structures include:
+---
 
-- BCC: atoms at cube corners and body centre
-- FCC: atoms at cube corners and face centres
-- HCP: close-packed ABAB atomic layers
+### Common Structures
 
-Metals are also ductile and malleable because ions can slide past each other while remaining bonded by the electron sea.
-
-Band structure explanation:
-
-```math
-\text{partially filled band}
-```
-
-or:
-
-```math
-\text{overlapping valence and conduction bands}
-```
-
-This means electrons have available nearby energy states and can move easily under an electric field.
+| Structure | Arrangement | Examples |
+|---|---|---|
+| BCC | corners + body centre | Fe, W, Cr |
+| FCC | corners + face centres | Cu, Al, Ni |
+| HCP | ABAB layers | Mg, Ti, Zn |
 
 ---
 
-## 4. Why Silicon Is a Semiconductor
+### Explanation Pattern
 
-**Why this example matters:**  
-This example connects covalent bonding, diamond cubic structure and semiconductor behaviour. It is one of the most important material explanations in the course.
+Metals contain positive ion cores surrounded by delocalised electrons. These electrons can move under an electric field, so metals conduct well. Metallic bonding is non-directional, so atoms can pack efficiently, giving common structures such as BCC, FCC and HCP.
+
+---
+
+## 6. Silicon as a Semiconductor
+
+**Use when:** asked to link covalent bonding, crystal structure and semiconductor behaviour.
 
 Related concepts:
 
-- [Covalent Bonding](./concept.md#8-covalent-bonding)
-- [Covalent Semiconductor Crystal Structures](./concept.md#14-covalent-semiconductor-crystal-structures)
-- [Semiconductors](./concept.md#183-semiconductors)
-
-Silicon is a group IV element.
-
-It has four valence electrons.
-
-```math
-\text{Si has 4 valence electrons}
-```
-
-Each silicon atom shares electrons with four neighbouring silicon atoms.
-
-```math
-\text{4 valence electrons}
-\rightarrow
-\text{4 covalent bonds}
-```
-
-This produces tetrahedral bonding.
-
-```math
-\text{tetrahedral bonding}
-\rightarrow
-\text{diamond cubic structure}
-```
-
-Silicon is not a metal because its valence electrons are mostly locked in covalent bonds.
-
-However, silicon is not a perfect insulator because the band gap is moderate.
-
-```math
-E_g\approx1.1\ \text{eV}
-```
-
-At room temperature, some electrons can be excited into the conduction band.
-
-This creates:
-
-```math
-\text{electrons in conduction band}
-```
-
-and:
-
-```math
-\text{holes in valence band}
-```
-
-Therefore:
-
-```math
-\text{covalent bonding}
-\rightarrow
-\text{diamond cubic structure}
-\rightarrow
-\text{moderate band gap}
-\rightarrow
-\text{semiconductor behaviour}
-```
-
-Final idea:
-
-> Silicon is covalent, but its electrons can be excited into mobile carriers because its band gap is not too large.
+- [Covalent Bonding](./concept.md#5-covalent-bonding)
+- [Diamond Cubic](./concept.md#111-diamond-cubic)
+- [Bonding, Structure and Band Behaviour](./concept.md#14-bonding-structure-and-band-behaviour)
 
 ---
 
-## 5. Diamond Cubic vs Zincblende
+### Key Chain
 
-**Why this example matters:**  
-This example distinguishes elemental semiconductors from compound semiconductors.
+```math
+\text{Si has 4 valence electrons}
+\rightarrow
+\text{4 covalent bonds}
+\rightarrow
+\text{diamond cubic}
+\rightarrow
+\text{moderate band gap}
+\rightarrow
+\text{semiconductor}
+```
 
-Related concept: [Covalent Semiconductor Crystal Structures](./concept.md#14-covalent-semiconductor-crystal-structures)
+---
+
+### Explanation Pattern
+
+Silicon is a group IV element with four valence electrons. Each silicon atom forms four directional covalent bonds with neighbouring silicon atoms, producing a tetrahedral diamond cubic structure. Its electrons are mostly localised in covalent bonds, so it is not metallic. However, its band gap is moderate, so some electrons can be excited into the conduction band, giving semiconductor behaviour.
+
+---
+
+## 7. Diamond Cubic vs Zincblende
+
+**Use when:** asked to compare elemental and compound semiconductor structures.
+
+Related concepts:
+
+- [Diamond Cubic](./concept.md#111-diamond-cubic)
+- [Zincblende](./concept.md#112-zincblende)
+
+---
+
+### Comparison
+
+| Structure | Basis | Atom types | Examples |
+|---|---|---|---|
+| Diamond cubic | two-atom basis | identical atoms | diamond, Si, Ge |
+| Zincblende | two-atom basis | different atoms | GaAs, InP, ZnS |
+
+---
 
 ### Diamond Cubic
 
-Diamond cubic is found in elemental group IV semiconductors.
+```math
+\text{FCC lattice}+\text{two identical atom basis}
+```
 
-Examples:
-
-- diamond
-- Si
-- Ge
-
-Key features:
-
-- FCC lattice
-- two-atom basis
-- identical atoms in the basis
-- tetrahedral bonding
-- each atom has 4 nearest neighbours
-- 8 atoms per conventional unit cell
-
-In silicon:
+Coordination number:
 
 ```math
-\text{Si-Si covalent bonds}
-\rightarrow
-\text{diamond cubic}
+4
+```
+
+Bonding:
+
+```math
+\text{tetrahedral covalent}
 ```
 
 ---
 
 ### Zincblende
 
-Zincblende is common in compound semiconductors.
-
-Examples:
-
-- GaAs
-- InP
-- ZnS
-
-Key features:
-
-- similar to diamond cubic
-- two-atom basis
-- two different atom types
-- tetrahedral bonding
-- each atom has 4 nearest neighbours of the opposite atom type
-
-In GaAs:
-
 ```math
-\text{Ga-As bonding}
-\rightarrow
-\text{zincblende}
-```
-
-Main difference:
-
-```math
-\text{diamond cubic}
-=
-\text{same atom type on both sublattices}
-```
-
-```math
-\text{zincblende}
-=
-\text{two different atom types on the two sublattices}
-```
-
----
-
-## 6. Crystal Structure Arrangements
-
-**Why this example matters:**  
-This example focuses only on the physical arrangement of atoms in the most important structures.
-
-Related concepts:
-
-- [Cubic Crystal Structures](./concept.md#12-cubic-crystal-structures)
-- [Hexagonal Close-Packed Structure](./concept.md#13-hexagonal-close-packed-structure)
-- [Covalent Semiconductor Crystal Structures](./concept.md#14-covalent-semiconductor-crystal-structures)
-- [Ionic Crystal Structure: Rock Salt](./concept.md#15-ionic-crystal-structure-rock-salt)
-
----
-
-### 6.1 BCC Arrangement
-
-BCC has atoms at:
-
-- the 8 cube corners
-- the body centre
-
-```math
-\text{atoms per BCC unit cell}=2
-```
-
-```math
-\text{coordination number}=8
-```
-
-Common examples:
-
-- Fe
-- W
-- Cr
-
----
-
-### 6.2 FCC Arrangement
-
-FCC has atoms at:
-
-- the 8 cube corners
-- the centre of each of the 6 faces
-
-```math
-\text{atoms per FCC unit cell}=4
-```
-
-```math
-\text{coordination number}=12
-```
-
-```math
-\text{packing factor}=74\%
-```
-
-Common examples:
-
-- Cu
-- Al
-- Ni
-
----
-
-### 6.3 HCP Arrangement
-
-HCP has close-packed layers with:
-
-```math
-ABABAB\cdots
-```
-
-stacking.
-
-```math
-\text{atoms per conventional HCP cell}=6
-```
-
-```math
-\text{atoms per primitive HCP cell}=2
-```
-
-```math
-\text{coordination number}=12
-```
-
-```math
-\text{packing factor}=74\%
-```
-
-Common examples:
-
-- Mg
-- Ti
-- Zn
-
----
-
-### 6.4 Diamond Cubic Arrangement
-
-Diamond cubic is:
-
-```math
-\text{FCC lattice}+\text{two identical atom basis}
-```
-
-Basis:
-
-```math
-(0,0,0)
-```
-
-and:
-
-```math
-\left(\frac{1}{4},\frac{1}{4},\frac{1}{4}\right)
-```
-
-```math
-\text{atoms per unit cell}=8
-```
-
-```math
-\text{coordination number}=4
-```
-
-Common examples:
-
-- diamond
-- Si
-- Ge
-
----
-
-### 6.5 Zincblende Arrangement
-
-Zincblende is similar to diamond cubic, but with two different atoms.
-
-Example for GaAs:
-
-```math
-\text{As at }(0,0,0)
-```
-
-```math
-\text{Ga at }\left(\frac{1}{4},\frac{1}{4},\frac{1}{4}\right)
-```
-
-```math
-\text{coordination number}=4
-```
-
-Common examples:
-
-- GaAs
-- InP
-- ZnS
-
----
-
-### 6.6 Rock Salt Arrangement
-
-Rock salt consists of alternating cations and anions.
-
-For NaCl:
-
-```math
-\text{Cl}^- \text{ at }(0,0,0)
-```
-
-```math
-\text{Na}^+ \text{ at }\left(\frac{1}{2},\frac{1}{2},\frac{1}{2}\right)
-```
-
-Each ion has 6 nearest neighbours of opposite charge.
-
-```math
-\text{coordination number}=6
-```
-
-Common examples:
-
-- NaCl
-- MgO
-
----
-
-## 7. Week 3 Discussion Question: Metals, Insulators and Semiconductors
-
-**Why this example matters:**  
-This is the representative discussion-style answer for Week 3. It combines bonding type, crystal structure, band structure and electrical behaviour in one answer.
-
-The Week 3 discussion question asks what crystal structures are expected for metals, insulators and semiconductors, asks for examples, and then asks how bonding relates to their band structures.
-
-Related concepts:
-
-- [Crystal Structure Basics](./concept.md#11-crystal-structure-basics)
-- [Bonding, Band Structure and Electrical Behaviour](./concept.md#18-bonding-band-structure-and-electrical-behaviour)
-
----
-
-### 7.1 Summary Table
-
-| Type of solid | Expected crystal structures | Example materials | Bonding type | Band structure |
-|---|---|---|---|---|
-| Metal | BCC, FCC, HCP | Cu, Al, Fe, W, Mg, Ti | metallic | partially filled or overlapping bands |
-| Insulator | rock salt, covalent network, molecular or layered structures | NaCl, MgO, diamond, SiO2, molecular solids | ionic / strong covalent / van der Waals | large band gap |
-| Semiconductor | diamond cubic, zincblende | Si, Ge, GaAs, InP | covalent or partly ionic-covalent | moderate band gap |
-
----
-
-### 7.2 Metals
-
-Metals usually form close-packed crystal structures such as BCC, FCC or HCP.
-
-In BCC:
-
-- atoms occupy the cube corners and body centre
-- each atom has 8 nearest neighbours
-
-In FCC:
-
-- atoms occupy the cube corners and face centres
-- each atom has 12 nearest neighbours
-- the packing factor is 74%
-
-In HCP:
-
-- atoms form close-packed ABAB layers
-- each atom has 12 nearest neighbours
-- the packing factor is 74%
-
-Reason:
-
-```math
-\text{metallic bonding is non-directional}
-```
-
-Metal atoms are held together by attraction between positive ion cores and delocalised electrons.
-
-```math
-\text{positive ion cores}
+\text{diamond cubic-like}
 +
-\text{electron sea}
-\rightarrow
-\text{metallic bonding}
+\text{two different atoms}
 ```
 
-Because the bonding is non-directional, atoms can pack efficiently.
-
-Band structure:
+Coordination number:
 
 ```math
-\text{partially filled band}
+4
 ```
 
-or:
+Bonding:
 
 ```math
-\text{overlap between valence band and conduction band}
-```
-
-Therefore, metals have many mobile electrons.
-
-```math
-\text{many mobile carriers}
-\rightarrow
-\text{high conductivity}
+\text{tetrahedral, partly ionic-covalent}
 ```
 
 ---
 
-### 7.3 Insulators
+## 8. Week 3 Discussion: Metals, Insulators and Semiconductors
 
-Insulators may form ionic crystals, covalent network structures, molecular solids or layered structures.
+**Use when:** asked to compare structures, bonding and band behaviour.
 
-Examples:
+Related concept:
 
-- NaCl and MgO are ionic crystals with rock salt-type structures
-- diamond and SiO2 are covalent network solids
-- some molecular solids are held by van der Waals bonds
-
-In rock salt structures such as NaCl:
-
-- cations and anions alternate
-- each ion has 6 nearest neighbours of opposite charge
-- the structure maximises attraction between opposite charges
-
-In ionic solids, electrons are transferred and become localised around ions.
-
-```math
-\text{electron transfer}
-\rightarrow
-\text{cation + anion}
-\rightarrow
-\text{ionic crystal}
-```
-
-In covalent insulators, electrons are shared but strongly locked in bonds.
-
-```math
-\text{shared electrons}
-\rightarrow
-\text{strong localised bonds}
-```
-
-In van der Waals solids, molecules are held weakly and there are usually no free electrons.
-
-Band structure:
-
-```math
-\text{full valence band}
-```
-
-```math
-\text{empty conduction band}
-```
-
-```math
-\text{large band gap}
-```
-
-Because the band gap is large, room-temperature thermal energy is not enough to excite many electrons into the conduction band.
-
-Therefore:
-
-```math
-\text{large }E_g
-\rightarrow
-\text{very few mobile carriers}
-\rightarrow
-\text{poor conductivity}
-```
+- [Bonding, Structure and Band Behaviour](./concept.md#14-bonding-structure-and-band-behaviour)
 
 ---
 
-### 7.4 Semiconductors
+### Summary Table
 
-Semiconductors commonly have tetrahedral covalent bonding.
-
-Elemental semiconductors such as silicon and germanium form diamond cubic structures.
-
-```math
-\text{Si, Ge}
-\rightarrow
-\text{diamond cubic}
-```
-
-In diamond cubic:
-
-- the lattice is FCC
-- the basis contains two identical atoms
-- each atom has 4 nearest neighbours
-- bonding is tetrahedral
-
-Compound semiconductors such as GaAs and InP commonly form zincblende structures.
-
-```math
-\text{GaAs, InP}
-\rightarrow
-\text{zincblende}
-```
-
-In zincblende:
-
-- the structure is similar to diamond cubic
-- the basis contains two different atom types
-- each atom bonds to 4 atoms of the opposite type
-- bonding is tetrahedral with partly ionic-covalent character
-
-Reason:
-
-```math
-\text{covalent bonding}
-\rightarrow
-\text{directional tetrahedral bonding}
-\rightarrow
-\text{diamond cubic / zincblende}
-```
-
-Band structure:
-
-```math
-\text{full valence band at }0\text{ K}
-```
-
-```math
-\text{empty conduction band at }0\text{ K}
-```
-
-but:
-
-```math
-E_g\text{ is moderate}
-```
-
-For silicon:
-
-```math
-E_g\approx1.1\ \text{eV}
-```
-
-At room temperature, some electrons can be excited into the conduction band, leaving holes in the valence band.
-
-```math
-\text{electron-hole pairs}
-\rightarrow
-\text{controllable conductivity}
-```
+| Solid type | Structures | Examples | Bonding | Band behaviour |
+|---|---|---|---|---|
+| Metal | BCC, FCC, HCP | Cu, Al, Fe | metallic | partially filled / overlapping bands |
+| Insulator | rock salt, covalent network, molecular | NaCl, MgO, diamond, SiO2 | ionic / strong covalent / van der Waals | large band gap |
+| Semiconductor | diamond cubic, zincblende | Si, Ge, GaAs | covalent / partly ionic-covalent | moderate band gap |
 
 ---
 
-### 7.5 Final Discussion Answer
+### Answer Pattern
 
-Metals usually form close-packed structures such as BCC, FCC and HCP because metallic bonding is non-directional. In BCC, atoms occupy the cube corners and body centre; in FCC, atoms occupy the cube corners and face centres; and in HCP, atoms form close-packed ABAB layers. These arrangements allow positive ion cores to pack efficiently inside the delocalised electron sea. In band terms, metals have either partially filled bands or overlapping valence and conduction bands, so electrons can move freely under an applied electric field.
+Metals usually form BCC, FCC or HCP structures because metallic bonding is non-directional. Their valence electrons are delocalised, giving partially filled or overlapping bands and high electrical conductivity.
 
-Insulators can form ionic structures such as rock salt in NaCl and MgO, covalent network structures such as diamond and SiO2, or molecular structures held by weaker bonding. In rock salt, cations and anions alternate, and each ion has six nearest neighbours of opposite charge. Ionic and covalent insulators have electrons that are strongly localised in ions or bonds. Their valence band is full, their conduction band is empty, and the band gap is large, so very few electrons can be thermally excited into mobile states.
+Insulators may form ionic, covalent network or molecular structures. Their electrons are strongly localised, and their band gap is large, so very few electrons can enter the conduction band.
 
-Semiconductors such as Si and Ge form diamond cubic structures because their group IV atoms form four directional covalent bonds in a tetrahedral arrangement. Compound semiconductors such as GaAs and InP commonly form zincblende structures, which are similar to diamond cubic but contain two different atom types in the basis. Their band gap is smaller than that of insulators, so some electrons can be excited into the conduction band, leaving holes in the valence band. This gives semiconductors controllable conductivity.
+Semiconductors such as Si and Ge form diamond cubic structures, while compound semiconductors such as GaAs form zincblende structures. Their covalent bonding gives a moderate band gap, so conductivity is possible but controlled.
 
 ---
 
-## 8. Key Exam Logic
+## 9. Quick Exam Logic
 
-When answering bonding / crystal structure / band structure questions, use this chain:
+For bonding questions, use:
 
 ```math
 \text{bonding type}
@@ -754,49 +393,29 @@ When answering bonding / crystal structure / band structure questions, use this 
 \rightarrow
 \text{crystal structure}
 \rightarrow
-\text{band structure}
+\text{band behaviour}
 \rightarrow
-\text{electrical behaviour}
+\text{electrical property}
 ```
 
-For metals:
+For force/energy curve questions, use:
 
 ```math
-\text{metallic bonding}
+\text{attraction at larger }r
 \rightarrow
-\text{delocalised electrons}
+\text{repulsion at small }r
 \rightarrow
-\text{close-packed crystal structures}
+F_N=0
 \rightarrow
-\text{partially filled or overlapping bands}
-\rightarrow
-\text{good conductor}
+r_0
 ```
 
-For insulators:
+For potential energy curve questions, use:
 
 ```math
-\text{ionic or strong covalent bonding}
+U(\infty)=0
 \rightarrow
-\text{localised electrons}
+U(r_0)=U_{\min}
 \rightarrow
-\text{ionic or covalent crystal structures}
-\rightarrow
-\text{large band gap}
-\rightarrow
-\text{poor conductor}
-```
-
-For semiconductors:
-
-```math
-\text{covalent bonding}
-\rightarrow
-\text{directional tetrahedral crystal structures}
-\rightarrow
-\text{moderate band gap}
-\rightarrow
-\text{electron-hole pairs}
-\rightarrow
-\text{controllable conductivity}
+E_0=U(\infty)-U(r_0)
 ```
