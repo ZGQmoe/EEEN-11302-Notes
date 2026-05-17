@@ -52,7 +52,7 @@ Key relation:
 
 ## 3. Isolated Hydrogen Atoms
 
-![Two isolated hydrogen atomic wavefunctions](../images302/wf_infini.png)
+![Two isolated hydrogen atomic wavefunctions](../images302/wf_infin.png)
 
 For two isolated H atoms:
 
