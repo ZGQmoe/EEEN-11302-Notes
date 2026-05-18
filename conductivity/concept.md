@@ -78,11 +78,11 @@ J=\sigma E
 
 where:
 
-- $J$: current density, $\text{A m}^{-2}$
-- $I$: current, A
-- $A$: cross-sectional area, $\text{m}^2$
-- $\sigma$: electrical conductivity, $\text{S m}^{-1}$
-- $E$: electric field, $\text{V m}^{-1}$
+- `J`: current density, A m^-2
+- `I`: current, A
+- `A`: cross-sectional area, m^2
+- `sigma`: electrical conductivity, S m^-1
+- `E`: electric field, V m^-1
 
 Meaning:
 
@@ -104,8 +104,8 @@ Conductivity and resistivity are inverses:
 
 where:
 
-- $\sigma$: electrical conductivity, $\text{S m}^{-1}$
-- $\rho$: electrical resistivity, $\Omega\text{m}$
+- `sigma`: electrical conductivity, S m^-1
+- `rho`: electrical resistivity, ohm m
 
 Therefore:
 
@@ -133,10 +133,10 @@ R=\rho\frac{L}{A}
 
 where:
 
-- $R$: resistance, $\Omega$
-- $\rho$: resistivity, $\Omega\text{m}$
-- $L$: length, m
-- $A$: cross-sectional area, $\text{m}^2$
+- `R`: resistance
+- `rho`: resistivity
+- `L`: length
+- `A`: cross-sectional area
 
 Key trends:
 
@@ -192,7 +192,7 @@ Use this when the question gives:
 E,\quad A,\quad \rho
 ```
 
-instead of length $begin:math:text$L$end:math:text$.
+instead of length.
 
 ---
 
@@ -212,11 +212,11 @@ Steady-state heat conduction:
 
 where:
 
-- $\Delta Q$: heat transfer rate / thermal power, W
-- $A$: cross-sectional area, $\text{m}^2$
-- $\kappa$: thermal conductivity, $\text{W m}^{-1}\text{K}^{-1}$
-- $T$: temperature, K
-- $x$: distance, m
+- `Delta Q`: heat transfer rate / thermal power, W
+- `A`: cross-sectional area
+- `kappa`: thermal conductivity, W m^-1 K^-1
+- `T`: temperature
+- `x`: distance
 
 The negative sign means:
 
@@ -282,16 +282,16 @@ However, electrons are scattered by the lattice.
 
 | Symbol | Meaning | Unit |
 |---|---|---|
-| $n$ | free electron concentration | $\text{m}^{-3}$ |
-| $e$ | electron charge magnitude | C |
-| $E$ | electric field | $\text{V m}^{-1}$ |
-| $v_{\text{drift}}$ | average drift velocity | $\text{m s}^{-1}$ |
-| $\mu_{\text{drift}}$ | drift mobility | $\text{m}^2\text{V}^{-1}\text{s}^{-1}$ |
-| $\sigma$ | electrical conductivity | $\text{S m}^{-1}$ |
-| $\rho$ | electrical resistivity | $\Omega\text{m}$ |
-| $\tau$ | scattering time | s |
-| $m_e$ | electron mass | kg |
-| $m^*$ | effective mass | kg |
+| `n` | free electron concentration | m^-3 |
+| `e` | electron charge magnitude | C |
+| `E` | electric field | V m^-1 |
+| `v_drift` | average drift velocity | m s^-1 |
+| `mu_drift` | drift mobility | m^2 V^-1 s^-1 |
+| `sigma` | electrical conductivity | S m^-1 |
+| `rho` | electrical resistivity | ohm m |
+| `tau` | scattering time | s |
+| `m_e` | electron mass | kg |
+| `m*` | effective mass | kg |
 
 ---
 
@@ -567,7 +567,7 @@ m^*\downarrow
 
 - Electrons move in straight lines between collisions.
 - Collisions with atoms or ions are instantaneous and random.
-- Scattering time $\tau$ is independent of electron position and velocity.
+- Scattering time is independent of electron position and velocity.
 - Electrons reach thermal equilibrium by collisions with the lattice.
 - The electric field is uniform.
 - Electrons do not interact with each other.
@@ -694,7 +694,7 @@ gives:
 \frac{m_eT}{e^2nC}
 ```
 
-Since $begin:math:text$m\_e$end:math:text$, $begin:math:text$e$end:math:text$, $begin:math:text$n$end:math:text$, and $begin:math:text$C$end:math:text$ are constants:
+Since electron mass, electron charge, electron concentration, and `C` are constants:
 
 ```math
 \rho_{\text{drift}}\propto T
@@ -720,9 +720,9 @@ For lattice-scattering-limited metals:
 
 where:
 
-- $\rho_T$: temperature-dependent resistivity, $\Omega\text{m}$
-- $A$: temperature-independent constant, $\Omega\text{m K}^{-1}$
-- $T$: temperature, K
+- `rho_T`: temperature-dependent resistivity
+- `A`: temperature-independent constant
+- `T`: temperature
 
 Here:
 
@@ -736,11 +736,11 @@ Important:
 A\neq\text{cross-sectional area}
 ```
 
-In this equation, $begin:math:text$A$end:math:text$ is just a proportionality constant.
+In this equation, `A` is just a proportionality constant.
 
 ---
 
-## 22. Relationship Between $begin:math:text$\\rho\_\{\\text\{drift\}\}$end:math:text$ and $begin:math:text$\\rho\_T$end:math:text$
+## 22. Relationship Between Drift Resistivity and Temperature Resistivity
 
 General drift resistivity:
 
@@ -870,7 +870,7 @@ Valence band:
 \text{band filled with valence electrons}
 ```
 
-At $begin:math:text$0K$end:math:text$:
+At zero kelvin:
 
 ```math
 \text{valence band is full}
@@ -888,7 +888,7 @@ Conduction band:
 \text{higher-energy band where electrons can move and conduct}
 ```
 
-At $begin:math:text$0K$end:math:text$:
+At zero kelvin:
 
 ```math
 \text{conduction band is empty}
@@ -916,8 +916,8 @@ E_g=E_C-E_V
 
 where:
 
-- $begin:math:text$E\_C$end:math:text$: bottom of conduction band
-- $begin:math:text$E\_V$end:math:text$: top of valence band
+- `E_C`: bottom of conduction band
+- `E_V`: top of valence band
 
 Meaning:
 
@@ -953,7 +953,7 @@ Fermi level:
 E_F=\text{occupation reference energy level}
 ```
 
-At $begin:math:text$0K$end:math:text$:
+At zero kelvin:
 
 ```math
 E<E_F
@@ -975,7 +975,7 @@ Important:
 
 means states that actually exist.
 
-In a semiconductor, $begin:math:text$E\_F$end:math:text$ can lie inside the bandgap.
+In a semiconductor, the Fermi level can lie inside the bandgap.
 
 ```math
 E_F\text{ inside bandgap}
@@ -999,8 +999,8 @@ n_E=g(E)f(E)
 
 where:
 
-- $begin:math:text$g\(E\)$end:math:text$: density of available states
-- $begin:math:text$f\(E\)$end:math:text$: occupation probability
+- `g(E)`: density of available states
+- `f(E)`: occupation probability
 
 Inside the bandgap:
 
@@ -1116,7 +1116,7 @@ Key memory:
 \Phi\text{ uses }E_F
 ```
 
-Doping changes $begin:math:text$E\_F$end:math:text$, so it can change $begin:math:text$\\Phi$end:math:text$.
+Doping changes the Fermi level, so it can change the work function.
 
 Electron affinity is usually treated as a material property.
 
@@ -1124,7 +1124,7 @@ Electron affinity is usually treated as a material property.
 
 ## 32. Semiconductor Conduction
 
-At $begin:math:text$0K$end:math:text$:
+At zero kelvin:
 
 ```math
 \text{VB full}
@@ -1134,7 +1134,7 @@ At $begin:math:text$0K$end:math:text$:
 \text{very low conductivity}
 ```
 
-At $begin:math:text$T\>0K$end:math:text$ or under illumination:
+At temperature above zero or under illumination:
 
 ```math
 \text{energy supplied}
@@ -1164,13 +1164,13 @@ e^-+h^+
 
 ## 33. E-k Diagram Reminder
 
-In an $begin:math:text$E\-k$end:math:text$ diagram:
+In an E-k diagram:
 
 ```math
 p=\hbar k
 ```
 
-So $begin:math:text$k$end:math:text$ is related to crystal momentum.
+So `k` is related to crystal momentum.
 
 ---
 
@@ -1370,12 +1370,12 @@ n=N_C e^{-(E_C-E_F)/(k_BT)}
 
 where:
 
-- $begin:math:text$n$end:math:text$: electron concentration, $begin:math:text$\\text\{m\}\^\{\-3\}$end:math:text$
-- $begin:math:text$N\_C$end:math:text$: effective density of states at conduction band edge
-- $begin:math:text$E\_C$end:math:text$: conduction band minimum
-- $begin:math:text$E\_F$end:math:text$: Fermi level
-- $begin:math:text$k\_B$end:math:text$: Boltzmann constant
-- $begin:math:text$T$end:math:text$: temperature
+- `n`: electron concentration
+- `N_C`: effective density of states at conduction band edge
+- `E_C`: conduction band minimum
+- `E_F`: Fermi level
+- `k_B`: Boltzmann constant
+- `T`: temperature
 
 Key trend:
 
@@ -1427,10 +1427,10 @@ p=N_V e^{-(E_F-E_V)/(k_BT)}
 
 where:
 
-- $begin:math:text$p$end:math:text$: hole concentration, $begin:math:text$\\text\{m\}\^\{\-3\}$end:math:text$
-- $begin:math:text$N\_V$end:math:text$: effective density of states at valence band edge
-- $begin:math:text$E\_V$end:math:text$: valence band maximum
-- $begin:math:text$E\_F$end:math:text$: Fermi level
+- `p`: hole concentration
+- `N_V`: effective density of states at valence band edge
+- `E_V`: valence band maximum
+- `E_F`: Fermi level
 
 Key trend:
 
@@ -1498,9 +1498,9 @@ np=n_i^2
 
 where:
 
-- $begin:math:text$n$end:math:text$: electron concentration in conduction band
-- $begin:math:text$p$end:math:text$: hole concentration in valence band
-- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration
+- `n`: electron concentration in conduction band
+- `p`: hole concentration in valence band
+- `n_i`: intrinsic carrier concentration
 
 For an intrinsic semiconductor:
 
@@ -1730,7 +1730,7 @@ The 5th electron is weakly bound.
 
 ---
 
-## 50. Donor Energy Level $begin:math:text$E\_D$end:math:text$
+## 50. Donor Energy Level
 
 Donor atoms introduce a donor energy level:
 
@@ -1782,7 +1782,7 @@ So:
 
 ---
 
-## 51. Why $begin:math:text$n\\approx N\_D$end:math:text$ in n-Type
+## 51. Why n is Approximately Equal to Donor Concentration in n-Type
 
 Important correction:
 
@@ -1798,9 +1798,9 @@ n\approx N_D
 
 where:
 
-- $begin:math:text$n$end:math:text$: actual electron concentration in conduction band
-- $begin:math:text$N\_D$end:math:text$: donor concentration
-- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration of pure semiconductor
+- `n`: actual electron concentration in conduction band
+- `N_D`: donor concentration
+- `n_i`: intrinsic carrier concentration of pure semiconductor
 
 Reason:
 
@@ -1894,7 +1894,7 @@ So one covalent bond lacks an electron.
 
 ---
 
-## 53. Acceptor Energy Level $begin:math:text$E\_A$end:math:text$
+## 53. Acceptor Energy Level
 
 Acceptor atoms introduce an acceptor energy level:
 
@@ -1956,7 +1956,7 @@ So:
 
 ---
 
-## 54. Why $begin:math:text$p\\approx N\_A$end:math:text$ in p-Type
+## 54. Why p is Approximately Equal to Acceptor Concentration in p-Type
 
 For fully ionised p-type material:
 
@@ -1966,8 +1966,8 @@ p\approx N_A
 
 where:
 
-- $begin:math:text$p$end:math:text$: actual hole concentration in valence band
-- $begin:math:text$N\_A$end:math:text$: acceptor concentration
+- `p`: actual hole concentration in valence band
+- `N_A`: acceptor concentration
 
 Reason:
 
@@ -2019,7 +2019,7 @@ Intrinsic Fermi level:
 E_{Fi}
 ```
 
-For an intrinsic semiconductor, $begin:math:text$E\_F$end:math:text$ is usually near the middle of the bandgap.
+For an intrinsic semiconductor, the Fermi level is usually near the middle of the bandgap.
 
 ---
 
@@ -2039,10 +2039,10 @@ E_{Fn}-E_{Fi}=k_BT\ln\left(\frac{n}{n_i}\right)
 
 where:
 
-- $begin:math:text$E\_\{Fn\}$end:math:text$: Fermi level in n-type semiconductor
-- $begin:math:text$E\_\{Fi\}$end:math:text$: intrinsic Fermi level
-- $begin:math:text$n$end:math:text$: electron concentration
-- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration
+- `E_Fn`: Fermi level in n-type semiconductor
+- `E_Fi`: intrinsic Fermi level
+- `n`: electron concentration
+- `n_i`: intrinsic carrier concentration
 
 Since:
 
@@ -2094,10 +2094,10 @@ E_{Fp}-E_{Fi}=-k_BT\ln\left(\frac{p}{n_i}\right)
 
 where:
 
-- $begin:math:text$E\_\{Fp\}$end:math:text$: Fermi level in p-type semiconductor
-- $begin:math:text$E\_\{Fi\}$end:math:text$: intrinsic Fermi level
-- $begin:math:text$p$end:math:text$: hole concentration
-- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration
+- `E_Fp`: Fermi level in p-type semiconductor
+- `E_Fi`: intrinsic Fermi level
+- `p`: hole concentration
+- `n_i`: intrinsic carrier concentration
 
 Since:
 
@@ -2133,15 +2133,15 @@ E_F\text{ moves closer to valence band}
 
 ---
 
-## 58. Relationship Between $begin:math:text$E\_F$end:math:text$, $begin:math:text$E\_D$end:math:text$, and $begin:math:text$E\_A$end:math:text$
+## 58. Relationship Between Fermi Level, Donor Level and Acceptor Level
 
 Do not confuse these three energy levels.
 
 | Symbol | Meaning | Typical position |
 |---|---|---|
-| $begin:math:text$E\_F$end:math:text$ | Fermi level / occupation reference level | moves up or down depending on doping |
-| $begin:math:text$E\_D$end:math:text$ | donor impurity level | slightly below $begin:math:text$E\_C$end:math:text$ |
-| $begin:math:text$E\_A$end:math:text$ | acceptor impurity level | slightly above $begin:math:text$E\_V$end:math:text$ |
+| `E_F` | Fermi level / occupation reference level | moves up or down depending on doping |
+| `E_D` | donor impurity level | slightly below conduction band |
+| `E_A` | acceptor impurity level | slightly above valence band |
 
 For n-type:
 
@@ -2175,7 +2175,7 @@ E_F\neq E_A
 
 ---
 
-## 59. $begin:math:text$n$end:math:text$ vs $begin:math:text$n\_i$end:math:text$
+## 59. n and Intrinsic Carrier Concentration
 
 Actual electron concentration:
 
@@ -2215,8 +2215,8 @@ Key difference:
 
 | Quantity | Meaning | Changes with doping? |
 |---|---|---|
-| $begin:math:text$n$end:math:text$ | actual electron concentration | yes |
-| $begin:math:text$n\_i$end:math:text$ | intrinsic carrier concentration of pure material | fixed for given material and temperature |
+| `n` | actual electron concentration | yes |
+| `n_i` | intrinsic carrier concentration of pure material | fixed for given material and temperature |
 
 Core memory:
 
@@ -2237,8 +2237,8 @@ n_i=\text{intrinsic reference concentration}
 | Material | Fermi level position | Relation to valence band | Conductivity reason |
 |---|---|---|---|
 | Metal / conductor | inside an allowed band | valence/conduction bands may overlap or band is partially filled | nearby filled and empty states allow electron motion |
-| Semiconductor | inside small bandgap | $begin:math:text$E\_F$end:math:text$ lies above $begin:math:text$E\_V$end:math:text$, often near mid-gap if intrinsic | electrons can be thermally excited from $begin:math:text$E\_V$end:math:text$ to $begin:math:text$E\_C$end:math:text$ |
-| Insulator | inside large bandgap | $begin:math:text$E\_F$end:math:text$ lies above $begin:math:text$E\_V$end:math:text$, far from $begin:math:text$E\_C$end:math:text$ | gap too large, almost no electrons reach conduction band |
+| Semiconductor | inside small bandgap | Fermi level lies above valence band, often near mid-gap if intrinsic | electrons can be thermally excited from valence band to conduction band |
+| Insulator | inside large bandgap | Fermi level lies above valence band, far from conduction band | gap too large, almost no electrons reach conduction band |
 
 ---
 
@@ -2246,8 +2246,8 @@ n_i=\text{intrinsic reference concentration}
 
 | Feature | Direct bandgap | Indirect bandgap |
 |---|---|---|
-| $begin:math:text$E\_C$end:math:text$ minimum and $begin:math:text$E\_V$end:math:text$ maximum | same $begin:math:text$k$end:math:text$ | different $begin:math:text$k$end:math:text$ |
-| Momentum change | $begin:math:text$\\Delta k\\approx0$end:math:text$ | $begin:math:text$\\Delta k\\neq0$end:math:text$ |
+| Band extrema | CB minimum and VB maximum at same k | CB minimum and VB maximum at different k |
+| Momentum change | small | significant |
 | Phonon needed? | usually no | yes |
 | Light emission | efficient | inefficient |
 | Common use | LEDs, lasers | electronics, weak light emission |
@@ -2263,11 +2263,11 @@ n_i=\text{intrinsic reference concentration}
 | Common dopants in Si | P, As, Sb | B, Al, Ga |
 | Majority carrier | electrons | holes |
 | Minority carrier | holes | electrons |
-| Carrier relation | $begin:math:text$n\>p$end:math:text$ | $begin:math:text$p\>n$end:math:text$ |
-| Approximation | $begin:math:text$n\\approx N\_D$end:math:text$ | $begin:math:text$p\\approx N\_A$end:math:text$ |
-| Impurity level | $begin:math:text$E\_D$end:math:text$ slightly below $begin:math:text$E\_C$end:math:text$ | $begin:math:text$E\_A$end:math:text$ slightly above $begin:math:text$E\_V$end:math:text$ |
-| Fermi level shift | $begin:math:text$E\_F$end:math:text$ moves up toward $begin:math:text$E\_C$end:math:text$ | $begin:math:text$E\_F$end:math:text$ moves down toward $begin:math:text$E\_V$end:math:text$ |
-| Minority carrier concentration | $begin:math:text$p\\approx n\_i\^2\/N\_D$end:math:text$ | $begin:math:text$n\\approx n\_i\^2\/N\_A$end:math:text$ |
+| Carrier relation | `n > p` | `p > n` |
+| Approximation | `n approximately N_D` | `p approximately N_A` |
+| Impurity level | donor level slightly below CB | acceptor level slightly above VB |
+| Fermi level shift | moves up toward CB | moves down toward VB |
+| Minority carrier concentration | `p approximately n_i^2 / N_D` | `n approximately n_i^2 / N_A` |
 
 ---
 
