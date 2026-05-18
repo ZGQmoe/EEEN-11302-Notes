@@ -58,7 +58,7 @@ For two isolated hydrogen atoms:
 R=\infty
 ```
 
-Each atom has its own $begin:math:text$1s$end:math:text$ wavefunction:
+Each atom has its own $1s$ wavefunction:
 
 ```math
 \psi_{1s}(r_A)
@@ -208,8 +208,8 @@ Final:
 
 | Type | Wavefunction | Phase | Electron density between nuclei | Energy |
 |---|---|---|---|---|
-| Bonding | $begin:math:text$\\psi\_A\+\\psi\_B$end:math:text$ | same phase | high | lower |
-| Anti-bonding | $begin:math:text$\\psi\_A\-\\psi\_B$end:math:text$ | opposite phase | zero / node | higher |
+| Bonding | $\psi_A+\psi_B$ | same phase | high | lower |
+| Anti-bonding | $\psi_A-\psi_B$ | opposite phase | zero / node | higher |
 
 Memory:
 
@@ -231,9 +231,9 @@ Memory:
 
 ---
 
-## Example 6: Energy Level Splitting in H$begin:math:text$\_2$end:math:text$
+## Example 6: Energy Level Splitting in H$_2$
 
-Two H atoms each provide one $begin:math:text$1s$end:math:text$ orbital.
+Two H atoms each provide one $1s$ orbital.
 
 So:
 
@@ -261,7 +261,7 @@ Energy order:
 E_{\text{bonding}}<E_{1s}<E_{\text{anti-bonding}}
 ```
 
-For $begin:math:text$H\_2$end:math:text$, there are two electrons.
+For $H_2$, there are two electrons.
 
 They fill the lower-energy bonding orbital first:
 
@@ -297,7 +297,7 @@ Why do energy bands form in solids?
 
 Answer:
 
-For $begin:math:text$N$end:math:text$ atoms:
+For $N$ atoms:
 
 ```math
 N\ \text{atomic orbitals}
@@ -337,9 +337,9 @@ Lithium electron configuration:
 1s^2 2s^1
 ```
 
-For $begin:math:text$N$end:math:text$ Li atoms:
+For $N$ Li atoms:
 
-### $begin:math:text$1s$end:math:text$ band
+### $1s$ band
 
 Each Li atom has:
 
@@ -347,13 +347,13 @@ Each Li atom has:
 1s^2
 ```
 
-So $begin:math:text$N$end:math:text$ atoms have:
+So $N$ atoms have:
 
 ```math
 2N\ \text{1s electrons}
 ```
 
-The $begin:math:text$1s$end:math:text$ band has:
+The $1s$ band has:
 
 ```math
 2N\ \text{states}
@@ -367,7 +367,7 @@ Therefore:
 
 ---
 
-### $begin:math:text$2s$end:math:text$ band
+### $2s$ band
 
 Each Li atom has:
 
@@ -375,13 +375,13 @@ Each Li atom has:
 2s^1
 ```
 
-So $begin:math:text$N$end:math:text$ atoms have:
+So $N$ atoms have:
 
 ```math
 N\ \text{2s electrons}
 ```
 
-The $begin:math:text$2s$end:math:text$ band has:
+The $2s$ band has:
 
 ```math
 2N\ \text{states}
@@ -393,7 +393,7 @@ Therefore:
 2s\ \text{band is half-filled}
 ```
 
-Since the $begin:math:text$2s$end:math:text$ band is partially filled:
+Since the $2s$ band is partially filled:
 
 ```math
 \text{electrons + nearby empty states}
@@ -503,7 +503,7 @@ Short answer:
 
 Question:
 
-At $begin:math:text$0K$end:math:text$, should all electrons be at the lowest energy state?
+At $0K$, should all electrons be at the lowest energy state?
 
 Answer:
 
@@ -517,7 +517,7 @@ Electrons obey the Pauli exclusion principle.
 
 So electrons fill available states from the bottom upward.
 
-At $begin:math:text$0K$end:math:text$:
+At $0K$:
 
 ```math
 E<E_F
@@ -555,7 +555,7 @@ E=\frac{p^2}{2m_e}
 
 This energy is kinetic energy.
 
-At $begin:math:text$0K$end:math:text$, electrons fill all allowed kinetic-energy states up to $begin:math:text$E\_F$end:math:text$.
+At $0K$, electrons fill all allowed kinetic-energy states up to $E_F$.
 
 So:
 
@@ -563,7 +563,7 @@ So:
 E_F=\text{maximum occupied kinetic energy at }0K
 ```
 
-This does not mean every electron has $begin:math:text$E\_F$end:math:text$.
+This does not mean every electron has $E_F$.
 
 It means:
 
@@ -606,25 +606,25 @@ Example:
 If:
 
 ```math
-E_{\text{vac}}=0\text{ eV}
+E_{\text{vac}}=0\ \text{eV}
 ```
 
 and:
 
 ```math
-E_F=-4.7\text{ eV}
+E_F=-4.7\ \text{eV}
 ```
 
 then:
 
 ```math
-\Phi=0-(-4.7)=4.7\text{ eV}
+\Phi=0-(-4.7)=4.7\ \text{eV}
 ```
 
 Final:
 
 ```math
-\boxed{\Phi=4.7\text{ eV}}
+\boxed{\Phi=4.7\ \text{eV}}
 ```
 
 ---
@@ -634,13 +634,13 @@ Final:
 Given:
 
 ```math
-E_F-E_b=11.6\text{ eV}
+E_F-E_b=11.6\ \text{eV}
 ```
 
 and:
 
 ```math
-\Phi=4.25\text{ eV}
+\Phi=4.25\ \text{eV}
 ```
 
 Choose the band bottom as reference:
@@ -652,7 +652,7 @@ E_b=0
 Then:
 
 ```math
-E_F=11.6\text{ eV}
+E_F=11.6\ \text{eV}
 ```
 
 Work function:
@@ -674,34 +674,34 @@ E_{\text{vac}}=11.6+4.25
 ```
 
 ```math
-E_{\text{vac}}=15.85\text{ eV}
+E_{\text{vac}}=15.85\ \text{eV}
 ```
 
 Final labelled diagram values:
 
 ```math
-\boxed{E_b=0\text{ eV}}
+\boxed{E_b=0\ \text{eV}}
 ```
 
 ```math
-\boxed{E_F=11.6\text{ eV}}
+\boxed{E_F=11.6\ \text{eV}}
 ```
 
 ```math
-\boxed{E_{\text{vac}}=15.85\text{ eV}}
+\boxed{E_{\text{vac}}=15.85\ \text{eV}}
 ```
 
 ```math
-\boxed{\Phi=4.25\text{ eV}}
+\boxed{\Phi=4.25\ \text{eV}}
 ```
 
 ---
 
-## Example 15: What Is the Band Bottom $begin:math:text$E\_b$end:math:text$?
+## Example 15: What Is the Band Bottom $E_b$?
 
 Question:
 
-What exactly is $begin:math:text$E\_b$end:math:text$?
+What exactly is $E_b$?
 
 Answer:
 
@@ -718,13 +718,13 @@ E_b=\text{lowest allowed energy in that band}
 If a question says:
 
 ```math
-E_F=11.6\text{ eV with respect to band bottom}
+E_F=11.6\ \text{eV with respect to band bottom}
 ```
 
 it means:
 
 ```math
-E_F-E_b=11.6\text{ eV}
+E_F-E_b=11.6\ \text{eV}
 ```
 
 If:
@@ -736,7 +736,7 @@ E_b=0
 then:
 
 ```math
-E_F=11.6\text{ eV}
+E_F=11.6\ \text{eV}
 ```
 
 Final:
@@ -747,7 +747,7 @@ Final:
 
 ---
 
-## Example 16: Why Metals Do Not Use a Separate $begin:math:text$E\_C$end:math:text$
+## Example 16: Why Metals Do Not Use a Separate $E_C$
 
 In semiconductors:
 
@@ -777,7 +777,7 @@ or:
 \text{bands overlap}
 ```
 
-So there is usually no separate semiconductor-style $begin:math:text$E\_C$end:math:text$.
+So there is usually no separate semiconductor-style $E_C$.
 
 Metal conduction comes from:
 
@@ -798,11 +798,11 @@ Final:
 Given:
 
 ```math
-\Phi_{\text{Pt}}=5.36\text{ eV}
+\Phi_{\text{Pt}}=5.36\ \text{eV}
 ```
 
 ```math
-\Phi_{\text{Mo}}=4.2\text{ eV}
+\Phi_{\text{Mo}}=4.2\ \text{eV}
 ```
 
 Find contact potential.
@@ -820,13 +820,13 @@ e\Delta V=5.36-4.2
 ```
 
 ```math
-e\Delta V=1.16\text{ eV}
+e\Delta V=1.16\ \text{eV}
 ```
 
 Therefore:
 
 ```math
-\Delta V=1.16\text{ V}
+\Delta V=1.16\ \text{V}
 ```
 
 Direction of electron transfer:
@@ -852,7 +852,7 @@ Electrons move:
 Final:
 
 ```math
-\boxed{\Delta V=1.16\text{ V}}
+\boxed{\Delta V=1.16\ \text{V}}
 ```
 
 ```math
@@ -866,11 +866,11 @@ Final:
 Given:
 
 ```math
-\Phi_{\text{Al}}\approx4.3\text{ eV}
+\Phi_{\text{Al}}\approx4.3\ \text{eV}
 ```
 
 ```math
-\Phi_{\text{Li}}=3.0\text{ eV}
+\Phi_{\text{Li}}=3.0\ \text{eV}
 ```
 
 Use:
@@ -886,13 +886,13 @@ e\Delta V=4.3-3.0
 ```
 
 ```math
-e\Delta V=1.3\text{ eV}
+e\Delta V=1.3\ \text{eV}
 ```
 
 Therefore:
 
 ```math
-\Delta V=1.3\text{ V}
+\Delta V=1.3\ \text{V}
 ```
 
 Because:
@@ -916,7 +916,7 @@ Electrons transfer:
 Final:
 
 ```math
-\boxed{\Delta V\approx1.3\text{ V}}
+\boxed{\Delta V\approx1.3\ \text{V}}
 ```
 
 ```math
@@ -925,7 +925,7 @@ Final:
 
 ---
 
-## Example 19: Reading an $begin:math:text$E\-k$end:math:text$ Diagram
+## Example 19: Reading an $E-k$ Diagram
 
 For a free-electron-like band:
 
@@ -945,7 +945,7 @@ So:
 E=\frac{\hbar^2k^2}{2m^*}
 ```
 
-This gives a parabolic $begin:math:text$E\-k$end:math:text$ diagram.
+This gives a parabolic $E-k$ diagram.
 
 If the parabola is steep:
 
@@ -1070,11 +1070,11 @@ Final:
 Given:
 
 ```math
-E_C=1.0\text{ eV}
+E_C=1.0\ \text{eV}
 ```
 
 ```math
-E_V=0\text{ eV}
+E_V=0\ \text{eV}
 ```
 
 Find band gap.
@@ -1092,13 +1092,13 @@ E_g=1.0-0
 ```
 
 ```math
-E_g=1.0\text{ eV}
+E_g=1.0\ \text{eV}
 ```
 
 Final:
 
 ```math
-\boxed{E_g=1.0\text{ eV}}
+\boxed{E_g=1.0\ \text{eV}}
 ```
 
 ---
@@ -1108,11 +1108,11 @@ Final:
 Given:
 
 ```math
-E_{\text{vac}}=4.5\text{ eV}
+E_{\text{vac}}=4.5\ \text{eV}
 ```
 
 ```math
-E_C=0.4\text{ eV}
+E_C=0.4\ \text{eV}
 ```
 
 Find electron affinity.
@@ -1130,13 +1130,13 @@ Substitute:
 ```
 
 ```math
-\chi=4.1\text{ eV}
+\chi=4.1\ \text{eV}
 ```
 
 Final:
 
 ```math
-\boxed{\chi=4.1\text{ eV}}
+\boxed{\chi=4.1\ \text{eV}}
 ```
 
 Meaning:
@@ -1226,7 +1226,7 @@ Answer:
 Valence band full, conduction band empty, small band gap.
 
 ```math
-E_g\sim1\text{ eV}
+E_g\sim1\ \text{eV}
 ```
 
 Answer:
@@ -1242,7 +1242,7 @@ Answer:
 Valence band full, conduction band empty, large band gap.
 
 ```math
-E_g\sim6\text{ eV}
+E_g\sim6\ \text{eV}
 ```
 
 Answer:
@@ -1255,7 +1255,7 @@ Answer:
 
 ## Example 26: Why Semiconductors Conduct at Room Temperature
 
-At $begin:math:text$0K$end:math:text$:
+At $0K$:
 
 ```math
 \text{valence band full}
@@ -1301,9 +1301,9 @@ Final:
 
 ---
 
-## Example 27: Fermi-Dirac Distribution at $begin:math:text$T\=0K$end:math:text$
+## Example 27: Fermi-Dirac Distribution at $T=0K$
 
-At $begin:math:text$T\=0K$end:math:text$:
+At $T=0K$:
 
 ```math
 f(E)=1\quad E<E_F
@@ -1319,7 +1319,7 @@ So:
 f(E)=\text{step function}
 ```
 
-At $begin:math:text$E\=E\_F$end:math:text$, from the general formula:
+At $E=E_F$, from the general formula:
 
 ```math
 f(E_F)=\frac{1}{2}
@@ -1333,7 +1333,7 @@ Final:
 
 ---
 
-## Example 28: Electron Distribution $begin:math:text$n\_E$end:math:text$
+## Example 28: Electron Distribution $n_E$
 
 Given:
 
@@ -1363,9 +1363,9 @@ Meaning:
 \text{probability of occupation}
 ```
 
-At $begin:math:text$0K$end:math:text$:
+At $0K$:
 
-For $begin:math:text$E\<E\_F$end:math:text$:
+For $E<E_F$:
 
 ```math
 f(E)=1
@@ -1377,7 +1377,7 @@ so:
 n_E=g(E)
 ```
 
-For $begin:math:text$E\>E\_F$end:math:text$:
+For $E>E_F$:
 
 ```math
 f(E)=0
@@ -1413,7 +1413,7 @@ where:
 n=\int n_E\,dE
 ```
 
-For free electrons at $begin:math:text$0K$end:math:text$:
+For free electrons at $0K$:
 
 ```math
 E_{\text{average}}\approx\frac{3}{5}E_F

@@ -82,11 +82,11 @@ R=\frac{L}{\sigma A}
 
 where:
 
-- $begin:math:text$R$end:math:text$: resistance
-- $begin:math:text$\\rho$end:math:text$: resistivity
-- $begin:math:text$\\sigma$end:math:text$: conductivity
-- $begin:math:text$L$end:math:text$: length
-- $begin:math:text$A$end:math:text$: cross-sectional area
+- $R$: resistance
+- $\rho$: resistivity
+- $\sigma$: conductivity
+- $L$: length
+- $A$: cross-sectional area
 
 For circular wire:
 
@@ -154,8 +154,8 @@ Linear approximation:
 
 where:
 
-- $begin:math:text$A$end:math:text$: positive temperature coefficient
-- $begin:math:text$B$end:math:text$: residual / baseline resistivity
+- $A$: positive temperature coefficient
+- $B$: residual / baseline resistivity
 
 Exam wording:
 
@@ -246,9 +246,9 @@ v_d=\mu E
 
 where:
 
-- $begin:math:text$v\_d$end:math:text$: drift velocity
-- $begin:math:text$E$end:math:text$: electric field
-- $begin:math:text$\\mu$end:math:text$: mobility
+- $v_d$: drift velocity
+- $E$: electric field
+- $\mu$: mobility
 
 Meaning:
 
@@ -396,9 +396,9 @@ I=\frac{V}{R}
 
 where:
 
-- $begin:math:text$I$end:math:text$: current
-- $begin:math:text$V$end:math:text$: applied voltage
-- $begin:math:text$R$end:math:text$: resistance
+- $I$: current
+- $V$: applied voltage
+- $R$: resistance
 
 Current density:
 
@@ -430,11 +430,11 @@ D=\frac{\mu k_BT}{e}
 
 where:
 
-- $begin:math:text$D$end:math:text$: diffusion coefficient
-- $begin:math:text$\\mu$end:math:text$: mobility
-- $begin:math:text$k\_B$end:math:text$: Boltzmann constant
-- $begin:math:text$T$end:math:text$: absolute temperature
-- $begin:math:text$e$end:math:text$: electron charge magnitude
+- $D$: diffusion coefficient
+- $\mu$: mobility
+- $k_B$: Boltzmann constant
+- $T$: absolute temperature
+- $e$: electron charge magnitude
 
 Drift:
 
@@ -494,9 +494,9 @@ Thermal resistance:
 
 where:
 
-- $begin:math:text$\\theta$end:math:text$: thermal resistance
-- $begin:math:text$\\Delta T$end:math:text$: temperature drop
-- $begin:math:text$P$end:math:text$: heat flow rate / thermal power
+- $\theta$: thermal resistance
+- $\Delta T$: temperature drop
+- $P$: heat flow rate / thermal power
 
 For a uniform rod or wire:
 
@@ -530,11 +530,11 @@ A\uparrow \Rightarrow \theta\downarrow
 
 | Electrical | Thermal |
 |---|---|
-| voltage difference $begin:math:text$V$end:math:text$ | temperature difference $begin:math:text$\\Delta T$end:math:text$ |
-| current $begin:math:text$I$end:math:text$ | heat flow rate $begin:math:text$P$end:math:text$ |
-| resistance $begin:math:text$R$end:math:text$ | thermal resistance $begin:math:text$\\theta$end:math:text$ |
-| resistivity $begin:math:text$\\rho$end:math:text$ | thermal resistivity $begin:math:text$1\/\\kappa$end:math:text$ |
-| conductivity $begin:math:text$\\sigma$end:math:text$ | thermal conductivity $begin:math:text$\\kappa$end:math:text$ |
+| voltage difference $V$ | temperature difference $\Delta T$ |
+| current $I$ | heat flow rate $P$ |
+| resistance $R$ | thermal resistance $\theta$ |
+| resistivity $\rho$ | thermal resistivity $1/\kappa$ |
+| conductivity $\sigma$ | thermal conductivity $\kappa$ |
 
 Electrical:
 
@@ -572,10 +572,10 @@ Conductivity:
 
 where:
 
-- $begin:math:text$n$end:math:text$: electron concentration
-- $begin:math:text$p$end:math:text$: hole concentration
-- $begin:math:text$\\mu\_e$end:math:text$: electron mobility
-- $begin:math:text$\\mu\_h$end:math:text$: hole mobility
+- $n$: electron concentration
+- $p$: hole concentration
+- $\mu_e$: electron mobility
+- $\mu_h$: hole mobility
 
 Meaning:
 
@@ -823,9 +823,9 @@ Majority carriers:
 
 | Type | Meaning | Carrier source | Carrier relation |
 |---|---|---|---|
-| Intrinsic | pure semiconductor | thermal excitation | $begin:math:text$n\=p\=n\_i$end:math:text$ |
-| n-type extrinsic | donor-doped | extra electrons | $begin:math:text$n\\gg p$end:math:text$ |
-| p-type extrinsic | acceptor-doped | extra holes | $begin:math:text$p\\gg n$end:math:text$ |
+| Intrinsic | pure semiconductor | thermal excitation | $n=p=n_i$ |
+| n-type extrinsic | donor-doped | extra electrons | $n\gg p$ |
+| p-type extrinsic | acceptor-doped | extra holes | $p\gg n$ |
 
 Key memory:
 
@@ -896,13 +896,13 @@ as a simple mobility / conductivity trend indicator.
 
 ## 19. Direct and Indirect Bandgap
 
-In an $begin:math:text$E\-k$end:math:text$ diagram:
+In an $E-k$ diagram:
 
 ```math
 p=\hbar k
 ```
 
-So $begin:math:text$k$end:math:text$ relates to crystal momentum.
+So $k$ relates to crystal momentum.
 
 ---
 
@@ -1114,7 +1114,7 @@ E_{\text{vac}}=\text{vacuum level}
 
 ---
 
-### 22.1 Band Bottom $begin:math:text$E\_b$end:math:text$
+### 22.1 Band Bottom $E_b$
 
 Band bottom:
 
@@ -1134,7 +1134,7 @@ If the band bottom is chosen as zero:
 E_b=0
 ```
 
-then all other energies are measured upward from $begin:math:text$E\_b$end:math:text$.
+then all other energies are measured upward from $E_b$.
 
 Example:
 
@@ -1194,7 +1194,7 @@ or:
 \text{overlapping bands}
 ```
 
-So there is usually no separate semiconductor-style $begin:math:text$E\_C$end:math:text$.
+So there is usually no separate semiconductor-style $E_C$.
 
 For a metal:
 
@@ -1210,12 +1210,14 @@ The important energy is:
 E_F
 ```
 
-because conduction mainly involves electrons near $begin:math:text$E\_F$end:math:text$.
+because conduction mainly involves electrons near $E_F$.
 
 Key idea:
 
 ```math
-E_F\text{附近有 occupied states 和 nearby empty states}
+\text{occupied states near }E_F
++
+\text{nearby empty states}
 \Rightarrow
 \text{electrons can move}
 \Rightarrow

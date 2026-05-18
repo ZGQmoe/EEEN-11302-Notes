@@ -36,14 +36,14 @@ E_{\text{bonded}}<E_{\text{separate atoms}}
 
 | Particle | Charge | Role |
 |---|---:|---|
-| Electron | $begin:math:text$\-1\.6\\times10\^\{\-19\}\\text\{ C\}$end:math:text$ | controls bonding and electrical behaviour |
-| Proton | $begin:math:text$\+1\.6\\times10\^\{\-19\}\\text\{ C\}$end:math:text$ | determines atomic number |
-| Neutron | $begin:math:text$0$end:math:text$ | affects atomic mass |
+| Electron | $-1.6\times10^{-19}\ \text{C}$ | controls bonding and electrical behaviour |
+| Proton | $+1.6\times10^{-19}\ \text{C}$ | determines atomic number |
+| Neutron | $0$ | affects atomic mass |
 
 Electron charge magnitude:
 
 ```math
-e=1.6\times10^{-19}\text{ C}
+e=1.6\times10^{-19}\ \text{C}
 ```
 
 Electron charge:
@@ -76,8 +76,8 @@ A=Z+N
 
 where:
 
-- $begin:math:text$Z$end:math:text$: protons
-- $begin:math:text$N$end:math:text$: neutrons
+- $Z$: protons
+- $N$: neutrons
 
 Neutral atom:
 
@@ -120,7 +120,7 @@ Principal quantum number:
 n=1,2,3,\dots
 ```
 
-Increasing $begin:math:text$n$end:math:text$:
+Increasing $n$:
 
 ```math
 n\uparrow
@@ -133,14 +133,14 @@ n\uparrow
 For hydrogen-like atoms:
 
 ```math
-E_n=-\frac{13.6Z^2}{n^2}\text{ eV}
+E_n=-\frac{13.6Z^2}{n^2}\ \text{eV}
 ```
 
 where:
 
-- $begin:math:text$E\_n$end:math:text$: energy of shell $begin:math:text$n$end:math:text$
-- $begin:math:text$Z$end:math:text$: atomic number
-- $begin:math:text$n$end:math:text$: principal quantum number
+- $E_n$: energy of shell $n$
+- $Z$: atomic number
+- $n$: principal quantum number
 
 For hydrogen:
 
@@ -151,7 +151,7 @@ Z=1
 Ground state:
 
 ```math
-n=1,\quad E_1=-13.6\text{ eV}
+n=1,\quad E_1=-13.6\ \text{eV}
 ```
 
 Ionisation limit:
@@ -160,10 +160,10 @@ Ionisation limit:
 n=\infty,\quad E_\infty=0
 ```
 
-Ionisation energy from $begin:math:text$n\=1$end:math:text$:
+Ionisation energy from $n=1$:
 
 ```math
-E_{\text{ionisation}}=0-(-13.6)=13.6\text{ eV}
+E_{\text{ionisation}}=0-(-13.6)=13.6\ \text{eV}
 ```
 
 ---
@@ -226,7 +226,7 @@ If photon energy exceeds ionisation energy:
 K=E_{\text{photon}}-E_{\text{ionisation}}
 ```
 
-where $begin:math:text$K$end:math:text$ is kinetic energy of the emitted electron.
+where $K$ is kinetic energy of the emitted electron.
 
 ---
 
@@ -250,13 +250,13 @@ Orbital:
 \text{region where electron is likely to be found}
 ```
 
-Maximum number of electrons in shell $begin:math:text$n$end:math:text$:
+Maximum number of electrons in shell $n$:
 
 ```math
 N=2n^2
 ```
 
-| Shell $begin:math:text$n$end:math:text$ | Maximum electrons |
+| Shell $n$ | Maximum electrons |
 |---:|---:|
 | 1 | 2 |
 | 2 | 8 |
@@ -272,10 +272,10 @@ An electron state is described by four quantum numbers.
 
 | Symbol | Name | Meaning |
 |---|---|---|
-| $begin:math:text$n$end:math:text$ | principal quantum number | shell / energy level |
-| $begin:math:text$l$end:math:text$ | orbital quantum number | orbital shape |
-| $begin:math:text$m$end:math:text$ | magnetic quantum number | orbital orientation |
-| $begin:math:text$s$end:math:text$ | spin quantum number | electron spin |
+| $n$ | principal quantum number | shell / energy level |
+| $l$ | orbital quantum number | orbital shape |
+| $m$ | magnetic quantum number | orbital orientation |
+| $s$ | spin quantum number | electron spin |
 
 Allowed values:
 
@@ -297,7 +297,7 @@ s=\pm\frac12
 
 Orbital labels:
 
-| $begin:math:text$l$end:math:text$ | Orbital |
+| $l$ | Orbital |
 |---:|---|
 | 0 | s |
 | 1 | p |
@@ -631,7 +631,7 @@ Covalent bonds are directional.
 
 Common examples:
 
-- H$begin:math:text$\_2$end:math:text$
+- $H_2$
 - diamond
 - Si
 - Ge
@@ -764,7 +764,7 @@ Key terms:
 | Lattice | periodic array of points |
 | Basis | atom/group attached to each lattice point |
 | Unit cell | smallest repeating volume |
-| Lattice parameter $begin:math:text$a$end:math:text$ | unit cell length |
+| Lattice parameter $a$ | unit cell length |
 
 ---
 
@@ -1035,7 +1035,7 @@ Bonding:
 Example:
 
 ```math
-E_g(\text{Si})\approx1.1\text{ eV}
+E_g(\text{Si})\approx1.1\ \text{eV}
 ```
 
 ### Insulators
@@ -1063,7 +1063,7 @@ A=Z+N
 Hydrogen-like energy levels:
 
 ```math
-E_n=-\frac{13.6Z^2}{n^2}\text{ eV}
+E_n=-\frac{13.6Z^2}{n^2}\ \text{eV}
 ```
 
 Photon energy:

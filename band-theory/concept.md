@@ -174,7 +174,7 @@ Energy order:
 E_{\text{bonding}}<E_{\text{atomic}}<E_{\text{anti-bonding}}
 ```
 
-For $begin:math:text$N$end:math:text$ atoms:
+For $N$ atoms:
 
 ```math
 N\ \text{atomic orbitals}
@@ -296,7 +296,7 @@ Lithium electron configuration:
 1s^2 2s^1
 ```
 
-For $begin:math:text$N$end:math:text$ Li atoms:
+For $N$ Li atoms:
 
 ```math
 1s^2
@@ -304,7 +304,7 @@ For $begin:math:text$N$end:math:text$ Li atoms:
 2N\ \text{electrons}
 ```
 
-The $begin:math:text$1s$end:math:text$ band has:
+The $1s$ band has:
 
 ```math
 2N\ \text{states}
@@ -316,7 +316,7 @@ Therefore:
 1s\ \text{band full}
 ```
 
-For the $begin:math:text$2s$end:math:text$ band:
+For the $2s$ band:
 
 ```math
 2s^1
@@ -324,7 +324,7 @@ For the $begin:math:text$2s$end:math:text$ band:
 N\ \text{electrons}
 ```
 
-The $begin:math:text$2s$end:math:text$ band has:
+The $2s$ band has:
 
 ```math
 2N\ \text{states}
@@ -400,7 +400,7 @@ Fermi level:
 E_F=\text{energy level with 50% occupation probability}
 ```
 
-At $begin:math:text$T\=0\\\,\\text\{K\}$end:math:text$:
+At $T=0\,\text{K}$:
 
 ```math
 E<E_F
@@ -414,7 +414,7 @@ E>E_F
 \text{states empty}
 ```
 
-So at $begin:math:text$0\\\,\\text\{K\}$end:math:text$:
+So at $0\,\text{K}$:
 
 ```math
 E_F=\text{highest occupied energy level}
@@ -470,7 +470,7 @@ Key distinction:
 \text{Fermi energy}=\text{energy difference from a reference}
 ```
 
-At $begin:math:text$0\\\,\\text\{K\}$end:math:text$, in a free-electron metal:
+At $0\,\text{K}$, in a free-electron metal:
 
 ```math
 E_F=\text{maximum occupied kinetic energy}
@@ -514,13 +514,13 @@ Formula:
 f(E)=\frac{1}{1+e^{(E-E_F)/(k_BT)}}
 ```
 
-At $begin:math:text$E\=E\_F$end:math:text$:
+At $E=E_F$:
 
 ```math
 f(E_F)=\frac{1}{2}
 ```
 
-At $begin:math:text$T\=0\\\,\\text\{K\}$end:math:text$:
+At $T=0\,\text{K}$:
 
 ```math
 E<E_F\Rightarrow f(E)=1
@@ -536,7 +536,7 @@ So:
 f(E)=\text{sharp step at }E_F
 ```
 
-At $begin:math:text$T\>0\\\,\\text\{K\}$end:math:text$:
+At $T>0\,\text{K}$:
 
 ```math
 \text{sharp step}
@@ -584,7 +584,7 @@ Meaning:
 \text{occupation probability}
 ```
 
-Electrons in energy range $begin:math:text$E$end:math:text$ to $begin:math:text$E\+dE$end:math:text$:
+Electrons in energy range $E$ to $E+dE$:
 
 ```math
 n_EdE
@@ -610,7 +610,7 @@ E_{\text{average}}
 \frac{\int E n_E\,dE}{n}
 ```
 
-For a free-electron metal at $begin:math:text$0\\\,\\text\{K\}$end:math:text$:
+For a free-electron metal at $0\,\text{K}$:
 
 ```math
 E_{\text{average}}\approx\frac{3}{5}E_F
@@ -851,8 +851,8 @@ m^*=\alpha m_e
 
 where:
 
-- $begin:math:text$m\_e$end:math:text$: free electron mass
-- $begin:math:text$\\alpha$end:math:text$: dimensionless constant
+- $m_e$: free electron mass
+- $\alpha$: dimensionless constant
 
 ---
 
@@ -900,8 +900,8 @@ E_g=E_C-E_V
 
 where:
 
-- $begin:math:text$E\_C$end:math:text$: bottom of conduction band
-- $begin:math:text$E\_V$end:math:text$: top of valence band
+- $E_C$: bottom of conduction band
+- $E_V$: top of valence band
 
 Meaning:
 
@@ -959,7 +959,7 @@ E_C=\text{bottom of conduction band}
 E_V=\text{top of valence band}
 ```
 
-At $begin:math:text$T\=0\\\,\\text\{K\}$end:math:text$:
+At $T=0\,\text{K}$:
 
 ```math
 \text{valence band full}
@@ -969,7 +969,7 @@ At $begin:math:text$T\=0\\\,\\text\{K\}$end:math:text$:
 \text{conduction band empty}
 ```
 
-At $begin:math:text$T\>0\\\,\\text\{K\}$end:math:text$, in a semiconductor:
+At $T>0\,\text{K}$, in a semiconductor:
 
 ```math
 \text{some electrons thermally excited to conduction band}
@@ -1029,9 +1029,9 @@ E_g=E_C-E_V
 
 | Quantity | Formula | Measures |
 |---|---|---|
-| Work function | $begin:math:text$\\Phi\=E\_\{\\text\{vac\}\}\-E\_F$end:math:text$ | vacuum level to Fermi level |
-| Electron affinity | $begin:math:text$\\chi\=E\_\{\\text\{vac\}\}\-E\_C$end:math:text$ | vacuum level to conduction band edge |
-| Band gap | $begin:math:text$E\_g\=E\_C\-E\_V$end:math:text$ | conduction band edge to valence band edge |
+| Work function | $\Phi=E_{\text{vac}}-E_F$ | vacuum level to Fermi level |
+| Electron affinity | $\chi=E_{\text{vac}}-E_C$ | vacuum level to conduction band edge |
+| Band gap | $E_g=E_C-E_V$ | conduction band edge to valence band edge |
 
 Key reminder:
 
@@ -1056,7 +1056,7 @@ E_g\text{ uses }E_C\text{ and }E_V
 | Energy gap | none | small | large |
 | Band overlap | yes | no | no |
 | Valence band | full / overlapping | full | full |
-| Conduction band | filled up to $begin:math:text$E\_F$end:math:text$ | empty at $begin:math:text$0K$end:math:text$, partly filled at $begin:math:text$T\>0K$end:math:text$ | empty |
+| Conduction band | filled up to $E_F$ | empty at $0K$, partly filled at $T>0K$ | empty |
 | Conductivity | very high | moderate / controllable | negligible |
 | Current flow | free electrons | electrons and holes | negligible |
 

@@ -16,9 +16,9 @@ For an atom written as:
 
 where:
 
-- $begin:math:text$A$end:math:text$: mass number
-- $begin:math:text$Z$end:math:text$: atomic number
-- $begin:math:text$X$end:math:text$: element symbol
+- $A$: mass number
+- $Z$: atomic number
+- $X$: element symbol
 
 Find:
 
@@ -122,7 +122,7 @@ Neutral Na has:
 11\text{ electrons}
 ```
 
-Na$begin:math:text$\^\+$end:math:text$ has lost one electron:
+Na$^+$ has lost one electron:
 
 ```math
 11-1=10
@@ -141,14 +141,14 @@ So:
 For a hydrogen-like atom:
 
 ```math
-E_n=-\frac{13.6Z^2}{n^2}\text{ eV}
+E_n=-\frac{13.6Z^2}{n^2}\ \text{eV}
 ```
 
 ---
 
 ### Example
 
-Find the $begin:math:text$n\=2$end:math:text$ energy level for hydrogen.
+Find the $n=2$ energy level for hydrogen.
 
 For hydrogen:
 
@@ -167,20 +167,20 @@ E_2=-\frac{13.6}{4}
 ```
 
 ```math
-E_2=-3.4\text{ eV}
+E_2=-3.4\ \text{eV}
 ```
 
 Answer:
 
 ```math
-\boxed{E_2=-3.4\text{ eV}}
+\boxed{E_2=-3.4\ \text{eV}}
 ```
 
 ---
 
 ## Example 4: Energy Transition and Emitted Photon
 
-An electron falls from $begin:math:text$n\=3$end:math:text$ to $begin:math:text$n\=2$end:math:text$ in hydrogen.
+An electron falls from $n=3$ to $n=2$ in hydrogen.
 
 Find the photon energy and wavelength.
 
@@ -191,7 +191,7 @@ Find the photon energy and wavelength.
 For hydrogen:
 
 ```math
-E_n=-\frac{13.6}{n^2}\text{ eV}
+E_n=-\frac{13.6}{n^2}\ \text{eV}
 ```
 
 Initial level:
@@ -201,7 +201,7 @@ E_3=-\frac{13.6}{3^2}
 ```
 
 ```math
-E_3=-1.51\text{ eV}
+E_3=-1.51\ \text{eV}
 ```
 
 Final level:
@@ -211,7 +211,7 @@ E_2=-\frac{13.6}{2^2}
 ```
 
 ```math
-E_2=-3.40\text{ eV}
+E_2=-3.40\ \text{eV}
 ```
 
 ---
@@ -229,7 +229,7 @@ E_{\text{photon}}=(-1.51)-(-3.40)
 ```
 
 ```math
-E_{\text{photon}}=1.89\text{ eV}
+E_{\text{photon}}=1.89\ \text{eV}
 ```
 
 ---
@@ -247,17 +247,17 @@ Use:
 ```
 
 ```math
-\lambda=656\text{ nm}
+\lambda=656\ \text{nm}
 ```
 
 Answer:
 
 ```math
-\boxed{E_{\text{photon}}=1.89\text{ eV}}
+\boxed{E_{\text{photon}}=1.89\ \text{eV}}
 ```
 
 ```math
-\boxed{\lambda\approx656\text{ nm}}
+\boxed{\lambda\approx656\ \text{nm}}
 ```
 
 ---
@@ -267,7 +267,7 @@ Answer:
 For hydrogen in the ground state:
 
 ```math
-E_1=-13.6\text{ eV}
+E_1=-13.6\ \text{eV}
 ```
 
 Ionisation means:
@@ -297,27 +297,27 @@ E_{\text{ionisation}}=0-(-13.6)
 ```
 
 ```math
-E_{\text{ionisation}}=13.6\text{ eV}
+E_{\text{ionisation}}=13.6\ \text{eV}
 ```
 
 Answer:
 
 ```math
-\boxed{E_{\text{ionisation}}=13.6\text{ eV}}
+\boxed{E_{\text{ionisation}}=13.6\ \text{eV}}
 ```
 
 ---
 
 ## Example 6: Photon Energy Greater Than Ionisation Energy
 
-A photon with energy $begin:math:text$20\\text\{ eV\}$end:math:text$ ionises hydrogen from $begin:math:text$n\=1$end:math:text$.
+A photon with energy $20\ \text{eV}$ ionises hydrogen from $n=1$.
 
 Find the kinetic energy of the emitted electron.
 
 Ionisation energy:
 
 ```math
-E_{\text{ionisation}}=13.6\text{ eV}
+E_{\text{ionisation}}=13.6\ \text{eV}
 ```
 
 Use:
@@ -331,20 +331,20 @@ K=20-13.6
 ```
 
 ```math
-K=6.4\text{ eV}
+K=6.4\ \text{eV}
 ```
 
 Answer:
 
 ```math
-\boxed{K=6.4\text{ eV}}
+\boxed{K=6.4\ \text{eV}}
 ```
 
 ---
 
 ## Example 7: Maximum Electrons in a Shell
 
-Maximum electrons in shell $begin:math:text$n$end:math:text$:
+Maximum electrons in shell $n$:
 
 ```math
 N=2n^2
@@ -354,7 +354,7 @@ N=2n^2
 
 ### Example
 
-For $begin:math:text$n\=3$end:math:text$:
+For $n=3$:
 
 ```math
 N=2(3)^2
@@ -453,9 +453,9 @@ Answer:
 
 Given a potential energy curve:
 
-- the minimum point occurs at $begin:math:text$r\=r\_0$end:math:text$
-- the energy at the minimum is $begin:math:text$U\(r\_0\)$end:math:text$
-- the reference is $begin:math:text$U\(\\infty\)\=0$end:math:text$
+- the minimum point occurs at $r=r_0$
+- the energy at the minimum is $U(r_0)$
+- the reference is $U(\infty)=0$
 
 Bond length:
 
@@ -488,7 +488,7 @@ E_0=-U(r_0)
 If:
 
 ```math
-U(r_0)=-4.0\text{ eV}
+U(r_0)=-4.0\ \text{eV}
 ```
 
 then:
@@ -498,13 +498,13 @@ E_0=0-(-4.0)
 ```
 
 ```math
-E_0=4.0\text{ eV}
+E_0=4.0\ \text{eV}
 ```
 
 Answer:
 
 ```math
-\boxed{E_0=4.0\text{ eV}}
+\boxed{E_0=4.0\ \text{eV}}
 ```
 
 Key reminder:
