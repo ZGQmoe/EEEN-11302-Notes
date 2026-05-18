@@ -26,6 +26,14 @@ Thermal conduction:
 \text{heat flow}
 ```
 
+Semiconductor current can come from:
+
+```math
+\text{drift current}
++
+\text{diffusion current}
+```
+
 Main idea:
 
 ```math
@@ -35,6 +43,8 @@ Main idea:
 ```
 
 ---
+
+# Part A: Metal and General Conductivity
 
 ## 2. Resistance, Resistivity and Conductivity
 
@@ -250,6 +260,26 @@ where:
 - $E$: electric field
 - $\mu$: mobility
 
+Unit:
+
+```math
+\mu:\ \text{m}^2\text{V}^{-1}\text{s}^{-1}
+```
+
+or:
+
+```math
+\mu:\ \text{cm}^2\text{V}^{-1}\text{s}^{-1}
+```
+
+Conversion:
+
+```math
+1\ \text{m}^2\text{V}^{-1}\text{s}^{-1}
+=
+10^4\ \text{cm}^2\text{V}^{-1}\text{s}^{-1}
+```
+
 Meaning:
 
 ```math
@@ -384,6 +414,28 @@ n\uparrow \Rightarrow \sigma\uparrow
 \rho\uparrow
 ```
 
+Important unit note:
+
+```math
+e:\ \text{C}
+```
+
+```math
+\tau:\ \text{s}
+```
+
+```math
+m_e:\ \text{kg}
+```
+
+Using SI units in $\mu=e\tau/m_e$ gives:
+
+```math
+\mu:\ \text{m}^2\text{V}^{-1}\text{s}^{-1}
+```
+
+Convert to $\text{cm}^2\text{V}^{-1}\text{s}^{-1}$ at the end if needed.
+
 ---
 
 ## 7. Current and Ohm's Law
@@ -414,168 +466,46 @@ v_{\text{drift}}=\frac{J}{ne}
 
 ---
 
-## 8. Einstein Relation and Diffusion
+# Part B: Diffusion, Drift and Semiconductor Conductivity
 
-Diffusion coefficient:
+## 8. Drift Current in Semiconductors
+
+Drift means carrier motion caused by an electric field.
+
+Electron drift velocity:
 
 ```math
-D=\text{how easily carriers spread by diffusion}
+v_{de}=\mu_{de}E
 ```
 
-Einstein relation:
+Hole drift velocity:
 
 ```math
-D=\frac{\mu k_BT}{e}
+v_{dh}=\mu_{dh}E
 ```
 
-where:
-
-- $D$: diffusion coefficient
-- $\mu$: mobility
-- $k_B$: Boltzmann constant
-- $T$: absolute temperature
-- $e$: electron charge magnitude
-
-Drift:
+Drude model is valid for both electron and hole motion:
 
 ```math
-\text{electric field}
-\rightarrow
-\text{carrier drift}
-```
-
-Diffusion:
-
-```math
-\text{concentration gradient}
-\rightarrow
-\text{carrier spreading}
-```
-
-Key trends:
-
-```math
-\mu\uparrow \Rightarrow D\uparrow
+\mu_{de}=\frac{e\tau}{m_e^*}
 ```
 
 ```math
-T\uparrow \Rightarrow D\uparrow
-```
-
----
-
-## 9. Thermal Conductivity and Thermal Resistance
-
-Thermal conductivity:
-
-```math
-\kappa=\text{ability to conduct heat}
-```
-
-Unit:
-
-```math
-\text{W m}^{-1}\text{K}^{-1}
-```
-
-Meaning:
-
-```math
-\kappa\uparrow
-\Rightarrow
-\text{heat flows more easily}
-```
-
-Thermal resistance:
-
-```math
-\theta=\frac{\Delta T}{P}
+\mu_{dh}=\frac{e\tau}{m_h^*}
 ```
 
 where:
 
-- $\theta$: thermal resistance
-- $\Delta T$: temperature drop
-- $P$: heat flow rate / thermal power
+- $\mu_{de}$: electron drift mobility
+- $\mu_{dh}$: hole drift mobility
+- $m_e^*$: electron effective mass
+- $m_h^*$: hole effective mass
 
-For a uniform rod or wire:
-
-```math
-\theta=\frac{L}{\kappa A}
-```
-
-Temperature drop:
+Semiconductor conductivity:
 
 ```math
-\Delta T=P\theta
+\sigma=ne\mu_{de}+pe\mu_{dh}
 ```
-
-Key effects:
-
-```math
-L\uparrow \Rightarrow \theta\uparrow
-```
-
-```math
-A\uparrow \Rightarrow \theta\downarrow
-```
-
-```math
-\kappa\uparrow \Rightarrow \theta\downarrow
-```
-
----
-
-## 10. Electrical and Thermal Analogy
-
-| Electrical | Thermal |
-|---|---|
-| voltage difference $V$ | temperature difference $\Delta T$ |
-| current $I$ | heat flow rate $P$ |
-| resistance $R$ | thermal resistance $\theta$ |
-| resistivity $\rho$ | thermal resistivity $1/\kappa$ |
-| conductivity $\sigma$ | thermal conductivity $\kappa$ |
-
-Electrical:
-
-```math
-R=\rho\frac{L}{A}
-```
-
-Thermal:
-
-```math
-\theta=\frac{L}{\kappa A}
-```
-
----
-
-## 11. Semiconductor Conductivity
-
-In semiconductors, current can come from:
-
-```math
-\text{electrons in conduction band}
-```
-
-and:
-
-```math
-\text{holes in valence band}
-```
-
-Conductivity:
-
-```math
-\sigma=ne\mu_e+pe\mu_h
-```
-
-where:
-
-- $n$: electron concentration
-- $p$: hole concentration
-- $\mu_e$: electron mobility
-- $\mu_h$: hole mobility
 
 Meaning:
 
@@ -603,7 +533,7 @@ n,\quad p
 
 ---
 
-## 12. Hole
+## 9. Hole
 
 A hole is:
 
@@ -637,7 +567,7 @@ Electron-hole pair:
 
 ---
 
-## 13. Intrinsic Semiconductor
+## 10. Intrinsic Semiconductor
 
 Intrinsic semiconductor:
 
@@ -683,7 +613,7 @@ n_i\text{ low}
 
 ---
 
-## 14. Doping and Extrinsic Semiconductors
+## 11. Doping and Extrinsic Semiconductors
 
 Doping:
 
@@ -721,7 +651,7 @@ Meaning:
 
 ---
 
-## 15. n-Type Semiconductor
+## 12. n-Type Semiconductor
 
 n-type:
 
@@ -767,9 +697,35 @@ Majority carriers:
 \text{electrons}
 ```
 
+For n-type:
+
+```math
+n\approx N_D^+
+```
+
+Minority hole concentration:
+
+```math
+p=\frac{n_i^2}{N_D^+}
+```
+
+Full conductivity:
+
+```math
+\sigma=N_D^+e\mu_{de}
++
+\frac{n_i^2}{N_D^+}e\mu_{dh}
+```
+
+Since electrons dominate:
+
+```math
+\sigma\approx N_D^+e\mu_{de}
+```
+
 ---
 
-## 16. p-Type Semiconductor
+## 13. p-Type Semiconductor
 
 p-type:
 
@@ -817,9 +773,36 @@ Majority carriers:
 \text{holes}
 ```
 
+For p-type:
+
+```math
+p\approx N_A^-
+```
+
+Minority electron concentration:
+
+```math
+n=\frac{n_i^2}{N_A^-}
+```
+
+Full conductivity:
+
+```math
+\sigma=
+\frac{n_i^2}{N_A^-}e\mu_{de}
++
+N_A^-e\mu_{dh}
+```
+
+Since holes dominate:
+
+```math
+\sigma\approx N_A^-e\mu_{dh}
+```
+
 ---
 
-## 17. Intrinsic vs Extrinsic
+## 14. Intrinsic vs Extrinsic
 
 | Type | Meaning | Carrier source | Carrier relation |
 |---|---|---|---|
@@ -847,7 +830,298 @@ Key memory:
 
 ---
 
-## 18. Effective Mass and Conductivity
+## 15. Diffusion Current
+
+Diffusion is caused by concentration gradients.
+
+```math
+\text{high carrier concentration}
+\rightarrow
+\text{low carrier concentration}
+```
+
+Diffusion coefficient:
+
+```math
+D=\text{how easily carriers spread by diffusion}
+```
+
+Electron diffusion current density:
+
+```math
+J_{D,e}=eD_e\frac{dn}{dx}
+```
+
+Hole diffusion current density:
+
+```math
+J_{D,h}=-eD_h\frac{dp}{dx}
+```
+
+where:
+
+- $D_e$: electron diffusion coefficient
+- $D_h$: hole diffusion coefficient
+- $n$: electron concentration
+- $p$: hole concentration
+
+Key sign idea:
+
+```math
+\text{conventional current direction}
+\neq
+\text{electron motion direction}
+```
+
+Conventional current is defined as positive charge flow.
+
+---
+
+## 16. Einstein Relation
+
+Diffusion coefficient and mobility are directly related.
+
+Electron:
+
+```math
+D_e=\frac{k_BT}{e}\mu_e
+```
+
+Hole:
+
+```math
+D_h=\frac{k_BT}{e}\mu_h
+```
+
+General form:
+
+```math
+D=\frac{\mu k_BT}{e}
+```
+
+where:
+
+- $D$: diffusion coefficient
+- $\mu$: mobility
+- $k_B$: Boltzmann constant
+- $T$: absolute temperature
+- $e$: electron charge magnitude
+
+At room temperature:
+
+```math
+\frac{k_BT}{e}\approx0.0259\ \text{V}
+```
+
+So:
+
+```math
+D\approx0.0259\mu
+```
+
+if $\mu$ is in $\text{m}^2\text{V}^{-1}\text{s}^{-1}$, then $D$ is in $\text{m}^2\text{s}^{-1}$.
+
+If $\mu$ is in $\text{cm}^2\text{V}^{-1}\text{s}^{-1}$, then $D$ is in $\text{cm}^2\text{s}^{-1}$.
+
+Key trends:
+
+```math
+\mu\uparrow \Rightarrow D\uparrow
+```
+
+```math
+T\uparrow \Rightarrow D\uparrow
+```
+
+---
+
+## 17. Diffusion vs Drift
+
+Drift:
+
+```math
+\text{electric field}
+\rightarrow
+\text{carrier drift}
+```
+
+Diffusion:
+
+```math
+\text{concentration gradient}
+\rightarrow
+\text{carrier spreading}
+```
+
+Total electron current:
+
+```math
+J_e=J_{\text{drift},e}+J_{D,e}
+```
+
+Total hole current:
+
+```math
+J_h=J_{\text{drift},h}+J_{D,h}
+```
+
+If light generates electron-hole pairs near one side:
+
+```math
+\text{light}
+\rightarrow
+e^-+h^+
+```
+
+then both drift and diffusion may appear.
+
+Exam memory:
+
+```math
+\text{drift}
+\Rightarrow
+\text{electric field driven}
+```
+
+```math
+\text{diffusion}
+\Rightarrow
+\text{concentration-gradient driven}
+```
+
+---
+
+## 18. Temperature Dependence and Impurity Engineering
+
+There are three temperature regions.
+
+### 18.1 Ionisation Range: Low Temperature
+
+At low temperature:
+
+```math
+\text{not all dopants ionised}
+```
+
+As temperature increases:
+
+```math
+T\uparrow
+\Rightarrow
+\text{more donors ionised}
+\Rightarrow
+n\uparrow
+```
+
+Electron concentration increases until saturation temperature $T_s$.
+
+---
+
+### 18.2 Extrinsic Range: Medium Temperature
+
+In the extrinsic range:
+
+```math
+\text{all donors ionised}
+```
+
+For n-type:
+
+```math
+n=N_D
+```
+
+Carrier concentration is approximately constant.
+
+This is useful because:
+
+```math
+\text{carrier concentration controlled by doping}
+```
+
+---
+
+### 18.3 Intrinsic Range: High Temperature
+
+At high temperature:
+
+```math
+\text{thermal excitation generates electron-hole pairs}
+```
+
+So:
+
+```math
+n\uparrow,\quad p\uparrow
+```
+
+Conductivity increases strongly.
+
+---
+
+## 19. Mobility vs Temperature
+
+Low-temperature impurity scattering:
+
+```math
+\mu\propto T^{3/2}
+```
+
+High-temperature lattice scattering:
+
+```math
+\mu\propto T^{-3/2}
+```
+
+Meaning:
+
+```math
+\text{low }T:
+\text{ increasing }T\text{ reduces impurity scattering effect}
+```
+
+```math
+\text{high }T:
+\text{ lattice vibrations increase}
+\Rightarrow
+\mu\downarrow
+```
+
+---
+
+## 20. Semiconductor vs Metal Temperature Trend
+
+Metal:
+
+```math
+T\uparrow
+\Rightarrow
+\text{lattice scattering}\uparrow
+\Rightarrow
+\rho\uparrow
+```
+
+Semiconductor:
+
+```math
+T\uparrow
+\Rightarrow
+\text{carrier concentration}\uparrow
+\Rightarrow
+\sigma\uparrow
+\Rightarrow
+\rho\downarrow
+```
+
+Key exam phrase:
+
+```math
+\text{In semiconductors, carrier concentration increase can dominate over mobility decrease.}
+```
+
+---
+
+## 21. Effective Mass and Conductivity
 
 Effective mass:
 
@@ -894,7 +1168,612 @@ as a simple mobility / conductivity trend indicator.
 
 ---
 
-## 19. Direct and Indirect Bandgap
+# Part C: p-n Junctions
+
+## 22. p-n Junction Formation
+
+A p-n junction forms when:
+
+```math
+p\text{-type semiconductor}
++
+n\text{-type semiconductor}
+```
+
+are brought into contact.
+
+Carrier diffusion occurs because of concentration gradients.
+
+Electrons diffuse:
+
+```math
+n\text{-side}
+\rightarrow
+p\text{-side}
+```
+
+Holes diffuse:
+
+```math
+p\text{-side}
+\rightarrow
+n\text{-side}
+```
+
+Diffused carriers recombine near the junction.
+
+This exposes fixed ions:
+
+```math
+\text{positive donor ions on n-side}
+```
+
+```math
+\text{negative acceptor ions on p-side}
+```
+
+This forms the depletion region.
+
+---
+
+## 23. Depletion Region
+
+Depletion region:
+
+```math
+\text{region near junction depleted of mobile carriers}
+```
+
+It contains fixed ionised dopants:
+
+```math
+n\text{-side}:\quad +eN_D
+```
+
+```math
+p\text{-side}:\quad -eN_A
+```
+
+Charge neutrality requires:
+
+```math
+N_DW_n=N_AW_p
+```
+
+Meaning:
+
+```math
+\text{total positive charge}
+=
+\text{total negative charge}
+```
+
+If one side is more heavily doped:
+
+```math
+\text{depletion width mainly extends into the more lightly doped side}
+```
+
+---
+
+## 24. Built-in Electric Field
+
+Fixed charges create a built-in electric field.
+
+Electric field direction:
+
+```math
+n\text{-side}
+\rightarrow
+p\text{-side}
+```
+
+Reason:
+
+```math
+\text{electric field points from positive donor ions to negative acceptor ions}
+```
+
+The built-in field opposes further diffusion.
+
+At equilibrium:
+
+```math
+\text{diffusion current}
++
+\text{drift current}
+=
+0
+```
+
+---
+
+## 25. Built-in Potential
+
+Built-in potential:
+
+```math
+V_0=
+\frac{k_BT}{e}
+\ln\left(
+\frac{N_A N_D}{n_i^2}
+\right)
+```
+
+where:
+
+- $V_0$: built-in potential
+- $N_A$: acceptor concentration
+- $N_D$: donor concentration
+- $n_i$: intrinsic carrier concentration
+- $T$: temperature
+
+Key trends:
+
+```math
+N_A,N_D\uparrow
+\Rightarrow
+V_0\uparrow
+```
+
+```math
+n_i\uparrow
+\Rightarrow
+V_0\downarrow
+```
+
+---
+
+## 26. Depletion Width at Open Circuit
+
+Total depletion width:
+
+```math
+W_0=W_p+W_n
+```
+
+Formula:
+
+```math
+W_0=
+\left[
+\frac{2\epsilon}{e}
+\frac{N_A+N_D}{N_A N_D}
+V_0
+\right]^{1/2}
+```
+
+where:
+
+```math
+\epsilon=\epsilon_0\epsilon_r
+```
+
+For an abrupt asymmetric junction:
+
+```math
+N_DW_n=N_AW_p
+```
+
+So:
+
+```math
+\frac{W_p}{W_n}=\frac{N_D}{N_A}
+```
+
+The depletion region extends more into the lightly doped side.
+
+---
+
+## 27. Band Diagram in Open Circuit
+
+Before contact:
+
+```math
+E_F\text{ differs between p-side and n-side}
+```
+
+After contact at equilibrium:
+
+```math
+E_F\text{ aligns}
+```
+
+Electrons move:
+
+```math
+\text{high Fermi level}
+\rightarrow
+\text{low Fermi level}
+```
+
+For p-n junction:
+
+```math
+e^-\text{ diffuse from n-type to p-type}
+```
+
+Holes move:
+
+```math
+p\text{-type}
+\rightarrow
+n\text{-type}
+```
+
+Built-in potential energy:
+
+```math
+eV_0=\Phi_p-\Phi_n
+```
+
+Meaning:
+
+```math
+eV_0=\text{initial Fermi level difference}
+```
+
+---
+
+# Part D: Biasing a p-n Junction
+
+## 28. Forward Bias
+
+Forward bias means the applied field is opposite to the built-in field.
+
+Effect:
+
+```math
+\text{potential barrier decreases}
+```
+
+```math
+V_{\text{barrier}}=V_0-V
+```
+
+Depletion width:
+
+```math
+W=
+\left[
+\frac{2\epsilon}{e}
+\frac{N_A+N_D}{N_A N_D}
+(V_0-V)
+\right]^{1/2}
+```
+
+So:
+
+```math
+V\uparrow
+\Rightarrow
+W\downarrow
+```
+
+Result:
+
+```math
+\text{depletion region narrows}
+```
+
+```math
+\text{current can flow}
+```
+
+---
+
+## 29. Reverse Bias
+
+Reverse bias means the applied field is in the same direction as the built-in field.
+
+Effect:
+
+```math
+\text{potential barrier increases}
+```
+
+```math
+V_{\text{barrier}}=V_0+V
+```
+
+Depletion width:
+
+```math
+W=
+\left[
+\frac{2\epsilon}{e}
+\frac{N_A+N_D}{N_A N_D}
+(V_0+V)
+\right]^{1/2}
+```
+
+So:
+
+```math
+V\uparrow
+\Rightarrow
+W\uparrow
+```
+
+Result:
+
+```math
+\text{depletion region widens}
+```
+
+```math
+\text{current is strongly blocked}
+```
+
+---
+
+## 30. Minority Carrier Injection
+
+Under forward bias:
+
+```math
+\text{electrons injected into p-side}
+```
+
+```math
+\text{holes injected into n-side}
+```
+
+These are minority carriers in the opposite region.
+
+They diffuse away from the junction and can recombine.
+
+This minority carrier diffusion gives diode current.
+
+---
+
+## 31. Ideal Diode Equation
+
+Ideal diode current density:
+
+```math
+J=J_s\left[
+\exp\left(\frac{eV}{k_BT}\right)-1
+\right]
+```
+
+where:
+
+- $J_s$: saturation current density
+- $V$: applied voltage
+- $T$: temperature
+
+This ideal form assumes diffusion current only.
+
+---
+
+## 32. Diffusion Current Density in a Diode
+
+Minority carrier diffusion current density:
+
+```math
+J_D=
+\left[
+\frac{eD_h n_i^2}{L_hN_D}
++
+\frac{eD_e n_i^2}{L_eN_A}
+\right]
+\left[
+\exp\left(\frac{eV}{k_BT}\right)-1
+\right]
+```
+
+where:
+
+- $L_e,L_h$: electron/hole diffusion lengths
+- $D_e,D_h$: electron/hole diffusion coefficients
+- $N_D,N_A$: donor/acceptor concentrations
+
+Key idea:
+
+```math
+J_s\propto n_i^2
+```
+
+So materials with larger bandgap usually have smaller $n_i$ and need higher voltage for current.
+
+---
+
+## 33. Real Diode Equation and Ideality Factor
+
+Including recombination current:
+
+```math
+J=J_0\exp\left(\frac{eV}{\eta k_BT}\right)
+```
+
+where:
+
+- $\eta$: ideality factor
+
+Interpretation:
+
+```math
+\eta=1
+\Rightarrow
+\text{minority carrier diffusion dominates}
+```
+
+```math
+\eta=2
+\Rightarrow
+\text{recombination dominates}
+```
+
+---
+
+## 34. I-V Characteristics
+
+Forward bias:
+
+```math
+V>0
+\Rightarrow
+I\text{ increases exponentially}
+```
+
+Reverse bias:
+
+```math
+V<0
+\Rightarrow
+I\approx -I_s
+```
+
+Real reverse current can be larger because of:
+
+```math
+\text{space charge generation}
+```
+
+```math
+\text{surface leakage current}
+```
+
+---
+
+## 35. Bandgap and Forward Voltage
+
+Forward current depends on:
+
+```math
+J_s\propto n_i^2
+```
+
+and:
+
+```math
+n_i\text{ depends strongly on }E_g
+```
+
+Higher bandgap:
+
+```math
+E_g\uparrow
+\Rightarrow
+n_i\downarrow
+\Rightarrow
+J_s\downarrow
+\Rightarrow
+\text{higher forward voltage needed}
+```
+
+Example trend:
+
+```math
+\text{Ge} < \text{Si} < \text{GaAs}
+```
+
+in forward voltage.
+
+---
+
+## 36. Avalanche Breakdown
+
+At large reverse bias:
+
+```math
+\text{electric field becomes very strong}
+```
+
+Electrons gain enough kinetic energy to ionise atoms by collision.
+
+```math
+\text{impact ionisation}
+\rightarrow
+\text{more carriers}
+\rightarrow
+\text{large reverse current}
+```
+
+This is avalanche breakdown.
+
+---
+
+## 37. Zener Breakdown
+
+At very large reverse field and very narrow depletion width:
+
+```math
+\text{band bending becomes very strong}
+```
+
+Electrons can tunnel through the barrier.
+
+```math
+\text{valence band}
+\rightarrow
+\text{conduction band}
+```
+
+This tunnelling gives current.
+
+Zener breakdown is common in heavily doped junctions because:
+
+```math
+\text{heavy doping}
+\Rightarrow
+\text{narrow depletion region}
+\Rightarrow
+\text{strong electric field}
+```
+
+---
+
+# Part E: Applications
+
+## 38. LED
+
+LED works under forward bias.
+
+Forward bias injects minority carriers:
+
+```math
+e^-\text{ injected into p-side}
+```
+
+```math
+h^+\text{ injected into n-side}
+```
+
+Electrons recombine with holes and emit photons:
+
+```math
+e^-+h^+
+\rightarrow
+\text{photon}
+```
+
+Photon energy:
+
+```math
+E_{\text{photon}}\approx E_g
+```
+
+Wavelength:
+
+```math
+\lambda(\text{nm})=\frac{1240}{E_g(\text{eV})}
+```
+
+This is injection electroluminescence.
+
+Important design point:
+
+```math
+\text{thin emitting layer}
+\Rightarrow
+\text{photons can escape before reabsorption}
+```
+
+---
+
+## 39. Direct and Indirect Bandgap
 
 In an $E-k$ diagram:
 
@@ -903,10 +1782,6 @@ p=\hbar k
 ```
 
 So $k$ relates to crystal momentum.
-
----
-
-### 19.1 Direct Bandgap
 
 Direct bandgap:
 
@@ -919,8 +1794,6 @@ Meaning:
 ```math
 \Delta k\approx0
 ```
-
-Electron can recombine with hole without large momentum change.
 
 So:
 
@@ -936,10 +1809,6 @@ Good for:
 \text{LEDs, lasers, optical emitters}
 ```
 
----
-
-### 19.2 Indirect Bandgap
-
 Indirect bandgap:
 
 ```math
@@ -952,7 +1821,7 @@ Meaning:
 \Delta k\neq0
 ```
 
-Photon carries very little momentum, so phonon assistance is needed.
+Photon carries little momentum, so phonon assistance is needed.
 
 ```math
 \text{indirect bandgap}
@@ -968,7 +1837,7 @@ Examples:
 
 ---
 
-## 20. Bandgap and Emitted Wavelength
+## 40. Bandgap and Emitted Wavelength
 
 Radiative recombination:
 
@@ -994,6 +1863,12 @@ So:
 \lambda(\text{nm})=\frac{1240}{E_g(\text{eV})}
 ```
 
+or:
+
+```math
+\lambda(\mu\text{m})=\frac{1.24}{E_g(\text{eV})}
+```
+
 Key trend:
 
 ```math
@@ -1010,7 +1885,152 @@ E_g\uparrow
 
 ---
 
-## 21. Silicon vs Gallium Arsenide
+## 41. Solar Cell
+
+A solar cell is a p-n junction under illumination.
+
+Light generates electron-hole pairs:
+
+```math
+\text{photon}
+\rightarrow
+e^-+h^+
+```
+
+Built-in field separates carriers:
+
+```math
+e^-\rightarrow n\text{-side}
+```
+
+```math
+h^+\rightarrow p\text{-side}
+```
+
+This produces photocurrent.
+
+Photocurrent direction:
+
+```math
+n\rightarrow p
+```
+
+Solar cell current equation:
+
+```math
+I=
+-I_{\text{ph}}
++
+I_0
+\left[
+\exp\left(\frac{eV}{\eta k_BT}\right)-1
+\right]
+```
+
+where:
+
+- $I_{\text{ph}}$: photocurrent
+- $I_0$: diode saturation current
+- $\eta$: ideality factor
+
+---
+
+## 42. Solar Cell I-V Characteristics
+
+Short-circuit condition:
+
+```math
+V=0
+```
+
+```math
+I_{sc}=-I_{\text{ph}}
+```
+
+Open-circuit condition:
+
+```math
+I=0
+```
+
+At open circuit:
+
+```math
+\text{diode current}=\text{photocurrent}
+```
+
+Open-circuit voltage:
+
+```math
+V_{oc}
+```
+
+---
+
+## 43. Load Line
+
+For a load resistor:
+
+```math
+V=IR
+```
+
+In solar-cell convention, load line slope:
+
+```math
+\text{slope}=-\frac{1}{R}
+```
+
+Operating point:
+
+```math
+\text{intersection of solar-cell I-V curve and load line}
+```
+
+At the operating point:
+
+```math
+\text{solar cell and resistor have same }V\text{ and }I
+```
+
+---
+
+## 44. Solar Cell Power and Fill Factor
+
+Power delivered:
+
+```math
+P=IV
+```
+
+Maximum power point:
+
+```math
+P_{\max}=I_mV_m
+```
+
+Fill factor:
+
+```math
+FF=\frac{I_mV_m}{I_{sc}V_{oc}}
+```
+
+where:
+
+- $I_m$: current at maximum power point
+- $V_m$: voltage at maximum power point
+- $I_{sc}$: short-circuit current
+- $V_{oc}$: open-circuit voltage
+
+Meaning:
+
+```math
+FF=\text{how rectangular / ideal the solar cell I-V curve is}
+```
+
+---
+
+## 45. Silicon vs Gallium Arsenide
 
 Under simplified physics:
 
@@ -1092,299 +2112,95 @@ but:
 
 ---
 
-## 22. Metal Energy Band Diagram
+# Part F: Thermal Conductivity
 
-For a metal energy band diagram:
+## 46. Thermal Conductivity and Thermal Resistance
+
+Thermal conductivity:
 
 ```math
-E_b=\text{bottom of energy band}
+\kappa=\text{ability to conduct heat}
 ```
 
-```math
-E_F=\text{Fermi level}
-```
+Unit:
 
 ```math
-E_{\text{vac}}=\text{vacuum level}
-```
-
-```math
-\Phi=\text{work function}
-```
-
----
-
-### 22.1 Band Bottom $E_b$
-
-Band bottom:
-
-```math
-E_b=\text{lowest allowed energy in the metal band}
-```
-
-or:
-
-```math
-E_b=\text{starting point of the metal energy band}
-```
-
-If the band bottom is chosen as zero:
-
-```math
-E_b=0
-```
-
-then all other energies are measured upward from $E_b$.
-
-Example:
-
-```math
-E_F-E_b=11.6\ \text{eV}
-```
-
-If:
-
-```math
-E_b=0
-```
-
-then:
-
-```math
-E_F=11.6\ \text{eV}
+\text{W m}^{-1}\text{K}^{-1}
 ```
 
 Meaning:
 
 ```math
-\text{Fermi level is 11.6 eV above the band bottom}
+\kappa\uparrow
+\Rightarrow
+\text{heat flows more easily}
+```
+
+Thermal resistance:
+
+```math
+\theta=\frac{\Delta T}{P}
+```
+
+where:
+
+- $\theta$: thermal resistance
+- $\Delta T$: temperature drop
+- $P$: heat flow rate / thermal power
+
+For a uniform rod or wire:
+
+```math
+\theta=\frac{L}{\kappa A}
+```
+
+Temperature drop:
+
+```math
+\Delta T=P\theta
+```
+
+Key effects:
+
+```math
+L\uparrow \Rightarrow \theta\uparrow
+```
+
+```math
+A\uparrow \Rightarrow \theta\downarrow
+```
+
+```math
+\kappa\uparrow \Rightarrow \theta\downarrow
 ```
 
 ---
 
-### 22.2 Metal Conducting Band
+## 47. Electrical and Thermal Analogy
 
-In a semiconductor:
+| Electrical | Thermal |
+|---|---|
+| voltage difference $V$ | temperature difference $\Delta T$ |
+| current $I$ | heat flow rate $P$ |
+| resistance $R$ | thermal resistance $\theta$ |
+| resistivity $\rho$ | thermal resistivity $1/\kappa$ |
+| conductivity $\sigma$ | thermal conductivity $\kappa$ |
+
+Electrical:
 
 ```math
-E_C=\text{bottom of conduction band}
+R=\rho\frac{L}{A}
 ```
 
-and:
+Thermal:
 
 ```math
-E_V=\text{top of valence band}
-```
-
-There is a band gap:
-
-```math
-E_g=E_C-E_V
-```
-
-In a metal:
-
-```math
-\text{partially filled band}
-```
-
-or:
-
-```math
-\text{overlapping bands}
-```
-
-So there is usually no separate semiconductor-style $E_C$.
-
-For a metal:
-
-```math
-\text{conducting band}
-=
-\text{partially filled band crossing }E_F
-```
-
-The important energy is:
-
-```math
-E_F
-```
-
-because conduction mainly involves electrons near $E_F$.
-
-Key idea:
-
-```math
-\text{occupied states near }E_F
-+
-\text{nearby empty states}
-\Rightarrow
-\text{electrons can move}
-\Rightarrow
-\text{metal conducts}
+\theta=\frac{L}{\kappa A}
 ```
 
 ---
 
-### 22.3 Vacuum Level and Work Function
-
-Work function:
-
-```math
-\Phi=E_{\text{vac}}-E_F
-```
-
-So:
-
-```math
-E_{\text{vac}}=E_F+\Phi
-```
-
-Meaning:
-
-```math
-\Phi=\text{minimum energy needed to remove an electron from }E_F\text{ to vacuum}
-```
-
-Short memory:
-
-```math
-\Phi=\text{escape energy from }E_F
-```
-
-Larger work function:
-
-```math
-\Phi\uparrow
-\Rightarrow
-\text{electron harder to remove}
-```
-
-Smaller work function:
-
-```math
-\Phi\downarrow
-\Rightarrow
-\text{electron easier to remove}
-```
-
----
-
-## 23. Metal-Metal Contact
-
-When two different metals contact, electrons transfer because their initial Fermi levels differ.
-
-Key rule:
-
-```math
-\text{smaller work function}
-\Rightarrow
-\text{higher Fermi level relative to vacuum}
-```
-
-Electrons move from:
-
-```math
-\text{higher }E_F
-\rightarrow
-\text{lower }E_F
-```
-
-until equilibrium.
-
-At equilibrium:
-
-```math
-E_F\text{ aligns}
-```
-
-Charge separation creates:
-
-```math
-\text{contact potential}
-```
-
----
-
-## 24. Contact Potential
-
-Contact potential energy:
-
-```math
-e\Delta V=\Delta\Phi
-```
-
-or:
-
-```math
-e\Delta V=\Phi_2-\Phi_1
-```
-
-If using eV units:
-
-```math
-\Delta V\text{ in volts}
-=
-\text{work function difference in eV}
-```
-
-For Aluminium and Lithium:
-
-```math
-\Phi_{\text{Al}}\approx4.25\text{--}4.3\ \text{eV}
-```
-
-```math
-\Phi_{\text{Li}}=3.0\ \text{eV}
-```
-
-So:
-
-```math
-\Phi_{\text{Al}}-\Phi_{\text{Li}}
-\approx1.3\ \text{eV}
-```
-
-Therefore:
-
-```math
-\Delta V\approx1.3\ \text{V}
-```
-
-Logic:
-
-```math
-\Phi_{\text{Li}}<\Phi_{\text{Al}}
-```
-
-```math
-\Rightarrow
-E_F(\text{Li})>E_F(\text{Al})
-```
-
-```math
-\Rightarrow
-e^-\text{ transfer from Li to Al}
-```
-
-```math
-\Rightarrow
-\text{charge separation}
-```
-
-```math
-\Rightarrow
-\text{contact potential}
-```
-
-```math
-\Rightarrow
-E_F\text{ alignment}
-```
-
----
-
-## 25. Key Formula Chain
+## 48. Key Formula Chain
 
 Electrical resistivity:
 
@@ -1419,19 +2235,19 @@ Metal mobility:
 Drude mobility:
 
 ```math
-\mu=\frac{e\tau}{m_e}
+\mu=\frac{e\tau}{m^*}
 ```
 
 Drude conductivity:
 
 ```math
-\sigma=\frac{ne^2\tau}{m_e}
+\sigma=\frac{ne^2\tau}{m^*}
 ```
 
 Scattering time:
 
 ```math
-\tau=\frac{\mu m_e}{e}
+\tau=\frac{\mu m^*}{e}
 ```
 
 Current:
@@ -1452,10 +2268,121 @@ Drift velocity:
 v_{\text{drift}}=\frac{J}{ne}
 ```
 
+Semiconductor conductivity:
+
+```math
+\sigma=ne\mu_e+pe\mu_h
+```
+
+n-type conductivity:
+
+```math
+\sigma\approx N_D^+e\mu_{de}
+```
+
+p-type conductivity:
+
+```math
+\sigma\approx N_A^-e\mu_{dh}
+```
+
+Electron diffusion current:
+
+```math
+J_{D,e}=eD_e\frac{dn}{dx}
+```
+
+Hole diffusion current:
+
+```math
+J_{D,h}=-eD_h\frac{dp}{dx}
+```
+
 Einstein relation:
 
 ```math
 D=\frac{\mu k_BT}{e}
+```
+
+Built-in potential:
+
+```math
+V_0=
+\frac{k_BT}{e}
+\ln\left(
+\frac{N_A N_D}{n_i^2}
+\right)
+```
+
+Open-circuit depletion width:
+
+```math
+W_0=
+\left[
+\frac{2\epsilon}{e}
+\frac{N_A+N_D}{N_A N_D}
+V_0
+\right]^{1/2}
+```
+
+Forward-bias depletion width:
+
+```math
+W=
+\left[
+\frac{2\epsilon}{e}
+\frac{N_A+N_D}{N_A N_D}
+(V_0-V)
+\right]^{1/2}
+```
+
+Reverse-bias depletion width:
+
+```math
+W=
+\left[
+\frac{2\epsilon}{e}
+\frac{N_A+N_D}{N_A N_D}
+(V_0+V)
+\right]^{1/2}
+```
+
+Ideal diode equation:
+
+```math
+J=J_s
+\left[
+\exp\left(\frac{eV}{k_BT}\right)-1
+\right]
+```
+
+Real diode low-bias equation:
+
+```math
+J=J_0
+\exp\left(\frac{eV}{\eta k_BT}\right)
+```
+
+Solar cell equation:
+
+```math
+I=
+-I_{\text{ph}}
++
+I_0
+\left[
+\exp\left(\frac{eV}{\eta k_BT}\right)-1
+\right]
+```
+
+LED / radiative wavelength:
+
+```math
+\lambda(\text{nm})=\frac{1240}{E_g(\text{eV})}
+```
+
+```math
+\lambda(\mu\text{m})=\frac{1.24}{E_g(\text{eV})}
 ```
 
 Thermal resistance:
@@ -1470,32 +2397,8 @@ Temperature drop:
 \Delta T=P\theta
 ```
 
-Semiconductor conductivity:
+Fill factor:
 
 ```math
-\sigma=ne\mu_e+pe\mu_h
-```
-
-Radiative wavelength:
-
-```math
-\lambda(\text{nm})=\frac{1240}{E_g(\text{eV})}
-```
-
-Work function:
-
-```math
-\Phi=E_{\text{vac}}-E_F
-```
-
-Vacuum level:
-
-```math
-E_{\text{vac}}=E_F+\Phi
-```
-
-Contact potential:
-
-```math
-e\Delta V=\Delta\Phi
+FF=\frac{I_mV_m}{I_{sc}V_{oc}}
 ```
