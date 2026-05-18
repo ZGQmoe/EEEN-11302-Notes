@@ -1,4 +1,4 @@
-# Electrical and Thermal Conductivity
+# Electrical and Thermal Conduction in Solids
 
 For worked examples, see:
 
@@ -11,9 +11,9 @@ For worked examples, see:
 Electrical conduction:
 
 ```math
-\text{electric field}
+\text{applied electric field}
 \rightarrow
-\text{carrier drift}
+\text{charge motion}
 \rightarrow
 \text{current}
 ```
@@ -26,45 +26,104 @@ Thermal conduction:
 \text{heat flow}
 ```
 
-Semiconductor current can come from:
+Semiconductor conduction:
 
 ```math
-\text{drift current}
+\text{electron in conduction band}
 +
-\text{diffusion current}
-```
-
-Main idea:
-
-```math
-\text{conductivity}
-=
-\text{how easily charge or heat is transported}
+\text{hole in valence band}
+\rightarrow
+\text{current}
 ```
 
 ---
 
-# Part A: Metal and General Conductivity
+# Part A: Basic Electrical and Thermal Conduction
 
-## 2. Resistance, Resistivity and Conductivity
+## 2. Electrical Conduction
 
-Resistance:
-
-```math
-R=\text{resistance of a specific object}
-```
-
-Resistivity:
+Electrical conduction means:
 
 ```math
-\rho=\text{material property}
+\text{motion of charges due to an applied electric field}
 ```
 
-Conductivity:
+For electrons:
 
 ```math
-\sigma=\text{ability to conduct current}
+F=-eE
 ```
+
+Meaning:
+
+```math
+\text{electron force is opposite to electric field direction}
+```
+
+---
+
+## 3. Current Density and Conductivity
+
+Current density:
+
+```math
+J=\frac{I}{A}
+```
+
+Material form of Ohm's law:
+
+```math
+J=\sigma E
+```
+
+where:
+
+- $J$: current density, $\text{A m}^{-2}$
+- $I$: current, A
+- $A$: cross-sectional area, $\text{m}^2$
+- $\sigma$: electrical conductivity, $\text{S m}^{-1}$
+- $E$: electric field, $\text{V m}^{-1}$
+
+Meaning:
+
+```math
+\sigma\uparrow
+\Rightarrow
+\text{same electric field gives larger current density}
+```
+
+---
+
+## 4. Resistivity and Conductivity
+
+Conductivity and resistivity are inverses:
+
+```math
+\sigma=\frac{1}{\rho}
+```
+
+where:
+
+- $\sigma$: electrical conductivity, $\text{S m}^{-1}$
+- $\rho$: electrical resistivity, $\Omega\text{m}$
+
+Therefore:
+
+```math
+\rho\uparrow
+\Rightarrow
+\sigma\downarrow
+```
+
+```math
+\sigma\uparrow
+\Rightarrow
+\rho\downarrow
+```
+
+---
+
+## 5. Resistance of a Wire
 
 For a uniform wire:
 
@@ -72,204 +131,226 @@ For a uniform wire:
 R=\rho\frac{L}{A}
 ```
 
-So:
+where:
+
+- $R$: resistance, $\Omega$
+- $\rho$: resistivity, $\Omega\text{m}$
+- $L$: length, m
+- $A$: cross-sectional area, $\text{m}^2$
+
+Key trends:
 
 ```math
-\rho=\frac{RA}{L}
+L\uparrow
+\Rightarrow
+R\uparrow
 ```
 
-Also:
+```math
+A\uparrow
+\Rightarrow
+R\downarrow
+```
+
+---
+
+## 6. Useful Formula When Electric Field Is Given
+
+From:
+
+```math
+J=\sigma E
+```
+
+and:
 
 ```math
 \sigma=\frac{1}{\rho}
 ```
 
-Therefore:
+we get:
 
 ```math
-R=\frac{L}{\sigma A}
+J=\frac{E}{\rho}
 ```
 
-where:
-
-- $R$: resistance
-- $\rho$: resistivity
-- $\sigma$: conductivity
-- $L$: length
-- $A$: cross-sectional area
-
-For circular wire:
+Since:
 
 ```math
-A=\pi r^2
-```
-
-```math
-r=\frac{d}{2}
-```
-
-Key effects:
-
-```math
-L\uparrow \Rightarrow R\uparrow
-```
-
-```math
-A\uparrow \Rightarrow R\downarrow
-```
-
-```math
-\sigma\uparrow \Rightarrow R\downarrow
-```
-
-```math
-\rho\uparrow \Rightarrow \sigma\downarrow
-```
-
----
-
-## 3. Temperature Effect in Metals
-
-For metals:
-
-```math
-T\uparrow
-\Rightarrow
-\rho\uparrow
-```
-
-Reason:
-
-```math
-T\uparrow
-\Rightarrow
-\text{lattice vibration}\uparrow
-\Rightarrow
-\text{electron scattering}\uparrow
-\Rightarrow
-\tau\downarrow
-\Rightarrow
-\mu\downarrow
-\Rightarrow
-\sigma\downarrow
-\Rightarrow
-\rho\uparrow
-```
-
-Linear approximation:
-
-```math
-\rho=AT+B
-```
-
-where:
-
-- $A$: positive temperature coefficient
-- $B$: residual / baseline resistivity
-
-Exam wording:
-
-```math
-\text{higher temperature}
-\rightarrow
-\text{stronger lattice vibration}
-\rightarrow
-\text{more electron scattering}
-\rightarrow
-\text{higher resistivity}
-```
-
----
-
-## 4. Electron Concentration in Metals
-
-Electron concentration:
-
-```math
-n=\text{number of conduction electrons per unit volume}
-```
-
-Unit:
-
-```math
-\text{m}^{-3}
-```
-
-If each atom gives one conduction electron:
-
-```math
-n=\text{atom concentration}
-```
-
-From density and molar mass:
-
-```math
-n=
-\frac{\text{density}}{\text{molar mass}}N_A
-```
-
-Unit logic:
-
-```math
-\frac{\text{kg m}^{-3}}{\text{kg mol}^{-1}}
-=
-\text{mol m}^{-3}
-```
-
-```math
-\text{mol m}^{-3}\times N_A
-=
-\text{atoms m}^{-3}
-```
-
-If:
-
-```math
-1\ \text{atom}
-\rightarrow
-1\ \text{conduction electron}
+I=JA
 ```
 
 then:
 
 ```math
-\text{atoms m}^{-3}
-=
-\text{electrons m}^{-3}
+I=\frac{EA}{\rho}
+```
+
+Use this when the question gives:
+
+```math
+E,\quad A,\quad \rho
+```
+
+instead of length $begin:math:text$L$end:math:text$.
+
+---
+
+## 7. Thermal Conduction
+
+Thermal conduction means:
+
+```math
+\text{heat transfer through a material from hot to cold}
+```
+
+Steady-state heat conduction:
+
+```math
+\Delta Q=-A\kappa\frac{\delta T}{\delta x}
+```
+
+where:
+
+- $\Delta Q$: heat transfer rate / thermal power, W
+- $A$: cross-sectional area, $\text{m}^2$
+- $\kappa$: thermal conductivity, $\text{W m}^{-1}\text{K}^{-1}$
+- $T$: temperature, K
+- $x$: distance, m
+
+The negative sign means:
+
+```math
+\text{heat flows from hot to cold}
 ```
 
 ---
 
-## 5. Mobility and Drift Velocity
+## 8. Heat Transfer Mechanisms
 
-Mobility:
+In metals:
 
 ```math
-\mu=\text{how easily carriers drift under an electric field}
+\text{heat transfer mainly by conduction electrons}
+```
+
+In insulators:
+
+```math
+\text{heat transfer mainly by lattice vibrations}
+```
+
+Lattice vibrations are called:
+
+```math
+\text{phonons}
+```
+
+---
+
+# Part B: Drude Model
+
+## 9. Drude Model for Metal Conduction
+
+Drude model explains metal conduction by treating electrons as free carriers moving through a metal lattice.
+
+Core idea:
+
+```math
+\text{electric field}
+\rightarrow
+\text{electron drift}
+\rightarrow
+\text{current}
+```
+
+However, electrons are scattered by the lattice.
+
+```math
+\text{accelerate}
+\rightarrow
+\text{collision}
+\rightarrow
+\text{randomised motion}
+\rightarrow
+\text{accelerate again}
+```
+
+---
+
+## 10. Key Quantities
+
+| Symbol | Meaning | Unit |
+|---|---|---|
+| $n$ | free electron concentration | $\text{m}^{-3}$ |
+| $e$ | electron charge magnitude | C |
+| $E$ | electric field | $\text{V m}^{-1}$ |
+| $v_{\text{drift}}$ | average drift velocity | $\text{m s}^{-1}$ |
+| $\mu_{\text{drift}}$ | drift mobility | $\text{m}^2\text{V}^{-1}\text{s}^{-1}$ |
+| $\sigma$ | electrical conductivity | $\text{S m}^{-1}$ |
+| $\rho$ | electrical resistivity | $\Omega\text{m}$ |
+| $\tau$ | scattering time | s |
+| $m_e$ | electron mass | kg |
+| $m^*$ | effective mass | kg |
+
+---
+
+## 11. Drift Velocity
+
+Drift velocity:
+
+```math
+v_{\text{drift}}=\text{average carrier velocity caused by an electric field}
+```
+
+It is not the random thermal speed of electrons.
+
+```math
+\text{random electron speed}
+\neq
+v_{\text{drift}}
+```
+
+Random motion is large but gives no net current.
+
+```math
+\text{net average drift}
+\Rightarrow
+\text{current}
+```
+
+---
+
+## 12. Drift Mobility
+
+Drift mobility:
+
+```math
+\mu_{\text{drift}}=\text{how easily electrons drift under an electric field}
 ```
 
 Definition:
 
 ```math
-v_d=\mu E
+v_{\text{drift}}=\mu_{\text{drift}}E
 ```
 
-where:
+So:
 
-- $v_d$: drift velocity
-- $E$: electric field
-- $\mu$: mobility
+```math
+\mu_{\text{drift}}=\frac{v_{\text{drift}}}{E}
+```
 
 Unit:
 
 ```math
-\mu:\ \text{m}^2\text{V}^{-1}\text{s}^{-1}
+\mu_{\text{drift}}:\ \text{m}^2\text{V}^{-1}\text{s}^{-1}
 ```
 
 or:
 
 ```math
-\mu:\ \text{cm}^2\text{V}^{-1}\text{s}^{-1}
+\mu_{\text{drift}}:\ \text{cm}^2\text{V}^{-1}\text{s}^{-1}
 ```
 
 Conversion:
@@ -283,82 +364,142 @@ Conversion:
 Meaning:
 
 ```math
-\mu\uparrow
+\mu_{\text{drift}}\uparrow
 \Rightarrow
-\text{larger drift velocity for same electric field}
+\text{larger drift velocity for the same electric field}
 ```
 
-For metal electrons:
+---
+
+## 13. Current Density from Electron Motion
+
+Current density from carrier motion:
 
 ```math
-\sigma=ne\mu
+J=ne v_{\text{drift}}
 ```
+
+Meaning:
+
+```math
+\text{more free electrons}
+\Rightarrow
+J\uparrow
+```
+
+```math
+\text{larger drift velocity}
+\Rightarrow
+J\uparrow
+```
+
+Material Ohm's law:
+
+```math
+J=\sigma E
+```
+
+Therefore:
+
+```math
+ne v_{\text{drift}}=\sigma E
+```
+
+This links microscopic electron motion to macroscopic conductivity.
+
+---
+
+## 14. Conductivity from Drude Model
 
 Using:
 
 ```math
-\sigma=\frac{1}{\rho}
+v_{\text{drift}}=\mu_{\text{drift}}E
+```
+
+in:
+
+```math
+J=ne v_{\text{drift}}
 ```
 
 gives:
 
 ```math
-\mu=\frac{1}{ne\rho}
+J=ne\mu_{\text{drift}}E
 ```
 
-Current density:
+Compare with:
 
 ```math
-J=\frac{I}{A}
+J=\sigma E
 ```
 
-For electrons:
+Therefore:
 
 ```math
-J=nev_{\text{drift}}
+\sigma=ne\mu_{\text{drift}}
 ```
 
-So:
+Since:
 
 ```math
-v_{\text{drift}}=\frac{J}{ne}
+\sigma=\frac{1}{\rho}
 ```
 
-Important idea:
+we also have:
 
 ```math
-\text{random electron speed can be large}
-```
-
-but:
-
-```math
-\text{average drift velocity is usually small}
+\sigma=ne\mu_{\text{drift}}=\frac{1}{\rho}
 ```
 
 ---
 
-## 6. Drude Model and Scattering Time
+## 15. Scattering Time
 
-Scattering / relaxation time:
-
-```math
-\tau=\text{average time between scattering events}
-```
-
-Scattering sources:
+Scattering time:
 
 ```math
-\text{lattice vibrations}
+\tau=\text{average time between electron collisions}
+```
+
+Large scattering time:
+
+```math
+\tau\uparrow
+\Rightarrow
+\text{fewer collisions}
+\Rightarrow
+\text{electrons move more easily}
+```
+
+Small scattering time:
+
+```math
+\tau\downarrow
+\Rightarrow
+\text{more collisions}
+\Rightarrow
+\text{electrons move less easily}
+```
+
+Physical picture:
+
+```math
+\text{long }\tau
+\Rightarrow
+\text{longer free motion before collision}
 ```
 
 ```math
-\text{impurities}
+\text{short }\tau
+\Rightarrow
+\text{more frequent scattering}
 ```
 
-```math
-\text{defects}
-```
+---
+
+## 16. Drude Mobility and Conductivity
 
 Drude mobility:
 
@@ -366,7 +507,7 @@ Drude mobility:
 \mu_{\text{drift}}=\frac{e\tau}{m^*}
 ```
 
-If:
+If free electron mass is used:
 
 ```math
 m^*=m_e
@@ -378,12 +519,6 @@ then:
 \mu_{\text{drift}}=\frac{e\tau}{m_e}
 ```
 
-Rearrange:
-
-```math
-\tau=\frac{\mu m_e}{e}
-```
-
 Drude conductivity:
 
 ```math
@@ -393,1355 +528,667 @@ Drude conductivity:
 Substitute mobility:
 
 ```math
+\sigma=\frac{ne^2\tau}{m^*}
+```
+
+or, using free electron mass:
+
+```math
 \sigma=\frac{ne^2\tau}{m_e}
 ```
 
 Key trends:
 
 ```math
-n\uparrow \Rightarrow \sigma\uparrow
-```
-
-```math
-\tau\uparrow \Rightarrow \mu\uparrow \Rightarrow \sigma\uparrow \Rightarrow \rho\downarrow
-```
-
-```math
-\tau\downarrow
+n\uparrow
 \Rightarrow
-\text{more scattering}
+\sigma\uparrow
+```
+
+```math
+\tau\uparrow
 \Rightarrow
-\rho\uparrow
-```
-
-Important unit note:
-
-```math
-e:\ \text{C}
+\mu_{\text{drift}}\uparrow
+\Rightarrow
+\sigma\uparrow
 ```
 
 ```math
-\tau:\ \text{s}
-```
-
-```math
-m_e:\ \text{kg}
-```
-
-Using SI units in $\mu=e\tau/m_e$ gives:
-
-```math
-\mu:\ \text{m}^2\text{V}^{-1}\text{s}^{-1}
-```
-
-Convert to $\text{cm}^2\text{V}^{-1}\text{s}^{-1}$ at the end if needed.
-
----
-
-## 7. Current and Ohm's Law
-
-Ohm's law:
-
-```math
-I=\frac{V}{R}
-```
-
-where:
-
-- $I$: current
-- $V$: applied voltage
-- $R$: resistance
-
-Current density:
-
-```math
-J=\frac{I}{A}
-```
-
-Drift velocity:
-
-```math
-v_{\text{drift}}=\frac{J}{ne}
+m^*\downarrow
+\Rightarrow
+\mu_{\text{drift}}\uparrow
+\Rightarrow
+\sigma\uparrow
 ```
 
 ---
 
-# Part B: Diffusion, Drift and Semiconductor Conductivity
+## 17. Drude Model Assumptions
 
-## 8. Drift Current in Semiconductors
+- Electrons move in straight lines between collisions.
+- Collisions with atoms or ions are instantaneous and random.
+- Scattering time $\tau$ is independent of electron position and velocity.
+- Electrons reach thermal equilibrium by collisions with the lattice.
+- The electric field is uniform.
+- Electrons do not interact with each other.
 
-Drift means carrier motion caused by an electric field.
-
-Electron drift velocity:
-
-```math
-v_{de}=\mu_{de}E
-```
-
-Hole drift velocity:
+Exam-safe summary:
 
 ```math
-v_{dh}=\mu_{dh}E
-```
-
-Drude model is valid for both electron and hole motion:
-
-```math
-\mu_{de}=\frac{e\tau}{m_e^*}
-```
-
-```math
-\mu_{dh}=\frac{e\tau}{m_h^*}
-```
-
-where:
-
-- $\mu_{de}$: electron drift mobility
-- $\mu_{dh}$: hole drift mobility
-- $m_e^*$: electron effective mass
-- $m_h^*$: hole effective mass
-
-Semiconductor conductivity:
-
-```math
-\sigma=ne\mu_{de}+pe\mu_{dh}
-```
-
-Meaning:
-
-```math
-\text{conductivity}
+\text{Drude model}
 =
-\text{electron contribution}
+\text{free electrons}
 +
-\text{hole contribution}
-```
-
-Important:
-
-```math
-\text{high mobility}
-\neq
-\text{always high conductivity}
-```
-
-because conductivity also depends on:
-
-```math
-n,\quad p
-```
-
----
-
-## 9. Hole
-
-A hole is:
-
-```math
-\text{missing electron in the valence band}
-```
-
-It behaves like:
-
-```math
-\text{positive mobile charge carrier}
-```
-
-Formation:
-
-```math
-\text{electron leaves valence band}
-\Rightarrow
-\text{empty state left behind}
-\Rightarrow
-\text{hole}
-```
-
-Electron-hole pair:
-
-```math
-\text{electron in conduction band}
+\text{electric-field drift}
 +
-\text{hole in valence band}
+\text{random lattice scattering}
 ```
 
 ---
 
-## 10. Intrinsic Semiconductor
+# Part C: Temperature Dependence in Metals
 
-Intrinsic semiconductor:
+## 18. Temperature and Scattering
 
-```math
-\text{pure semiconductor with no intentional doping}
-```
-
-Examples:
+In metals, increasing temperature increases lattice vibrations.
 
 ```math
-\text{pure Si},\quad \text{pure Ge}
-```
-
-Carriers come from thermal excitation:
-
-```math
-\text{thermal energy}
-\rightarrow
-\text{electron jumps from valence band to conduction band}
-\rightarrow
-e^-+h^+
-```
-
-For intrinsic material:
-
-```math
-n=p=n_i
-```
-
-where:
-
-```math
-n_i=\text{intrinsic carrier concentration}
-```
-
-Key result:
-
-```math
-n_i\text{ low}
+T\uparrow
 \Rightarrow
-\sigma\text{ low}
-```
-
----
-
-## 11. Doping and Extrinsic Semiconductors
-
-Doping:
-
-```math
-\text{intentional addition of impurity atoms}
-```
-
-Purpose:
-
-```math
-\text{increase electron or hole concentration}
+\text{lattice vibration}\uparrow
+\Rightarrow
+\text{electron scattering}\uparrow
 ```
 
 Therefore:
 
 ```math
-\text{doping}
-\Rightarrow
-n\text{ or }p\text{ increases}
-\Rightarrow
-\sigma\text{ increases / becomes controllable}
-```
-
-Extrinsic semiconductor:
-
-```math
-\text{doped semiconductor}
-```
-
-Meaning:
-
-```math
-\text{carrier concentration is controlled by dopants}
-```
-
----
-
-## 12. n-Type Semiconductor
-
-n-type:
-
-```math
-\text{donor-doped semiconductor}
-```
-
-For silicon, donor dopants are Group V atoms:
-
-```math
-P,\ As,\ Sb
-```
-
-In Si lattice:
-
-```math
-4\ \text{electrons form bonds}
-```
-
-```math
-1\ \text{extra electron becomes mobile}
-```
-
-So:
-
-```math
-\text{donor}
-\rightarrow
-\text{extra electron}
-\rightarrow
-\text{n-type}
-```
-
-Carrier relation:
-
-```math
-n\gg p
-```
-
-Majority carriers:
-
-```math
-\text{electrons}
-```
-
-For n-type:
-
-```math
-n\approx N_D^+
-```
-
-Minority hole concentration:
-
-```math
-p=\frac{n_i^2}{N_D^+}
-```
-
-Full conductivity:
-
-```math
-\sigma=N_D^+e\mu_{de}
-+
-\frac{n_i^2}{N_D^+}e\mu_{dh}
-```
-
-Since electrons dominate:
-
-```math
-\sigma\approx N_D^+e\mu_{de}
-```
-
----
-
-## 13. p-Type Semiconductor
-
-p-type:
-
-```math
-\text{acceptor-doped semiconductor}
-```
-
-For silicon, acceptor dopants are Group III atoms:
-
-```math
-B,\ Al,\ Ga
-```
-
-In Si lattice:
-
-```math
-\text{one bond lacks an electron}
-```
-
-This creates:
-
-```math
-\text{hole}
-```
-
-So:
-
-```math
-\text{acceptor}
-\rightarrow
-\text{hole}
-\rightarrow
-\text{p-type}
-```
-
-Carrier relation:
-
-```math
-p\gg n
-```
-
-Majority carriers:
-
-```math
-\text{holes}
-```
-
-For p-type:
-
-```math
-p\approx N_A^-
-```
-
-Minority electron concentration:
-
-```math
-n=\frac{n_i^2}{N_A^-}
-```
-
-Full conductivity:
-
-```math
-\sigma=
-\frac{n_i^2}{N_A^-}e\mu_{de}
-+
-N_A^-e\mu_{dh}
-```
-
-Since holes dominate:
-
-```math
-\sigma\approx N_A^-e\mu_{dh}
-```
-
----
-
-## 14. Intrinsic vs Extrinsic
-
-| Type | Meaning | Carrier source | Carrier relation |
-|---|---|---|---|
-| Intrinsic | pure semiconductor | thermal excitation | $n=p=n_i$ |
-| n-type extrinsic | donor-doped | extra electrons | $n\gg p$ |
-| p-type extrinsic | acceptor-doped | extra holes | $p\gg n$ |
-
-Key memory:
-
-```math
-\text{intrinsic}=\text{pure, few carriers}
-```
-
-```math
-\text{extrinsic}=\text{doped, controlled carriers}
-```
-
-```math
-\text{n-type}=\text{extra electrons}
-```
-
-```math
-\text{p-type}=\text{extra holes}
-```
-
----
-
-## 15. Diffusion Current
-
-Diffusion is caused by concentration gradients.
-
-```math
-\text{high carrier concentration}
-\rightarrow
-\text{low carrier concentration}
-```
-
-Diffusion coefficient:
-
-```math
-D=\text{how easily carriers spread by diffusion}
-```
-
-Electron diffusion current density:
-
-```math
-J_{D,e}=eD_e\frac{dn}{dx}
-```
-
-Hole diffusion current density:
-
-```math
-J_{D,h}=-eD_h\frac{dp}{dx}
-```
-
-where:
-
-- $D_e$: electron diffusion coefficient
-- $D_h$: hole diffusion coefficient
-- $n$: electron concentration
-- $p$: hole concentration
-
-Key sign idea:
-
-```math
-\text{conventional current direction}
-\neq
-\text{electron motion direction}
-```
-
-Conventional current is defined as positive charge flow.
-
----
-
-## 16. Einstein Relation
-
-Diffusion coefficient and mobility are directly related.
-
-Electron:
-
-```math
-D_e=\frac{k_BT}{e}\mu_e
-```
-
-Hole:
-
-```math
-D_h=\frac{k_BT}{e}\mu_h
-```
-
-General form:
-
-```math
-D=\frac{\mu k_BT}{e}
-```
-
-where:
-
-- $D$: diffusion coefficient
-- $\mu$: mobility
-- $k_B$: Boltzmann constant
-- $T$: absolute temperature
-- $e$: electron charge magnitude
-
-At room temperature:
-
-```math
-\frac{k_BT}{e}\approx0.0259\ \text{V}
-```
-
-So:
-
-```math
-D\approx0.0259\mu
-```
-
-if $\mu$ is in $\text{m}^2\text{V}^{-1}\text{s}^{-1}$, then $D$ is in $\text{m}^2\text{s}^{-1}$.
-
-If $\mu$ is in $\text{cm}^2\text{V}^{-1}\text{s}^{-1}$, then $D$ is in $\text{cm}^2\text{s}^{-1}$.
-
-Key trends:
-
-```math
-\mu\uparrow \Rightarrow D\uparrow
-```
-
-```math
-T\uparrow \Rightarrow D\uparrow
-```
-
----
-
-## 17. Diffusion vs Drift
-
-Drift:
-
-```math
-\text{electric field}
-\rightarrow
-\text{carrier drift}
-```
-
-Diffusion:
-
-```math
-\text{concentration gradient}
-\rightarrow
-\text{carrier spreading}
-```
-
-Total electron current:
-
-```math
-J_e=J_{\text{drift},e}+J_{D,e}
-```
-
-Total hole current:
-
-```math
-J_h=J_{\text{drift},h}+J_{D,h}
-```
-
-If light generates electron-hole pairs near one side:
-
-```math
-\text{light}
-\rightarrow
-e^-+h^+
-```
-
-then both drift and diffusion may appear.
-
-Exam memory:
-
-```math
-\text{drift}
-\Rightarrow
-\text{electric field driven}
-```
-
-```math
-\text{diffusion}
-\Rightarrow
-\text{concentration-gradient driven}
-```
-
----
-
-## 18. Temperature Dependence and Impurity Engineering
-
-There are three temperature regions.
-
-### 18.1 Ionisation Range: Low Temperature
-
-At low temperature:
-
-```math
-\text{not all dopants ionised}
-```
-
-As temperature increases:
-
-```math
 T\uparrow
 \Rightarrow
-\text{more donors ionised}
-\Rightarrow
-n\uparrow
+\tau\downarrow
 ```
 
-Electron concentration increases until saturation temperature $T_s$.
-
----
-
-### 18.2 Extrinsic Range: Medium Temperature
-
-In the extrinsic range:
+The slide assumes:
 
 ```math
-\text{all donors ionised}
+\tau\propto\frac{1}{T}
 ```
 
-For n-type:
+or:
 
 ```math
-n=N_D
+\tau=\frac{C}{T}
 ```
 
-Carrier concentration is approximately constant.
-
-This is useful because:
+where:
 
 ```math
-\text{carrier concentration controlled by doping}
+C=\text{temperature-independent constant}
 ```
-
----
-
-### 18.3 Intrinsic Range: High Temperature
-
-At high temperature:
-
-```math
-\text{thermal excitation generates electron-hole pairs}
-```
-
-So:
-
-```math
-n\uparrow,\quad p\uparrow
-```
-
-Conductivity increases strongly.
 
 ---
 
 ## 19. Mobility vs Temperature
 
-Low-temperature impurity scattering:
+Drude mobility:
 
 ```math
-\mu\propto T^{3/2}
+\mu_{\text{drift}}=\frac{e\tau}{m_e}
 ```
 
-High-temperature lattice scattering:
+Using:
 
 ```math
-\mu\propto T^{-3/2}
+\tau=\frac{C}{T}
+```
+
+gives:
+
+```math
+\mu_{\text{drift}}=\frac{eC}{m_eT}
+```
+
+Therefore:
+
+```math
+\mu_{\text{drift}}\propto\frac{1}{T}
 ```
 
 Meaning:
 
 ```math
-\text{low }T:
-\text{ increasing }T\text{ reduces impurity scattering effect}
-```
-
-```math
-\text{high }T:
-\text{ lattice vibrations increase}
+T\uparrow
 \Rightarrow
-\mu\downarrow
+\mu_{\text{drift}}\downarrow
 ```
 
 ---
 
-## 20. Semiconductor vs Metal Temperature Trend
+## 20. Drift Resistivity
 
-Metal:
+Drift resistivity:
+
+```math
+\rho_{\text{drift}}=\frac{1}{ne\mu_{\text{drift}}}
+```
+
+Meaning:
+
+```math
+\rho_{\text{drift}}
+=
+\text{resistivity caused by limited electron drift mobility}
+```
+
+Using:
+
+```math
+\mu_{\text{drift}}=\frac{eC}{m_eT}
+```
+
+gives:
+
+```math
+\rho_{\text{drift}}
+=
+\frac{m_eT}{e^2nC}
+```
+
+Since $begin:math:text$m\_e$end:math:text$, $begin:math:text$e$end:math:text$, $begin:math:text$n$end:math:text$, and $begin:math:text$C$end:math:text$ are constants:
+
+```math
+\rho_{\text{drift}}\propto T
+```
+
+---
+
+## 21. Temperature-Dependent Resistivity
+
+Temperature-dependent resistivity:
+
+```math
+\rho_T=\text{temperature-dependent part of resistivity}
+```
+
+It comes mainly from lattice vibration scattering.
+
+For lattice-scattering-limited metals:
+
+```math
+\rho_T=AT
+```
+
+where:
+
+- $\rho_T$: temperature-dependent resistivity, $\Omega\text{m}$
+- $A$: temperature-independent constant, $\Omega\text{m K}^{-1}$
+- $T$: temperature, K
+
+Here:
+
+```math
+A=\frac{m_e}{e^2nC}
+```
+
+Important:
+
+```math
+A\neq\text{cross-sectional area}
+```
+
+In this equation, $begin:math:text$A$end:math:text$ is just a proportionality constant.
+
+---
+
+## 22. Relationship Between $begin:math:text$\\rho\_\{\\text\{drift\}\}$end:math:text$ and $begin:math:text$\\rho\_T$end:math:text$
+
+General drift resistivity:
+
+```math
+\rho_{\text{drift}}=\frac{1}{ne\mu_{\text{drift}}}
+```
+
+Temperature-dependent resistivity:
+
+```math
+\rho_T=\text{part of resistivity caused by temperature-dependent lattice scattering}
+```
+
+If lattice scattering is the main scattering mechanism:
+
+```math
+\rho_{\text{drift}}\approx\rho_T
+```
+
+So on this slide:
+
+```math
+\rho_{\text{drift}}\approx\rho_T=AT
+```
+
+In real metals, total resistivity can be written as:
+
+```math
+\rho=\rho_0+\rho_T
+```
+
+where:
+
+```math
+\rho_0=\text{residual resistivity from defects and impurities}
+```
+
+```math
+\rho_T=\text{temperature-dependent resistivity from lattice vibrations}
+```
+
+---
+
+## 23. Temperature Dependence Exam Summary
+
+Main chain:
 
 ```math
 T\uparrow
 \Rightarrow
-\text{lattice scattering}\uparrow
+\text{lattice vibration}\uparrow
+\Rightarrow
+\text{electron scattering}\uparrow
+\Rightarrow
+\tau\downarrow
+```
+
+```math
+\tau\downarrow
+\Rightarrow
+\mu_{\text{drift}}\downarrow
+\Rightarrow
+\sigma\downarrow
 \Rightarrow
 \rho\uparrow
 ```
 
-Semiconductor:
+Therefore:
 
 ```math
-T\uparrow
-\Rightarrow
-\text{carrier concentration}\uparrow
-\Rightarrow
-\sigma\uparrow
-\Rightarrow
-\rho\downarrow
+\boxed{
+\text{For metals, resistivity increases with temperature.}
+}
 ```
 
-Key exam phrase:
+For lattice-scattering-limited metals:
 
 ```math
-\text{In semiconductors, carrier concentration increase can dominate over mobility decrease.}
+\boxed{
+\rho_T=AT
+}
 ```
 
----
+Exam wording:
 
-## 21. Effective Mass and Conductivity
-
-Effective mass:
-
-```math
-m^*=\text{carrier inertia inside a crystal}
-```
-
-Smaller effective mass:
-
-```math
-m^*\downarrow
-\Rightarrow
-\mu\uparrow
-```
-
-Mobility trend:
-
-```math
-\mu\propto\frac{1}{m^*}
-```
-
-For semiconductors:
-
-```math
-\sigma=ne\mu_e+pe\mu_h
-```
-
-If carrier concentrations and scattering times are assumed similar:
-
-```math
-\sigma\propto
-\frac{1}{m_e^*}
-+
-\frac{1}{m_h^*}
-```
-
-Use:
-
-```math
-\frac{1}{m_e^*}+\frac{1}{m_h^*}
-```
-
-as a simple mobility / conductivity trend indicator.
-
----
-
-# Part C: p-n Junctions
-
-## 22. p-n Junction Formation
-
-A p-n junction forms when:
-
-```math
-p\text{-type semiconductor}
-+
-n\text{-type semiconductor}
-```
-
-are brought into contact.
-
-Carrier diffusion occurs because of concentration gradients.
-
-Electrons diffuse:
-
-```math
-n\text{-side}
-\rightarrow
-p\text{-side}
-```
-
-Holes diffuse:
-
-```math
-p\text{-side}
-\rightarrow
-n\text{-side}
-```
-
-Diffused carriers recombine near the junction.
-
-This exposes fixed ions:
-
-```math
-\text{positive donor ions on n-side}
-```
-
-```math
-\text{negative acceptor ions on p-side}
-```
-
-This forms the depletion region.
-
----
-
-## 23. Depletion Region
-
-Depletion region:
-
-```math
-\text{region near junction depleted of mobile carriers}
-```
-
-It contains fixed ionised dopants:
-
-```math
-n\text{-side}:\quad +eN_D
-```
-
-```math
-p\text{-side}:\quad -eN_A
-```
-
-Charge neutrality requires:
-
-```math
-N_DW_n=N_AW_p
-```
-
-Meaning:
-
-```math
-\text{total positive charge}
-=
-\text{total negative charge}
-```
-
-If one side is more heavily doped:
-
-```math
-\text{depletion width mainly extends into the more lightly doped side}
+```text
+In metals, increasing temperature increases lattice vibrations. This increases electron scattering, reduces the average scattering time and drift mobility, and therefore increases resistivity.
 ```
 
 ---
 
-## 24. Built-in Electric Field
+# Part D: Semiconductor Energy Bands
 
-Fixed charges create a built-in electric field.
+## 24. Semiconductor Energy Bands
 
-Electric field direction:
-
-```math
-n\text{-side}
-\rightarrow
-p\text{-side}
-```
-
-Reason:
+A semiconductor has two important allowed energy bands:
 
 ```math
-\text{electric field points from positive donor ions to negative acceptor ions}
-```
-
-The built-in field opposes further diffusion.
-
-At equilibrium:
-
-```math
-\text{diffusion current}
-+
-\text{drift current}
-=
-0
-```
-
----
-
-## 25. Built-in Potential
-
-Built-in potential:
-
-```math
-V_0=
-\frac{k_BT}{e}
-\ln\left(
-\frac{N_A N_D}{n_i^2}
-\right)
-```
-
-where:
-
-- $V_0$: built-in potential
-- $N_A$: acceptor concentration
-- $N_D$: donor concentration
-- $n_i$: intrinsic carrier concentration
-- $T$: temperature
-
-Key trends:
-
-```math
-N_A,N_D\uparrow
-\Rightarrow
-V_0\uparrow
-```
-
-```math
-n_i\uparrow
-\Rightarrow
-V_0\downarrow
-```
-
----
-
-## 26. Depletion Width at Open Circuit
-
-Total depletion width:
-
-```math
-W_0=W_p+W_n
-```
-
-Formula:
-
-```math
-W_0=
-\left[
-\frac{2\epsilon}{e}
-\frac{N_A+N_D}{N_A N_D}
-V_0
-\right]^{1/2}
-```
-
-where:
-
-```math
-\epsilon=\epsilon_0\epsilon_r
-```
-
-For an abrupt asymmetric junction:
-
-```math
-N_DW_n=N_AW_p
-```
-
-So:
-
-```math
-\frac{W_p}{W_n}=\frac{N_D}{N_A}
-```
-
-The depletion region extends more into the lightly doped side.
-
----
-
-## 27. Band Diagram in Open Circuit
-
-Before contact:
-
-```math
-E_F\text{ differs between p-side and n-side}
-```
-
-After contact at equilibrium:
-
-```math
-E_F\text{ aligns}
-```
-
-Electrons move:
-
-```math
-\text{high Fermi level}
-\rightarrow
-\text{low Fermi level}
-```
-
-For p-n junction:
-
-```math
-e^-\text{ diffuse from n-type to p-type}
-```
-
-Holes move:
-
-```math
-p\text{-type}
-\rightarrow
-n\text{-type}
-```
-
-Built-in potential energy:
-
-```math
-eV_0=\Phi_p-\Phi_n
-```
-
-Meaning:
-
-```math
-eV_0=\text{initial Fermi level difference}
-```
-
----
-
-# Part D: Biasing a p-n Junction
-
-## 28. Forward Bias
-
-Forward bias means the applied field is opposite to the built-in field.
-
-Effect:
-
-```math
-\text{potential barrier decreases}
-```
-
-```math
-V_{\text{barrier}}=V_0-V
-```
-
-Depletion width:
-
-```math
-W=
-\left[
-\frac{2\epsilon}{e}
-\frac{N_A+N_D}{N_A N_D}
-(V_0-V)
-\right]^{1/2}
-```
-
-So:
-
-```math
-V\uparrow
-\Rightarrow
-W\downarrow
-```
-
-Result:
-
-```math
-\text{depletion region narrows}
-```
-
-```math
-\text{current can flow}
-```
-
----
-
-## 29. Reverse Bias
-
-Reverse bias means the applied field is in the same direction as the built-in field.
-
-Effect:
-
-```math
-\text{potential barrier increases}
-```
-
-```math
-V_{\text{barrier}}=V_0+V
-```
-
-Depletion width:
-
-```math
-W=
-\left[
-\frac{2\epsilon}{e}
-\frac{N_A+N_D}{N_A N_D}
-(V_0+V)
-\right]^{1/2}
-```
-
-So:
-
-```math
-V\uparrow
-\Rightarrow
-W\uparrow
-```
-
-Result:
-
-```math
-\text{depletion region widens}
-```
-
-```math
-\text{current is strongly blocked}
-```
-
----
-
-## 30. Minority Carrier Injection
-
-Under forward bias:
-
-```math
-\text{electrons injected into p-side}
-```
-
-```math
-\text{holes injected into n-side}
-```
-
-These are minority carriers in the opposite region.
-
-They diffuse away from the junction and can recombine.
-
-This minority carrier diffusion gives diode current.
-
----
-
-## 31. Ideal Diode Equation
-
-Ideal diode current density:
-
-```math
-J=J_s\left[
-\exp\left(\frac{eV}{k_BT}\right)-1
-\right]
-```
-
-where:
-
-- $J_s$: saturation current density
-- $V$: applied voltage
-- $T$: temperature
-
-This ideal form assumes diffusion current only.
-
----
-
-## 32. Diffusion Current Density in a Diode
-
-Minority carrier diffusion current density:
-
-```math
-J_D=
-\left[
-\frac{eD_h n_i^2}{L_hN_D}
-+
-\frac{eD_e n_i^2}{L_eN_A}
-\right]
-\left[
-\exp\left(\frac{eV}{k_BT}\right)-1
-\right]
-```
-
-where:
-
-- $L_e,L_h$: electron/hole diffusion lengths
-- $D_e,D_h$: electron/hole diffusion coefficients
-- $N_D,N_A$: donor/acceptor concentrations
-
-Key idea:
-
-```math
-J_s\propto n_i^2
-```
-
-So materials with larger bandgap usually have smaller $n_i$ and need higher voltage for current.
-
----
-
-## 33. Real Diode Equation and Ideality Factor
-
-Including recombination current:
-
-```math
-J=J_0\exp\left(\frac{eV}{\eta k_BT}\right)
-```
-
-where:
-
-- $\eta$: ideality factor
-
-Interpretation:
-
-```math
-\eta=1
-\Rightarrow
-\text{minority carrier diffusion dominates}
-```
-
-```math
-\eta=2
-\Rightarrow
-\text{recombination dominates}
-```
-
----
-
-## 34. I-V Characteristics
-
-Forward bias:
-
-```math
-V>0
-\Rightarrow
-I\text{ increases exponentially}
-```
-
-Reverse bias:
-
-```math
-V<0
-\Rightarrow
-I\approx -I_s
-```
-
-Real reverse current can be larger because of:
-
-```math
-\text{space charge generation}
-```
-
-```math
-\text{surface leakage current}
-```
-
----
-
-## 35. Bandgap and Forward Voltage
-
-Forward current depends on:
-
-```math
-J_s\propto n_i^2
+\text{conduction band}
 ```
 
 and:
 
 ```math
-n_i\text{ depends strongly on }E_g
+\text{valence band}
 ```
 
-Higher bandgap:
+Between them is the bandgap:
+
+```math
+E_g
+```
+
+The bandgap has:
+
+```math
+\text{no allowed electronic states}
+```
+
+---
+
+## 25. Valence Band
+
+Valence band:
+
+```math
+\text{band filled with valence electrons}
+```
+
+At $begin:math:text$0K$end:math:text$:
+
+```math
+\text{valence band is full}
+```
+
+A completely full band does not conduct well because there are no nearby empty states for electrons to move into.
+
+---
+
+## 26. Conduction Band
+
+Conduction band:
+
+```math
+\text{higher-energy band where electrons can move and conduct}
+```
+
+At $begin:math:text$0K$end:math:text$:
+
+```math
+\text{conduction band is empty}
+```
+
+If an electron reaches the conduction band:
+
+```math
+\text{electron in CB}
+\Rightarrow
+\text{mobile electron}
+\Rightarrow
+\text{conduction possible}
+```
+
+---
+
+## 27. Bandgap
+
+Bandgap:
+
+```math
+E_g=E_C-E_V
+```
+
+where:
+
+- $begin:math:text$E\_C$end:math:text$: bottom of conduction band
+- $begin:math:text$E\_V$end:math:text$: top of valence band
+
+Meaning:
+
+```math
+E_g=\text{minimum energy needed to excite an electron from VB to CB}
+```
+
+Key trend:
+
+```math
+E_g\downarrow
+\Rightarrow
+\text{more electrons can be excited}
+\Rightarrow
+\sigma\uparrow
+```
 
 ```math
 E_g\uparrow
 \Rightarrow
-n_i\downarrow
+\text{fewer electrons can be excited}
 \Rightarrow
-J_s\downarrow
-\Rightarrow
-\text{higher forward voltage needed}
-```
-
-Example trend:
-
-```math
-\text{Ge} < \text{Si} < \text{GaAs}
-```
-
-in forward voltage.
-
----
-
-## 36. Avalanche Breakdown
-
-At large reverse bias:
-
-```math
-\text{electric field becomes very strong}
-```
-
-Electrons gain enough kinetic energy to ionise atoms by collision.
-
-```math
-\text{impact ionisation}
-\rightarrow
-\text{more carriers}
-\rightarrow
-\text{large reverse current}
-```
-
-This is avalanche breakdown.
-
----
-
-## 37. Zener Breakdown
-
-At very large reverse field and very narrow depletion width:
-
-```math
-\text{band bending becomes very strong}
-```
-
-Electrons can tunnel through the barrier.
-
-```math
-\text{valence band}
-\rightarrow
-\text{conduction band}
-```
-
-This tunnelling gives current.
-
-Zener breakdown is common in heavily doped junctions because:
-
-```math
-\text{heavy doping}
-\Rightarrow
-\text{narrow depletion region}
-\Rightarrow
-\text{strong electric field}
+\sigma\downarrow
 ```
 
 ---
 
-# Part E: Applications
+## 28. Fermi Level in a Semiconductor
 
-## 38. LED
-
-LED works under forward bias.
-
-Forward bias injects minority carriers:
+Fermi level:
 
 ```math
-e^-\text{ injected into p-side}
+E_F=\text{occupation reference energy level}
+```
+
+At $begin:math:text$0K$end:math:text$:
+
+```math
+E<E_F
+\Rightarrow
+\text{available states are filled}
 ```
 
 ```math
-h^+\text{ injected into n-side}
+E>E_F
+\Rightarrow
+\text{available states are empty}
 ```
 
-Electrons recombine with holes and emit photons:
+Important:
+
+```math
+\text{available states}
+```
+
+means states that actually exist.
+
+In a semiconductor, $begin:math:text$E\_F$end:math:text$ can lie inside the bandgap.
+
+```math
+E_F\text{ inside bandgap}
+\neq
+\text{electrons occupy the bandgap}
+```
+
+because:
+
+```math
+\text{bandgap}
+=
+\text{no allowed electronic states}
+```
+
+Actual electron distribution depends on:
+
+```math
+n_E=g(E)f(E)
+```
+
+where:
+
+- $begin:math:text$g\(E\)$end:math:text$: density of available states
+- $begin:math:text$f\(E\)$end:math:text$: occupation probability
+
+Inside the bandgap:
+
+```math
+g(E)=0
+```
+
+so:
+
+```math
+n_E=0
+```
+
+---
+
+## 29. Relationship Between Fermi Level and Valence Band
+
+In semiconductors and insulators:
+
+```math
+E_F\text{ lies inside the bandgap}
+```
+
+The distance:
+
+```math
+E_F-E_V
+```
+
+means:
+
+```math
+\text{energy separation between Fermi level and valence band edge}
+```
+
+It does not mean electrons occupy the gap.
+
+For intrinsic semiconductors:
+
+```math
+E_F\text{ is near mid-gap}
+```
+
+For n-type semiconductors:
+
+```math
+E_F\text{ moves closer to }E_C
+```
+
+For p-type semiconductors:
+
+```math
+E_F\text{ moves closer to }E_V
+```
+
+---
+
+## 30. Vacuum Level
+
+Vacuum level:
+
+```math
+E_{\text{vac}}=\text{energy of an electron just free from the solid}
+```
+
+If:
+
+```math
+E=E_{\text{vac}}
+```
+
+then:
+
+```math
+\text{electron has escaped from the material}
+```
+
+---
+
+## 31. Electron Affinity and Work Function
+
+Electron affinity:
+
+```math
+\chi=E_{\text{vac}}-E_C
+```
+
+Meaning:
+
+```math
+\chi=\text{energy needed to remove an electron from bottom of CB to vacuum}
+```
+
+Work function:
+
+```math
+\Phi=E_{\text{vac}}-E_F
+```
+
+Meaning:
+
+```math
+\Phi=\text{energy needed to remove an electron from }E_F\text{ to vacuum}
+```
+
+Key memory:
+
+```math
+\chi\text{ uses }E_C
+```
+
+```math
+\Phi\text{ uses }E_F
+```
+
+Doping changes $begin:math:text$E\_F$end:math:text$, so it can change $begin:math:text$\\Phi$end:math:text$.
+
+Electron affinity is usually treated as a material property.
+
+---
+
+## 32. Semiconductor Conduction
+
+At $begin:math:text$0K$end:math:text$:
+
+```math
+\text{VB full}
++
+\text{CB empty}
+\Rightarrow
+\text{very low conductivity}
+```
+
+At $begin:math:text$T\>0K$end:math:text$ or under illumination:
+
+```math
+\text{energy supplied}
+\Rightarrow
+e^-\text{ excited from VB to CB}
+```
+
+This creates:
+
+```math
+\text{electron in CB}
++
+\text{hole in VB}
+```
+
+Therefore:
+
+```math
+e^-+h^+
+\Rightarrow
+\text{semiconductor current}
+```
+
+---
+
+# Part E: Direct and Indirect Bandgap Semiconductors
+
+## 33. E-k Diagram Reminder
+
+In an $begin:math:text$E\-k$end:math:text$ diagram:
+
+```math
+p=\hbar k
+```
+
+So $begin:math:text$k$end:math:text$ is related to crystal momentum.
+
+---
+
+## 34. Direct Bandgap
+
+Direct bandgap means:
+
+```math
+\text{conduction band minimum and valence band maximum occur at the same }k
+```
+
+So:
+
+```math
+\Delta k\approx0
+```
+
+Electron-hole recombination can happen directly:
 
 ```math
 e^-+h^+
@@ -1749,79 +1196,67 @@ e^-+h^+
 \text{photon}
 ```
 
-Photon energy:
+The photon energy is approximately:
 
 ```math
 E_{\text{photon}}\approx E_g
 ```
 
-Wavelength:
-
-```math
-\lambda(\text{nm})=\frac{1240}{E_g(\text{eV})}
-```
-
-This is injection electroluminescence.
-
-Important design point:
-
-```math
-\text{thin emitting layer}
-\Rightarrow
-\text{photons can escape before reabsorption}
-```
-
----
-
-## 39. Direct and Indirect Bandgap
-
-In an $E-k$ diagram:
-
-```math
-p=\hbar k
-```
-
-So $k$ relates to crystal momentum.
-
-Direct bandgap:
-
-```math
-\text{conduction band minimum and valence band maximum occur at same }k
-```
-
-Meaning:
-
-```math
-\Delta k\approx0
-```
-
-So:
+Therefore:
 
 ```math
 \text{direct bandgap}
 \Rightarrow
-\text{efficient photon emission}
+\text{efficient light emission}
 ```
 
-Good for:
+Used for:
 
 ```math
 \text{LEDs, lasers, optical emitters}
 ```
 
-Indirect bandgap:
+Example:
+
+```math
+\text{GaAs}
+```
+
+---
+
+## 35. Indirect Bandgap
+
+Indirect bandgap means:
 
 ```math
 \text{conduction band minimum and valence band maximum occur at different }k
 ```
 
-Meaning:
+So:
 
 ```math
 \Delta k\neq0
 ```
 
-Photon carries little momentum, so phonon assistance is needed.
+Electron-hole recombination requires a momentum change.
+
+Photon momentum is very small, so a phonon is needed:
+
+```math
+e^-+h^+
++
+\text{phonon}
+\rightarrow
+\text{photon}
+```
+
+A phonon is:
+
+```math
+\text{quantised lattice vibration}
+```
+
+Therefore:
 
 ```math
 \text{indirect bandgap}
@@ -1837,9 +1272,47 @@ Examples:
 
 ---
 
-## 40. Bandgap and Emitted Wavelength
+## 36. Why Direct Bandgap Emits Light Better
 
-Radiative recombination:
+Direct bandgap:
+
+```math
+\Delta k\approx0
+\Rightarrow
+\text{momentum conservation is easy}
+\Rightarrow
+\text{radiative recombination likely}
+```
+
+Indirect bandgap:
+
+```math
+\Delta k\neq0
+\Rightarrow
+\text{phonon required}
+\Rightarrow
+\text{radiative recombination less likely}
+```
+
+So:
+
+```math
+\text{direct bandgap}
+\Rightarrow
+\text{good light emitter}
+```
+
+```math
+\text{indirect bandgap}
+\Rightarrow
+\text{bad light emitter}
+```
+
+---
+
+## 37. Photon Wavelength from Bandgap
+
+For emitted light:
 
 ```math
 E_{\text{photon}}\approx E_g
@@ -1851,13 +1324,7 @@ Photon energy:
 E=\frac{hc}{\lambda}
 ```
 
-Useful form:
-
-```math
-E(\text{eV})=\frac{1240}{\lambda(\text{nm})}
-```
-
-So:
+Useful formula:
 
 ```math
 \lambda(\text{nm})=\frac{1240}{E_g(\text{eV})}
@@ -1869,13 +1336,7 @@ or:
 \lambda(\mu\text{m})=\frac{1.24}{E_g(\text{eV})}
 ```
 
-Key trend:
-
-```math
-E_g\downarrow
-\Rightarrow
-\lambda\uparrow
-```
+Trend:
 
 ```math
 E_g\uparrow
@@ -1883,377 +1344,945 @@ E_g\uparrow
 \lambda\downarrow
 ```
 
+```math
+E_g\downarrow
+\Rightarrow
+\lambda\uparrow
+```
+
 ---
 
-## 41. Solar Cell
+# Part F: Electron and Hole Concentrations
 
-A solar cell is a p-n junction under illumination.
+## 38. Electron Concentration in the Conduction Band
 
-Light generates electron-hole pairs:
+Electron concentration:
 
 ```math
-\text{photon}
-\rightarrow
-e^-+h^+
+n=\text{electron concentration in the conduction band}
 ```
 
-Built-in field separates carriers:
+Formula:
 
 ```math
-e^-\rightarrow n\text{-side}
-```
-
-```math
-h^+\rightarrow p\text{-side}
-```
-
-This produces photocurrent.
-
-Photocurrent direction:
-
-```math
-n\rightarrow p
-```
-
-Solar cell current equation:
-
-```math
-I=
--I_{\text{ph}}
-+
-I_0
-\left[
-\exp\left(\frac{eV}{\eta k_BT}\right)-1
-\right]
+n=N_C e^{-(E_C-E_F)/(k_BT)}
 ```
 
 where:
 
-- $I_{\text{ph}}$: photocurrent
-- $I_0$: diode saturation current
-- $\eta$: ideality factor
+- $begin:math:text$n$end:math:text$: electron concentration, $begin:math:text$\\text\{m\}\^\{\-3\}$end:math:text$
+- $begin:math:text$N\_C$end:math:text$: effective density of states at conduction band edge
+- $begin:math:text$E\_C$end:math:text$: conduction band minimum
+- $begin:math:text$E\_F$end:math:text$: Fermi level
+- $begin:math:text$k\_B$end:math:text$: Boltzmann constant
+- $begin:math:text$T$end:math:text$: temperature
 
----
-
-## 42. Solar Cell I-V Characteristics
-
-Short-circuit condition:
-
-```math
-V=0
-```
+Key trend:
 
 ```math
-I_{sc}=-I_{\text{ph}}
-```
-
-Open-circuit condition:
-
-```math
-I=0
-```
-
-At open circuit:
-
-```math
-\text{diode current}=\text{photocurrent}
-```
-
-Open-circuit voltage:
-
-```math
-V_{oc}
+E_F\text{ closer to }E_C
+\Rightarrow
+E_C-E_F\downarrow
+\Rightarrow
+n\uparrow
 ```
 
 ---
 
-## 43. Load Line
+## 39. Effective Density of States in the Conduction Band
 
-For a load resistor:
-
-```math
-V=IR
-```
-
-In solar-cell convention, load line slope:
+Effective density of states in CB:
 
 ```math
-\text{slope}=-\frac{1}{R}
+N_C=2\left(\frac{2\pi m_e^*k_BT}{h^2}\right)^{3/2}
 ```
-
-Operating point:
-
-```math
-\text{intersection of solar-cell I-V curve and load line}
-```
-
-At the operating point:
-
-```math
-\text{solar cell and resistor have same }V\text{ and }I
-```
-
----
-
-## 44. Solar Cell Power and Fill Factor
-
-Power delivered:
-
-```math
-P=IV
-```
-
-Maximum power point:
-
-```math
-P_{\max}=I_mV_m
-```
-
-Fill factor:
-
-```math
-FF=\frac{I_mV_m}{I_{sc}V_{oc}}
-```
-
-where:
-
-- $I_m$: current at maximum power point
-- $V_m$: voltage at maximum power point
-- $I_{sc}$: short-circuit current
-- $V_{oc}$: open-circuit voltage
 
 Meaning:
 
 ```math
-FF=\text{how rectangular / ideal the solar cell I-V curve is}
+N_C=\text{available electron states near conduction band edge}
+```
+
+It depends on:
+
+```math
+m_e^*,\quad T
 ```
 
 ---
 
-## 45. Silicon vs Gallium Arsenide
+## 40. Hole Concentration in the Valence Band
 
-Under simplified physics:
+Hole concentration:
 
 ```math
-\text{GaAs}
+p=\text{hole concentration in the valence band}
+```
+
+Formula:
+
+```math
+p=N_V e^{-(E_F-E_V)/(k_BT)}
+```
+
+where:
+
+- $begin:math:text$p$end:math:text$: hole concentration, $begin:math:text$\\text\{m\}\^\{\-3\}$end:math:text$
+- $begin:math:text$N\_V$end:math:text$: effective density of states at valence band edge
+- $begin:math:text$E\_V$end:math:text$: valence band maximum
+- $begin:math:text$E\_F$end:math:text$: Fermi level
+
+Key trend:
+
+```math
+E_F\text{ closer to }E_V
 \Rightarrow
-\text{higher mobility}
-+
-\text{direct bandgap}
-```
-
-So GaAs is good for:
-
-```math
-\text{high-speed electronics}
-```
-
-```math
-\text{optoelectronics}
-```
-
-Silicon:
-
-```math
-\text{indirect bandgap}
+E_F-E_V\downarrow
 \Rightarrow
-\text{poor light emitter}
+p\uparrow
 ```
 
-Intrinsic silicon:
+---
+
+## 41. Effective Density of States in the Valence Band
+
+Effective density of states in VB:
 
 ```math
-\text{low carrier concentration}
-\Rightarrow
-\text{low conductivity}
+N_V=2\left(\frac{2\pi m_h^*k_BT}{h^2}\right)^{3/2}
 ```
 
-Real silicon devices use extrinsic silicon:
+Meaning:
+
+```math
+N_V=\text{available hole states near valence band edge}
+```
+
+It depends on:
+
+```math
+m_h^*,\quad T
+```
+
+---
+
+## 42. Core Memory for Carrier Concentration
+
+```math
+E_F\text{ closer to }E_C
+\Rightarrow
+\text{more electrons}
+\Rightarrow
+n\text{-type tendency}
+```
+
+```math
+E_F\text{ closer to }E_V
+\Rightarrow
+\text{more holes}
+\Rightarrow
+p\text{-type tendency}
+```
+
+---
+
+# Part G: Mass Action Law
+
+## 43. Mass Action Law
+
+Mass action law:
+
+```math
+np=n_i^2
+```
+
+where:
+
+- $begin:math:text$n$end:math:text$: electron concentration in conduction band
+- $begin:math:text$p$end:math:text$: hole concentration in valence band
+- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration
+
+For an intrinsic semiconductor:
+
+```math
+n=p=n_i
+```
+
+So:
+
+```math
+np=n_i^2
+```
+
+---
+
+## 44. Meaning of Mass Action Law
+
+At thermal equilibrium:
+
+```math
+\text{electron-hole pair generation}
+=
+\text{electron-hole recombination}
+```
+
+So:
+
+```math
+np=\text{constant}=n_i^2
+```
+
+If one carrier concentration increases, the other decreases.
+
+```math
+n\uparrow
+\Rightarrow
+p\downarrow
+```
+
+```math
+p\uparrow
+\Rightarrow
+n\downarrow
+```
+
+---
+
+## 45. n-Type Semiconductor from Mass Action Law
+
+For n-type:
+
+```math
+n\gg p
+```
+
+If donors are fully ionised:
+
+```math
+n\approx N_D
+```
+
+Using mass action law:
+
+```math
+p=\frac{n_i^2}{n}
+```
+
+or:
+
+```math
+p\approx\frac{n_i^2}{N_D}
+```
+
+So:
+
+```math
+\text{majority carriers}=\text{electrons}
+```
+
+```math
+\text{minority carriers}=\text{holes}
+```
+
+---
+
+## 46. p-Type Semiconductor from Mass Action Law
+
+For p-type:
+
+```math
+p\gg n
+```
+
+If acceptors are fully ionised:
+
+```math
+p\approx N_A
+```
+
+Using mass action law:
+
+```math
+n=\frac{n_i^2}{p}
+```
+
+or:
+
+```math
+n\approx\frac{n_i^2}{N_A}
+```
+
+So:
+
+```math
+\text{majority carriers}=\text{holes}
+```
+
+```math
+\text{minority carriers}=\text{electrons}
+```
+
+---
+
+# Part H: Doped Semiconductors
+
+## 47. Doping Overview
+
+Doping means adding impurity atoms into a semiconductor to control carrier concentration.
 
 ```math
 \text{doping}
-\Rightarrow
-\text{controlled }n\text{ or }p
+\rightarrow
+\text{extra electrons or holes}
+\rightarrow
+\text{controlled conductivity}
 ```
 
-Silicon is widely used because:
+There are two main types:
 
 ```math
-\text{cheap and abundant}
+n\text{-type}
 ```
 
-```math
-\text{mature fabrication}
-```
+and:
 
 ```math
-\text{good control of electronic properties}
-```
-
-```math
-\text{high-quality }SiO_2
-```
-
-```math
-\text{cheap and efficient manufacturing}
-```
-
-Key conclusion:
-
-```math
-\text{GaAs wins in mobility / optics}
-```
-
-but:
-
-```math
-\text{Si wins in manufacturing and controllability}
+p\text{-type}
 ```
 
 ---
 
-# Part F: Thermal Conductivity
+## 48. n-Type and p-Type Overview
 
-## 46. Thermal Conductivity and Thermal Resistance
+![Doped semiconductor Fermi levels](../images302/doped_fermi_level.png)
 
-Thermal conductivity:
+For n-type:
 
 ```math
-\kappa=\text{ability to conduct heat}
+n>p
 ```
 
-Unit:
+Electrons are majority carriers.
+
+For p-type:
 
 ```math
-\text{W m}^{-1}\text{K}^{-1}
+p>n
+```
+
+Holes are majority carriers.
+
+Core memory:
+
+```math
+n\text{-type}
+\Rightarrow
+\text{more electrons}
+\Rightarrow
+E_F\text{ moves closer to }E_C
+```
+
+```math
+p\text{-type}
+\Rightarrow
+\text{more holes}
+\Rightarrow
+E_F\text{ moves closer to }E_V
+```
+
+---
+
+## 49. n-Type Semiconductor and Donor Level
+
+![n-type donor level](../images302/n_type.png)
+
+n-type doping uses donor atoms.
+
+For silicon, common donor atoms are Group V elements:
+
+```math
+\text{P},\ \text{As},\ \text{Sb}
+```
+
+Example:
+
+```math
+\text{As atom in Si}
+```
+
+Silicon has 4 valence electrons, while arsenic has 5 valence electrons.
+
+In the Si lattice:
+
+```math
+4\text{ electrons}
+\rightarrow
+4\text{ covalent bonds}
+```
+
+The 5th electron is weakly bound.
+
+```math
+\text{extra electron}
+\rightarrow
+\text{easily excited to conduction band}
+```
+
+---
+
+## 50. Donor Energy Level $begin:math:text$E\_D$end:math:text$
+
+Donor atoms introduce a donor energy level:
+
+```math
+E_D
+```
+
+The donor level lies slightly below the conduction band:
+
+```math
+E_D\text{ is close to }E_C
+```
+
+So:
+
+```math
+E_C-E_D\text{ is small}
 ```
 
 Meaning:
 
 ```math
-\kappa\uparrow
-\Rightarrow
-\text{heat flows more easily}
+\text{only a small energy is needed to excite donor electron into CB}
 ```
 
-Thermal resistance:
+Ionisation of donor atom:
 
 ```math
-\theta=\frac{\Delta T}{P}
+D\rightarrow D^+ + e^-
+```
+
+The electron enters the conduction band.
+
+The donor atom becomes a fixed positive ion:
+
+```math
+D^+
+```
+
+So:
+
+```math
+\text{donor atom}
+\rightarrow
+\text{positive ion}
++
+\text{free electron}
+```
+
+---
+
+## 51. Why $begin:math:text$n\\approx N\_D$end:math:text$ in n-Type
+
+Important correction:
+
+```math
+n_i\neq N_D
+```
+
+Instead, for fully ionised n-type material:
+
+```math
+n\approx N_D
 ```
 
 where:
 
-- $\theta$: thermal resistance
-- $\Delta T$: temperature drop
-- $P$: heat flow rate / thermal power
+- $begin:math:text$n$end:math:text$: actual electron concentration in conduction band
+- $begin:math:text$N\_D$end:math:text$: donor concentration
+- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration of pure semiconductor
 
-For a uniform rod or wire:
+Reason:
 
 ```math
-\theta=\frac{L}{\kappa A}
+1\text{ donor atom}
+\rightarrow
+1\text{ conduction electron}
 ```
 
-Temperature drop:
+So if donors are fully ionised:
 
 ```math
-\Delta T=P\theta
+n\approx N_D
 ```
 
-Key effects:
+This works when:
 
 ```math
-L\uparrow \Rightarrow \theta\uparrow
+N_D\gg n_i
+```
+
+The original silicon atoms still exist and form the crystal lattice and band structure. Their intrinsic carrier contribution is small compared with the donor contribution.
+
+```math
+\text{intrinsic carriers}=n_i
 ```
 
 ```math
-A\uparrow \Rightarrow \theta\downarrow
+\text{donor electrons}\approx N_D
 ```
 
+If:
+
 ```math
-\kappa\uparrow \Rightarrow \theta\downarrow
+N_D\gg n_i
+```
+
+then:
+
+```math
+n\approx N_D
+```
+
+Minority hole concentration is found using mass action law:
+
+```math
+np=n_i^2
+```
+
+so:
+
+```math
+p=\frac{n_i^2}{n}
+```
+
+For n-type:
+
+```math
+p\approx\frac{n_i^2}{N_D}
 ```
 
 ---
 
-## 47. Electrical and Thermal Analogy
+## 52. p-Type Semiconductor and Acceptor Level
 
-| Electrical | Thermal |
-|---|---|
-| voltage difference $V$ | temperature difference $\Delta T$ |
-| current $I$ | heat flow rate $P$ |
-| resistance $R$ | thermal resistance $\theta$ |
-| resistivity $\rho$ | thermal resistivity $1/\kappa$ |
-| conductivity $\sigma$ | thermal conductivity $\kappa$ |
+![p-type acceptor level](../images302/p_type.png)
 
-Electrical:
+p-type doping uses acceptor atoms.
+
+For silicon, common acceptor atoms are Group III elements:
 
 ```math
-R=\rho\frac{L}{A}
+\text{B},\ \text{Al},\ \text{Ga}
 ```
 
-Thermal:
+Example:
 
 ```math
-\theta=\frac{L}{\kappa A}
+\text{B atom in Si}
+```
+
+Boron has 3 valence electrons, while silicon has 4.
+
+So one covalent bond lacks an electron.
+
+```math
+\text{missing electron}
+\rightarrow
+\text{hole}
 ```
 
 ---
 
-## 48. Key Formula Chain
+## 53. Acceptor Energy Level $begin:math:text$E\_A$end:math:text$
 
-Electrical resistivity:
+Acceptor atoms introduce an acceptor energy level:
 
 ```math
-\rho=\frac{RA}{L}
+E_A
 ```
 
-Conductivity:
+The acceptor level lies slightly above the valence band:
+
+```math
+E_A\text{ is close to }E_V
+```
+
+So:
+
+```math
+E_A-E_V\text{ is small}
+```
+
+Meaning:
+
+```math
+\text{an electron from VB can easily move into the acceptor level}
+```
+
+This leaves a hole in the valence band.
+
+```math
+\text{electron from VB}
+\rightarrow
+E_A
+```
+
+```math
+\text{hole left in VB}
+```
+
+Ionisation of acceptor atom:
+
+```math
+A+e^-\rightarrow A^-
+```
+
+The acceptor becomes a fixed negative ion:
+
+```math
+A^-
+```
+
+So:
+
+```math
+\text{acceptor atom}
+\rightarrow
+\text{negative ion}
++
+\text{mobile hole}
+```
+
+---
+
+## 54. Why $begin:math:text$p\\approx N\_A$end:math:text$ in p-Type
+
+For fully ionised p-type material:
+
+```math
+p\approx N_A
+```
+
+where:
+
+- $begin:math:text$p$end:math:text$: actual hole concentration in valence band
+- $begin:math:text$N\_A$end:math:text$: acceptor concentration
+
+Reason:
+
+```math
+1\text{ acceptor atom}
+\rightarrow
+1\text{ hole}
+```
+
+This works when:
+
+```math
+N_A\gg n_i
+```
+
+Minority electron concentration is found using mass action law:
+
+```math
+np=n_i^2
+```
+
+so:
+
+```math
+n=\frac{n_i^2}{p}
+```
+
+For p-type:
+
+```math
+n\approx\frac{n_i^2}{N_A}
+```
+
+---
+
+## 55. Fermi Level Shift in Doped Semiconductors
+
+Doping changes the carrier concentration and shifts the Fermi level away from the intrinsic Fermi level.
+
+Intrinsic semiconductor:
+
+```math
+n=p=n_i
+```
+
+Intrinsic Fermi level:
+
+```math
+E_{Fi}
+```
+
+For an intrinsic semiconductor, $begin:math:text$E\_F$end:math:text$ is usually near the middle of the bandgap.
+
+---
+
+## 56. n-Type Fermi Level Shift
+
+For n-type:
+
+```math
+n>n_i
+```
+
+Fermi level shift:
+
+```math
+E_{Fn}-E_{Fi}=k_BT\ln\left(\frac{n}{n_i}\right)
+```
+
+where:
+
+- $begin:math:text$E\_\{Fn\}$end:math:text$: Fermi level in n-type semiconductor
+- $begin:math:text$E\_\{Fi\}$end:math:text$: intrinsic Fermi level
+- $begin:math:text$n$end:math:text$: electron concentration
+- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration
+
+Since:
+
+```math
+\frac{n}{n_i}>1
+```
+
+then:
+
+```math
+\ln\left(\frac{n}{n_i}\right)>0
+```
+
+so:
+
+```math
+E_{Fn}>E_{Fi}
+```
+
+Therefore:
+
+```math
+\text{n-type doping moves }E_F\text{ upward toward }E_C
+```
+
+Physical reason:
+
+```math
+\text{donor electrons increase }n
+\Rightarrow
+E_F\text{ moves closer to conduction band}
+```
+
+---
+
+## 57. p-Type Fermi Level Shift
+
+For p-type:
+
+```math
+p>n_i
+```
+
+Fermi level shift:
+
+```math
+E_{Fp}-E_{Fi}=-k_BT\ln\left(\frac{p}{n_i}\right)
+```
+
+where:
+
+- $begin:math:text$E\_\{Fp\}$end:math:text$: Fermi level in p-type semiconductor
+- $begin:math:text$E\_\{Fi\}$end:math:text$: intrinsic Fermi level
+- $begin:math:text$p$end:math:text$: hole concentration
+- $begin:math:text$n\_i$end:math:text$: intrinsic carrier concentration
+
+Since:
+
+```math
+\frac{p}{n_i}>1
+```
+
+then:
+
+```math
+\ln\left(\frac{p}{n_i}\right)>0
+```
+
+but the formula has a negative sign, so:
+
+```math
+E_{Fp}<E_{Fi}
+```
+
+Therefore:
+
+```math
+\text{p-type doping moves }E_F\text{ downward toward }E_V
+```
+
+Physical reason:
+
+```math
+\text{acceptors increase }p
+\Rightarrow
+E_F\text{ moves closer to valence band}
+```
+
+---
+
+## 58. Relationship Between $begin:math:text$E\_F$end:math:text$, $begin:math:text$E\_D$end:math:text$, and $begin:math:text$E\_A$end:math:text$
+
+Do not confuse these three energy levels.
+
+| Symbol | Meaning | Typical position |
+|---|---|---|
+| $begin:math:text$E\_F$end:math:text$ | Fermi level / occupation reference level | moves up or down depending on doping |
+| $begin:math:text$E\_D$end:math:text$ | donor impurity level | slightly below $begin:math:text$E\_C$end:math:text$ |
+| $begin:math:text$E\_A$end:math:text$ | acceptor impurity level | slightly above $begin:math:text$E\_V$end:math:text$ |
+
+For n-type:
+
+```math
+E_D\text{ provides electrons}
+\Rightarrow
+n\uparrow
+\Rightarrow
+E_F\uparrow
+```
+
+For p-type:
+
+```math
+E_A\text{ accepts electrons}
+\Rightarrow
+p\uparrow
+\Rightarrow
+E_F\downarrow
+```
+
+Important:
+
+```math
+E_F\neq E_D
+```
+
+```math
+E_F\neq E_A
+```
+
+---
+
+## 59. $begin:math:text$n$end:math:text$ vs $begin:math:text$n\_i$end:math:text$
+
+Actual electron concentration:
+
+```math
+n=\text{actual electron concentration in the conduction band}
+```
+
+Intrinsic carrier concentration:
+
+```math
+n_i=\text{electron/hole concentration in pure intrinsic semiconductor}
+```
+
+For intrinsic material:
+
+```math
+n=p=n_i
+```
+
+For n-type material:
+
+```math
+n\approx N_D
+```
+
+if donors are fully ionised.
+
+For p-type material:
+
+```math
+p\approx N_A
+```
+
+if acceptors are fully ionised.
+
+Key difference:
+
+| Quantity | Meaning | Changes with doping? |
+|---|---|---|
+| $begin:math:text$n$end:math:text$ | actual electron concentration | yes |
+| $begin:math:text$n\_i$end:math:text$ | intrinsic carrier concentration of pure material | fixed for given material and temperature |
+
+Core memory:
+
+```math
+n=\text{actual electrons}
+```
+
+```math
+n_i=\text{intrinsic reference concentration}
+```
+
+---
+
+# Part I: Comparison Tables
+
+## 60. Fermi Level and Band Structure Comparison
+
+| Material | Fermi level position | Relation to valence band | Conductivity reason |
+|---|---|---|---|
+| Metal / conductor | inside an allowed band | valence/conduction bands may overlap or band is partially filled | nearby filled and empty states allow electron motion |
+| Semiconductor | inside small bandgap | $begin:math:text$E\_F$end:math:text$ lies above $begin:math:text$E\_V$end:math:text$, often near mid-gap if intrinsic | electrons can be thermally excited from $begin:math:text$E\_V$end:math:text$ to $begin:math:text$E\_C$end:math:text$ |
+| Insulator | inside large bandgap | $begin:math:text$E\_F$end:math:text$ lies above $begin:math:text$E\_V$end:math:text$, far from $begin:math:text$E\_C$end:math:text$ | gap too large, almost no electrons reach conduction band |
+
+---
+
+## 61. Direct vs Indirect Semiconductor Comparison
+
+| Feature | Direct bandgap | Indirect bandgap |
+|---|---|---|
+| $begin:math:text$E\_C$end:math:text$ minimum and $begin:math:text$E\_V$end:math:text$ maximum | same $begin:math:text$k$end:math:text$ | different $begin:math:text$k$end:math:text$ |
+| Momentum change | $begin:math:text$\\Delta k\\approx0$end:math:text$ | $begin:math:text$\\Delta k\\neq0$end:math:text$ |
+| Phonon needed? | usually no | yes |
+| Light emission | efficient | inefficient |
+| Common use | LEDs, lasers | electronics, weak light emission |
+| Example | GaAs | Si, Ge |
+
+---
+
+## 62. n-Type vs p-Type Comparison
+
+| Feature | n-type | p-type |
+|---|---|---|
+| Dopant type | donor | acceptor |
+| Common dopants in Si | P, As, Sb | B, Al, Ga |
+| Majority carrier | electrons | holes |
+| Minority carrier | holes | electrons |
+| Carrier relation | $begin:math:text$n\>p$end:math:text$ | $begin:math:text$p\>n$end:math:text$ |
+| Approximation | $begin:math:text$n\\approx N\_D$end:math:text$ | $begin:math:text$p\\approx N\_A$end:math:text$ |
+| Impurity level | $begin:math:text$E\_D$end:math:text$ slightly below $begin:math:text$E\_C$end:math:text$ | $begin:math:text$E\_A$end:math:text$ slightly above $begin:math:text$E\_V$end:math:text$ |
+| Fermi level shift | $begin:math:text$E\_F$end:math:text$ moves up toward $begin:math:text$E\_C$end:math:text$ | $begin:math:text$E\_F$end:math:text$ moves down toward $begin:math:text$E\_V$end:math:text$ |
+| Minority carrier concentration | $begin:math:text$p\\approx n\_i\^2\/N\_D$end:math:text$ | $begin:math:text$n\\approx n\_i\^2\/N\_A$end:math:text$ |
+
+---
+
+# Part J: Key Formula Chain
+
+Conductivity and resistivity:
 
 ```math
 \sigma=\frac{1}{\rho}
 ```
 
-Resistance from conductivity:
+Resistance of wire:
 
 ```math
-R=\frac{L}{\sigma A}
-```
-
-Metal electron concentration:
-
-```math
-n=\frac{\text{density}}{\text{molar mass}}N_A
-```
-
-Metal mobility:
-
-```math
-\mu=\frac{1}{ne\rho}
-```
-
-Drude mobility:
-
-```math
-\mu=\frac{e\tau}{m^*}
-```
-
-Drude conductivity:
-
-```math
-\sigma=\frac{ne^2\tau}{m^*}
-```
-
-Scattering time:
-
-```math
-\tau=\frac{\mu m^*}{e}
-```
-
-Current:
-
-```math
-I=\frac{V}{R}
+R=\rho\frac{L}{A}
 ```
 
 Current density:
@@ -2262,120 +2291,103 @@ Current density:
 J=\frac{I}{A}
 ```
 
+Material Ohm's law:
+
+```math
+J=\sigma E
+```
+
+Current density using resistivity:
+
+```math
+J=\frac{E}{\rho}
+```
+
+Current when electric field is given:
+
+```math
+I=\frac{EA}{\rho}
+```
+
+Thermal conduction:
+
+```math
+\Delta Q=-A\kappa\frac{\delta T}{\delta x}
+```
+
+Current density from carrier motion:
+
+```math
+J=ne v_{\text{drift}}
+```
+
 Drift velocity:
 
 ```math
-v_{\text{drift}}=\frac{J}{ne}
+v_{\text{drift}}=\mu_{\text{drift}}E
 ```
 
-Semiconductor conductivity:
+Conductivity from Drude model:
 
 ```math
-\sigma=ne\mu_e+pe\mu_h
+\sigma=ne\mu_{\text{drift}}
 ```
 
-n-type conductivity:
+Drude mobility:
 
 ```math
-\sigma\approx N_D^+e\mu_{de}
+\mu_{\text{drift}}=\frac{e\tau}{m^*}
 ```
 
-p-type conductivity:
+Drude conductivity:
 
 ```math
-\sigma\approx N_A^-e\mu_{dh}
+\sigma=\frac{ne^2\tau}{m^*}
 ```
 
-Electron diffusion current:
+Drift resistivity:
 
 ```math
-J_{D,e}=eD_e\frac{dn}{dx}
+\rho_{\text{drift}}=\frac{1}{ne\mu_{\text{drift}}}
 ```
 
-Hole diffusion current:
+Temperature-dependent scattering assumption:
 
 ```math
-J_{D,h}=-eD_h\frac{dp}{dx}
+\tau=\frac{C}{T}
 ```
 
-Einstein relation:
+Mobility-temperature relation:
 
 ```math
-D=\frac{\mu k_BT}{e}
+\mu_{\text{drift}}\propto\frac{1}{T}
 ```
 
-Built-in potential:
+Temperature-dependent resistivity:
 
 ```math
-V_0=
-\frac{k_BT}{e}
-\ln\left(
-\frac{N_A N_D}{n_i^2}
-\right)
+\rho_T=AT
 ```
 
-Open-circuit depletion width:
+Bandgap:
 
 ```math
-W_0=
-\left[
-\frac{2\epsilon}{e}
-\frac{N_A+N_D}{N_A N_D}
-V_0
-\right]^{1/2}
+E_g=E_C-E_V
 ```
 
-Forward-bias depletion width:
+Electron affinity:
 
 ```math
-W=
-\left[
-\frac{2\epsilon}{e}
-\frac{N_A+N_D}{N_A N_D}
-(V_0-V)
-\right]^{1/2}
+\chi=E_{\text{vac}}-E_C
 ```
 
-Reverse-bias depletion width:
+Work function:
 
 ```math
-W=
-\left[
-\frac{2\epsilon}{e}
-\frac{N_A+N_D}{N_A N_D}
-(V_0+V)
-\right]^{1/2}
+\Phi=E_{\text{vac}}-E_F
 ```
 
-Ideal diode equation:
-
-```math
-J=J_s
-\left[
-\exp\left(\frac{eV}{k_BT}\right)-1
-\right]
-```
-
-Real diode low-bias equation:
-
-```math
-J=J_0
-\exp\left(\frac{eV}{\eta k_BT}\right)
-```
-
-Solar cell equation:
-
-```math
-I=
--I_{\text{ph}}
-+
-I_0
-\left[
-\exp\left(\frac{eV}{\eta k_BT}\right)-1
-\right]
-```
-
-LED / radiative wavelength:
+Photon wavelength:
 
 ```math
 \lambda(\text{nm})=\frac{1240}{E_g(\text{eV})}
@@ -2385,20 +2397,64 @@ LED / radiative wavelength:
 \lambda(\mu\text{m})=\frac{1.24}{E_g(\text{eV})}
 ```
 
-Thermal resistance:
+Electron concentration:
 
 ```math
-\theta=\frac{L}{\kappa A}
+n=N_C e^{-(E_C-E_F)/(k_BT)}
 ```
 
-Temperature drop:
+Hole concentration:
 
 ```math
-\Delta T=P\theta
+p=N_V e^{-(E_F-E_V)/(k_BT)}
 ```
 
-Fill factor:
+Effective density of states in CB:
 
 ```math
-FF=\frac{I_mV_m}{I_{sc}V_{oc}}
+N_C=2\left(\frac{2\pi m_e^*k_BT}{h^2}\right)^{3/2}
+```
+
+Effective density of states in VB:
+
+```math
+N_V=2\left(\frac{2\pi m_h^*k_BT}{h^2}\right)^{3/2}
+```
+
+Mass action law:
+
+```math
+np=n_i^2
+```
+
+n-type approximation:
+
+```math
+n\approx N_D
+```
+
+```math
+p\approx\frac{n_i^2}{N_D}
+```
+
+p-type approximation:
+
+```math
+p\approx N_A
+```
+
+```math
+n\approx\frac{n_i^2}{N_A}
+```
+
+n-type Fermi level shift:
+
+```math
+E_{Fn}-E_{Fi}=k_BT\ln\left(\frac{n}{n_i}\right)
+```
+
+p-type Fermi level shift:
+
+```math
+E_{Fp}-E_{Fi}=-k_BT\ln\left(\frac{p}{n_i}\right)
 ```
