@@ -1,100 +1,466 @@
-# Atomic Bonding — Examples
+# Atomic Bonding Examples
 
-Back to concepts:
+Related concept notes:
 
-⬅️ [Atomic Bonding Concepts](./concept.md)
-
----
-
-## 1. Interatomic Force Curve
-
-**Use when:** asked to draw attractive, repulsive and net force curves.
-
-Related concept:
-
-- [Interatomic Force and Potential Energy](./concept.md#2-interatomic-force-and-potential-energy)
+➡️ [Atoms, Bonding and Crystal Structures](./concept.md)
 
 ---
 
-### Key Formula
+## Example 1: Atomic Notation, Protons, Neutrons and Electrons
+
+For an atom written as:
 
 ```math
-F_N=F_A+F_R
-```
-
-Attractive force:
-
-```math
-F_A=-\frac{A}{r^2}
-```
-
-Repulsive force:
-
-```math
-F_R=\frac{B}{r^m}
+{}^A_ZX
 ```
 
 where:
 
+- $begin:math:text$A$end:math:text$: mass number
+- $begin:math:text$Z$end:math:text$: atomic number
+- $begin:math:text$X$end:math:text$: element symbol
+
+Find:
+
 ```math
-m>2
+\text{protons}=Z
+```
+
+```math
+\text{neutrons}=A-Z
+```
+
+For a neutral atom:
+
+```math
+\text{electrons}=Z
 ```
 
 ---
 
-### Drawing Rules
+### Example
 
-- At large $begin:math:text$r$end:math:text$, both forces approach zero.
-- Attraction dominates at intermediate distance.
-- Repulsion dominates at very small $begin:math:text$r$end:math:text$.
-- Net force crosses zero at $begin:math:text$r\_0$end:math:text$.
-
-At stable separation:
+For:
 
 ```math
-F_N=0
+{}^{23}_{11}\text{Na}
 ```
 
+Protons:
+
 ```math
-r=r_0
+Z=11
+```
+
+Neutrons:
+
+```math
+A-Z=23-11=12
+```
+
+Electrons in neutral atom:
+
+```math
+11
+```
+
+Answer:
+
+```math
+\boxed{11\text{ protons},\ 12\text{ neutrons},\ 11\text{ electrons}}
 ```
 
 ---
 
-### Explanation Pattern
+## Example 2: Isotope vs Ion
 
-At large separation, the atoms interact weakly. As they approach, electron-nucleus attraction pulls them together. At very small separation, electron cloud overlap and Pauli exclusion create strong repulsion. The stable separation $begin:math:text$r\_0$end:math:text$ occurs where attraction and repulsion balance, so the net force is zero.
+### Isotope
+
+Atoms are isotopes if:
+
+```math
+\text{same }Z,\quad \text{different }A
+```
+
+Example:
+
+```math
+{}^{12}_{6}\text{C}
+```
+
+and:
+
+```math
+{}^{14}_{6}\text{C}
+```
+
+Both have:
+
+```math
+Z=6
+```
+
+but different mass numbers.
+
+So they are isotopes.
 
 ---
 
-## 2. Potential Energy Curve
+### Ion
 
-**Use when:** asked to draw attractive energy, repulsive energy and net energy.
+An ion has gained or lost electrons.
 
-Related concept:
+Example:
 
-- [Potential Energy Curve](./concept.md#24-potential-energy-curve)
+```math
+\text{Na}^+
+```
+
+Neutral Na has:
+
+```math
+11\text{ electrons}
+```
+
+Na$begin:math:text$\^\+$end:math:text$ has lost one electron:
+
+```math
+11-1=10
+```
+
+So:
+
+```math
+\boxed{\text{Na}^+\text{ has }10\text{ electrons}}
+```
 
 ---
 
-### Key Ideas
+## Example 3: Bohr Energy Level
 
-Potential energy reference:
+For a hydrogen-like atom:
 
 ```math
-U(\infty)=0
+E_n=-\frac{13.6Z^2}{n^2}\text{ eV}
 ```
 
-Stable bond length:
+---
+
+### Example
+
+Find the $begin:math:text$n\=2$end:math:text$ energy level for hydrogen.
+
+For hydrogen:
 
 ```math
-r=r_0
+Z=1
 ```
 
-At $begin:math:text$r\_0$end:math:text$:
+Use:
 
 ```math
-U=U_{\min}
+E_2=-\frac{13.6(1)^2}{2^2}
+```
+
+```math
+E_2=-\frac{13.6}{4}
+```
+
+```math
+E_2=-3.4\text{ eV}
+```
+
+Answer:
+
+```math
+\boxed{E_2=-3.4\text{ eV}}
+```
+
+---
+
+## Example 4: Energy Transition and Emitted Photon
+
+An electron falls from $begin:math:text$n\=3$end:math:text$ to $begin:math:text$n\=2$end:math:text$ in hydrogen.
+
+Find the photon energy and wavelength.
+
+---
+
+### Step 1: Energy levels
+
+For hydrogen:
+
+```math
+E_n=-\frac{13.6}{n^2}\text{ eV}
+```
+
+Initial level:
+
+```math
+E_3=-\frac{13.6}{3^2}
+```
+
+```math
+E_3=-1.51\text{ eV}
+```
+
+Final level:
+
+```math
+E_2=-\frac{13.6}{2^2}
+```
+
+```math
+E_2=-3.40\text{ eV}
+```
+
+---
+
+### Step 2: Emitted photon energy
+
+For emission:
+
+```math
+E_{\text{photon}}=E_{\text{initial}}-E_{\text{final}}
+```
+
+```math
+E_{\text{photon}}=(-1.51)-(-3.40)
+```
+
+```math
+E_{\text{photon}}=1.89\text{ eV}
+```
+
+---
+
+### Step 3: Wavelength
+
+Use:
+
+```math
+\lambda(\text{nm})=\frac{1240}{E(\text{eV})}
+```
+
+```math
+\lambda=\frac{1240}{1.89}
+```
+
+```math
+\lambda=656\text{ nm}
+```
+
+Answer:
+
+```math
+\boxed{E_{\text{photon}}=1.89\text{ eV}}
+```
+
+```math
+\boxed{\lambda\approx656\text{ nm}}
+```
+
+---
+
+## Example 5: Ionisation Energy
+
+For hydrogen in the ground state:
+
+```math
+E_1=-13.6\text{ eV}
+```
+
+Ionisation means:
+
+```math
+n=1\rightarrow n=\infty
+```
+
+At:
+
+```math
+n=\infty
+```
+
+```math
+E_\infty=0
+```
+
+Ionisation energy:
+
+```math
+E_{\text{ionisation}}=E_\infty-E_1
+```
+
+```math
+E_{\text{ionisation}}=0-(-13.6)
+```
+
+```math
+E_{\text{ionisation}}=13.6\text{ eV}
+```
+
+Answer:
+
+```math
+\boxed{E_{\text{ionisation}}=13.6\text{ eV}}
+```
+
+---
+
+## Example 6: Photon Energy Greater Than Ionisation Energy
+
+A photon with energy $begin:math:text$20\\text\{ eV\}$end:math:text$ ionises hydrogen from $begin:math:text$n\=1$end:math:text$.
+
+Find the kinetic energy of the emitted electron.
+
+Ionisation energy:
+
+```math
+E_{\text{ionisation}}=13.6\text{ eV}
+```
+
+Use:
+
+```math
+K=E_{\text{photon}}-E_{\text{ionisation}}
+```
+
+```math
+K=20-13.6
+```
+
+```math
+K=6.4\text{ eV}
+```
+
+Answer:
+
+```math
+\boxed{K=6.4\text{ eV}}
+```
+
+---
+
+## Example 7: Maximum Electrons in a Shell
+
+Maximum electrons in shell $begin:math:text$n$end:math:text$:
+
+```math
+N=2n^2
+```
+
+---
+
+### Example
+
+For $begin:math:text$n\=3$end:math:text$:
+
+```math
+N=2(3)^2
+```
+
+```math
+N=18
+```
+
+Answer:
+
+```math
+\boxed{18\text{ electrons}}
+```
+
+---
+
+## Example 8: Identifying Bonding Type
+
+Choose the bonding type from electron behaviour.
+
+| Electron behaviour | Bonding type |
+|---|---|
+| electrons transferred | ionic |
+| electrons shared | covalent |
+| electrons delocalised | metallic |
+| dipole attraction | van der Waals |
+
+---
+
+### Example A: NaCl
+
+Sodium loses one electron:
+
+```math
+\text{Na}\rightarrow\text{Na}^+ + e^-
+```
+
+Chlorine gains one electron:
+
+```math
+\text{Cl}+e^-\rightarrow\text{Cl}^-
+```
+
+Opposite ions attract:
+
+```math
+\text{Na}^+ + \text{Cl}^-\rightarrow\text{NaCl}
+```
+
+Answer:
+
+```math
+\boxed{\text{ionic bonding}}
+```
+
+---
+
+### Example B: Silicon
+
+Silicon has 4 valence electrons and shares them with neighbouring silicon atoms.
+
+```math
+\text{Si}
+\rightarrow
+4\text{ covalent bonds}
+```
+
+Answer:
+
+```math
+\boxed{\text{covalent bonding}}
+```
+
+---
+
+### Example C: Copper
+
+Copper has delocalised electrons shared across metal ions.
+
+```math
+\text{positive ions}
++
+\text{electron sea}
+```
+
+Answer:
+
+```math
+\boxed{\text{metallic bonding}}
+```
+
+---
+
+## Example 9: Bond Length and Bond Energy from Energy Curve
+
+Given a potential energy curve:
+
+- the minimum point occurs at $begin:math:text$r\=r\_0$end:math:text$
+- the energy at the minimum is $begin:math:text$U\(r\_0\)$end:math:text$
+- the reference is $begin:math:text$U\(\\infty\)\=0$end:math:text$
+
+Bond length:
+
+```math
+r_0=\text{separation at energy minimum}
 ```
 
 Bond energy:
@@ -103,319 +469,358 @@ Bond energy:
 E_0=U(\infty)-U(r_0)
 ```
 
----
-
-### Drawing Rules
-
-- Attractive energy is negative.
-- Repulsive energy is positive and rises sharply at small $begin:math:text$r$end:math:text$.
-- Net energy forms a potential well.
-- Stable $begin:math:text$r\_0$end:math:text$ is at the minimum of the net energy curve.
-- $begin:math:text$r\_0$end:math:text$ is not where $begin:math:text$U\=0$end:math:text$.
-
----
-
-### Explanation Pattern
-
-The zero of potential energy is chosen at infinite separation. As atoms approach, attraction lowers the potential energy. At very small separation, repulsion dominates and energy rises sharply. The stable bond length $begin:math:text$r\_0$end:math:text$ occurs at the minimum of the net potential energy curve. The energy difference between this minimum and $begin:math:text$U\(\\infty\)\=0$end:math:text$ is the bond energy.
-
----
-
-## 3. Why Attractive and Repulsive Equations Differ
-
-**Use when:** confused why both forces are electromagnetic but have different equations.
-
-Related concepts:
-
-- [Attractive Force](./concept.md#21-attractive-force)
-- [Repulsive Force](./concept.md#22-repulsive-force)
-
----
-
-### Key Point
-
-Both interactions are ultimately electromagnetic.
-
-But they represent different effective behaviours:
-
-| Interaction | Approximate form | Reason |
-|---|---|---|
-| Attraction | $begin:math:text$\-A\/r\^2$end:math:text$ | long-range Coulomb electron-nucleus attraction |
-| Repulsion | $begin:math:text$B\/r\^m$end:math:text$ | short-range electron cloud overlap + Pauli exclusion |
-
-Repulsion rises faster because:
+Since:
 
 ```math
-m>2
+U(\infty)=0
+```
+
+then:
+
+```math
+E_0=-U(r_0)
 ```
 
 ---
 
-### Explanation Pattern
+### Example
 
-The attractive force is mainly long-range Coulomb attraction between electrons and neighbouring nuclei, so it can be approximated by a $begin:math:text$1\/r\^2$end:math:text$ term. The repulsive force is an effective short-range atomic force caused by electron cloud overlap, electron-electron repulsion, nucleus-nucleus repulsion and Pauli exclusion. Therefore it is modelled using a sharper term such as $begin:math:text$B\/r\^m$end:math:text$.
-
----
-
-## 4. Ionic Bonding and NaCl
-
-**Use when:** asked to explain ionic bonding or why NaCl is insulating.
-
-Related concepts:
-
-- [Ionic Bonding](./concept.md#4-ionic-bonding)
-- [Rock Salt Structure](./concept.md#12-rock-salt-structure)
-
----
-
-### Formation
+If:
 
 ```math
-\text{Na}\rightarrow\text{Na}^+ + e^-
+U(r_0)=-4.0\text{ eV}
+```
+
+then:
+
+```math
+E_0=0-(-4.0)
 ```
 
 ```math
-\text{Cl}+e^-\rightarrow\text{Cl}^-
+E_0=4.0\text{ eV}
+```
+
+Answer:
+
+```math
+\boxed{E_0=4.0\text{ eV}}
+```
+
+Key reminder:
+
+```math
+r_0\neq \text{where }U=0
 ```
 
 ```math
-\text{Na}^+ + \text{Cl}^-\rightarrow\text{NaCl}
-```
-
----
-
-### Rock Salt Structure
-
-NaCl forms a rock salt structure.
-
-Key features:
-
-- alternating cations and anions
-- FCC with two-ion basis
-- coordination number $begin:math:text$6$end:math:text$
-
----
-
-### Conductivity
-
-Solid NaCl is a poor conductor because:
-
-```math
-\text{electrons fixed in ions}
-\rightarrow
-\text{no free electrons}
+r_0=\text{where }U\text{ is minimum}
 ```
 
 ---
 
-## 5. Metallic Bonding and Metal Structures
+## Example 10: Force and Potential Energy Relation
 
-**Use when:** asked why metals conduct or why they form BCC/FCC/HCP.
+Force and potential energy are related by:
 
-Related concepts:
+```math
+F=-\frac{dU}{dr}
+```
 
-- [Metallic Bonding](./concept.md#6-metallic-bonding)
-- [Cubic Crystal Structures](./concept.md#9-cubic-crystal-structures)
-- [Hexagonal Close-Packed / HCP](./concept.md#10-hexagonal-close-packed--hcp)
+At equilibrium bond length:
+
+```math
+F=0
+```
+
+Therefore:
+
+```math
+\frac{dU}{dr}=0
+```
+
+So the equilibrium bond length is at the minimum of the potential energy curve.
+
+Answer:
+
+```math
+\boxed{F=0\text{ at }r_0}
+```
+
+```math
+\boxed{U\text{ is minimum at }r_0}
+```
 
 ---
 
-### Key Chain
+## Example 11: Coulomb Attraction or Repulsion
+
+Coulomb force:
+
+```math
+F=\frac{kq_1q_2}{r^2}
+```
+
+If:
+
+```math
+q_1q_2<0
+```
+
+then the force is attractive.
+
+If:
+
+```math
+q_1q_2>0
+```
+
+then the force is repulsive.
+
+---
+
+### Example A
+
+Electron and proton:
+
+```math
+q_e=-e,\quad q_p=+e
+```
+
+```math
+q_eq_p=-e^2<0
+```
+
+Answer:
+
+```math
+\boxed{\text{attractive}}
+```
+
+---
+
+### Example B
+
+Two electrons:
+
+```math
+q_1=-e,\quad q_2=-e
+```
+
+```math
+q_1q_2=+e^2>0
+```
+
+Answer:
+
+```math
+\boxed{\text{repulsive}}
+```
+
+---
+
+## Example 12: Atoms per Unit Cell
+
+### Simple Cubic
+
+Corners only:
+
+```math
+8\times\frac18=1
+```
+
+Answer:
+
+```math
+\boxed{1\text{ atom per unit cell}}
+```
+
+---
+
+### BCC
+
+Corners plus body centre:
+
+```math
+8\times\frac18+1=2
+```
+
+Answer:
+
+```math
+\boxed{2\text{ atoms per unit cell}}
+```
+
+---
+
+### FCC
+
+Corners plus face centres:
+
+```math
+8\times\frac18+6\times\frac12=4
+```
+
+Answer:
+
+```math
+\boxed{4\text{ atoms per unit cell}}
+```
+
+---
+
+## Example 13: Identifying Crystal Structure from Description
+
+### Description A
+
+Atoms at cube corners and one atom at the body centre.
+
+Answer:
+
+```math
+\boxed{\text{BCC}}
+```
+
+---
+
+### Description B
+
+Atoms at cube corners and face centres.
+
+Answer:
+
+```math
+\boxed{\text{FCC}}
+```
+
+---
+
+### Description C
+
+ABAB close-packed layer stacking.
+
+Answer:
+
+```math
+\boxed{\text{HCP}}
+```
+
+---
+
+### Description D
+
+FCC lattice with two identical atoms in the basis.
+
+Answer:
+
+```math
+\boxed{\text{diamond cubic}}
+```
+
+Common examples:
+
+```math
+\text{diamond, Si, Ge}
+```
+
+---
+
+### Description E
+
+Diamond-like structure with two different atoms.
+
+Answer:
+
+```math
+\boxed{\text{zincblende}}
+```
+
+Common examples:
+
+```math
+\text{GaAs, InP, ZnS}
+```
+
+---
+
+## Example 14: Linking Bonding to Electrical Behaviour
+
+### Metal
 
 ```math
 \text{metallic bonding}
 \rightarrow
 \text{delocalised electrons}
 \rightarrow
-\text{conductivity}
+\text{good conductivity}
 ```
 
+Example:
+
 ```math
-\text{metallic bonding}
-\rightarrow
-\text{non-directional bonding}
-\rightarrow
-\text{close-packed structures}
+\boxed{\text{Cu is conductive because it has delocalised electrons.}}
 ```
 
 ---
 
-### Common Structures
-
-| Structure | Arrangement | Examples |
-|---|---|---|
-| BCC | corners + body centre | Fe, W, Cr |
-| FCC | corners + face centres | Cu, Al, Ni |
-| HCP | ABAB layers | Mg, Ti, Zn |
-
----
-
-### Explanation Pattern
-
-Metals contain positive ion cores surrounded by delocalised electrons. These electrons can move under an electric field, so metals conduct well. Metallic bonding is non-directional, so atoms can pack efficiently, giving common structures such as BCC, FCC and HCP.
-
----
-
-## 6. Silicon as a Semiconductor
-
-**Use when:** asked to link covalent bonding, crystal structure and semiconductor behaviour.
-
-Related concepts:
-
-- [Covalent Bonding](./concept.md#5-covalent-bonding)
-- [Diamond Cubic](./concept.md#111-diamond-cubic)
-- [Bonding, Structure and Band Behaviour](./concept.md#14-bonding-structure-and-band-behaviour)
-
----
-
-### Key Chain
+### Ionic solid
 
 ```math
-\text{Si has 4 valence electrons}
+\text{ionic bonding}
 \rightarrow
-\text{4 covalent bonds}
+\text{fixed ions}
 \rightarrow
-\text{diamond cubic}
-\rightarrow
+\text{poor solid-state conductivity}
+```
+
+Example:
+
+```math
+\boxed{\text{Solid NaCl is insulating because ions are fixed in the lattice.}}
+```
+
+---
+
+### Semiconductor
+
+```math
+\text{covalent bonding}
++
 \text{moderate band gap}
 \rightarrow
-\text{semiconductor}
+\text{controllable conductivity}
+```
+
+Example:
+
+```math
+\boxed{\text{Si is semiconducting because it has covalent bonding and a moderate band gap.}}
 ```
 
 ---
 
-### Explanation Pattern
+## Example 15: Exam-Style Short Explanation
 
-Silicon is a group IV element with four valence electrons. Each silicon atom forms four directional covalent bonds with neighbouring silicon atoms, producing a tetrahedral diamond cubic structure. Its electrons are mostly localised in covalent bonds, so it is not metallic. However, its band gap is moderate, so some electrons can be excited into the conduction band, giving semiconductor behaviour.
+Question:
 
----
+Why are metals usually good electrical conductors?
 
-## 7. Diamond Cubic vs Zincblende
+Answer:
 
-**Use when:** asked to compare elemental and compound semiconductor structures.
-
-Related concepts:
-
-- [Diamond Cubic](./concept.md#111-diamond-cubic)
-- [Zincblende](./concept.md#112-zincblende)
-
----
-
-### Comparison
-
-| Structure | Basis | Atom types | Examples |
-|---|---|---|---|
-| Diamond cubic | two-atom basis | identical atoms | diamond, Si, Ge |
-| Zincblende | two-atom basis | different atoms | GaAs, InP, ZnS |
-
----
-
-### Diamond Cubic
-
-```math
-\text{FCC lattice}+\text{two identical atom basis}
-```
-
-Coordination number:
-
-```math
-4
-```
-
-Bonding:
-
-```math
-\text{tetrahedral covalent}
+```text
+Metals have metallic bonding, where valence electrons are delocalised and shared by many positive ions. These delocalised electrons act as mobile charge carriers, so they can drift under an applied electric field and produce current.
 ```
 
 ---
 
-### Zincblende
+## Example 16: Exam-Style Bond Energy Explanation
 
-```math
-\text{diamond cubic-like}
-+
-\text{two different atoms}
-```
+Question:
 
-Coordination number:
+What is the difference between bond length and bond energy?
 
-```math
-4
-```
+Answer:
 
-Bonding:
-
-```math
-\text{tetrahedral, partly ionic-covalent}
-```
-
----
-
-## 8. Week 3 Discussion: Metals, Insulators and Semiconductors
-
-**Use when:** asked to compare structures, bonding and band behaviour.
-
-Related concept:
-
-- [Bonding, Structure and Band Behaviour](./concept.md#14-bonding-structure-and-band-behaviour)
-
----
-
-### Summary Table
-
-| Solid type | Structures | Examples | Bonding | Band behaviour |
-|---|---|---|---|---|
-| Metal | BCC, FCC, HCP | Cu, Al, Fe | metallic | partially filled / overlapping bands |
-| Insulator | rock salt, covalent network, molecular | NaCl, MgO, diamond, SiO2 | ionic / strong covalent / van der Waals | large band gap |
-| Semiconductor | diamond cubic, zincblende | Si, Ge, GaAs | covalent / partly ionic-covalent | moderate band gap |
-
----
-
-### Answer Pattern
-
-Metals usually form BCC, FCC or HCP structures because metallic bonding is non-directional. Their valence electrons are delocalised, giving partially filled or overlapping bands and high electrical conductivity.
-
-Insulators may form ionic, covalent network or molecular structures. Their electrons are strongly localised, and their band gap is large, so very few electrons can enter the conduction band.
-
-Semiconductors such as Si and Ge form diamond cubic structures, while compound semiconductors such as GaAs form zincblende structures. Their covalent bonding gives a moderate band gap, so conductivity is possible but controlled.
-
----
-
-## 9. Quick Exam Logic
-
-For bonding questions, use:
-
-```math
-\text{bonding type}
-\rightarrow
-\text{electron mobility}
-\rightarrow
-\text{crystal structure}
-\rightarrow
-\text{band behaviour}
-\rightarrow
-\text{electrical property}
-```
-
-For force/energy curve questions, use:
-
-```math
-\text{attraction at larger }r
-\rightarrow
-\text{repulsion at small }r
-\rightarrow
-F_N=0
-\rightarrow
-r_0
-```
-
-For potential energy curve questions, use:
-
-```math
-U(\infty)=0
-\rightarrow
-U(r_0)=U_{\min}
-\rightarrow
-E_0=U(\infty)-U(r_0)
+```text
+Bond length is the equilibrium separation between two bonded atoms, corresponding to the minimum of the potential energy curve. Bond energy is the energy required to separate the bonded atoms to infinite separation. A deeper potential well means a stronger bond and larger bond energy.
 ```

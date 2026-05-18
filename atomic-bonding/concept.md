@@ -1,23 +1,25 @@
-# Atomic Bonding and Crystal Structures
+# Atoms, Bonding and Crystal Structures
 
-For discussion-style examples, see:
+For worked examples, see:
 
 ➡️ [Atomic Bonding Examples](./examples.md)
 
 ---
 
-## 1. Bonding Basics
+## 1. Core Idea
 
-Atomic bonding is controlled mainly by valence electrons.
+Electronic materials are controlled by electrons.
 
 ```math
+\text{atomic structure}
+\rightarrow
+\text{electron configuration}
+\rightarrow
 \text{valence electrons}
 \rightarrow
-\text{bonding type}
+\text{bonding}
 \rightarrow
-\text{crystal structure}
-\rightarrow
-\text{band structure}
+\text{crystal / band structure}
 \rightarrow
 \text{electrical behaviour}
 ```
@@ -30,59 +32,384 @@ E_{\text{bonded}}<E_{\text{separate atoms}}
 
 ---
 
-## 2. Interatomic Force and Potential Energy
+## 2. Fundamental Particles
 
-![Interatomic force and potential energy curve](../images302/net_force.png)
+| Particle | Charge | Role |
+|---|---:|---|
+| Electron | $begin:math:text$\-1\.6\\times10\^\{\-19\}\\text\{ C\}$end:math:text$ | controls bonding and electrical behaviour |
+| Proton | $begin:math:text$\+1\.6\\times10\^\{\-19\}\\text\{ C\}$end:math:text$ | determines atomic number |
+| Neutron | $begin:math:text$0$end:math:text$ | affects atomic mass |
 
-When two atoms approach:
+Electron charge magnitude:
+
+```math
+e=1.6\times10^{-19}\text{ C}
+```
+
+Electron charge:
+
+```math
+q_e=-e
+```
+
+Proton charge:
+
+```math
+q_p=+e
+```
+
+---
+
+## 3. Atomic Number, Mass Number, Isotopes and Ions
+
+Atomic number:
+
+```math
+Z=\text{number of protons}
+```
+
+Mass number:
+
+```math
+A=Z+N
+```
+
+where:
+
+- $begin:math:text$Z$end:math:text$: protons
+- $begin:math:text$N$end:math:text$: neutrons
+
+Neutral atom:
+
+```math
+\text{number of electrons}=\text{number of protons}
+```
+
+Isotope:
+
+```math
+\text{same }Z,\quad \text{different }N
+```
+
+Ion:
+
+```math
+\text{atom with net charge}
+```
+
+| Process | Ion formed |
+|---|---|
+| loses electrons | positive ion / cation |
+| gains electrons | negative ion / anion |
+
+Key reminder:
+
+```math
+\text{changing protons changes the element}
+```
+
+---
+
+## 4. Bohr Model
+
+In the Bohr model, electrons occupy discrete stationary shells around a positive nucleus.
+
+Principal quantum number:
+
+```math
+n=1,2,3,\dots
+```
+
+Increasing $begin:math:text$n$end:math:text$:
+
+```math
+n\uparrow
+\Rightarrow
+\text{larger shell}
+\Rightarrow
+\text{higher energy}
+```
+
+For hydrogen-like atoms:
+
+```math
+E_n=-\frac{13.6Z^2}{n^2}\text{ eV}
+```
+
+where:
+
+- $begin:math:text$E\_n$end:math:text$: energy of shell $begin:math:text$n$end:math:text$
+- $begin:math:text$Z$end:math:text$: atomic number
+- $begin:math:text$n$end:math:text$: principal quantum number
+
+For hydrogen:
+
+```math
+Z=1
+```
+
+Ground state:
+
+```math
+n=1,\quad E_1=-13.6\text{ eV}
+```
+
+Ionisation limit:
+
+```math
+n=\infty,\quad E_\infty=0
+```
+
+Ionisation energy from $begin:math:text$n\=1$end:math:text$:
+
+```math
+E_{\text{ionisation}}=0-(-13.6)=13.6\text{ eV}
+```
+
+---
+
+## 5. Energy Transitions and Photons
+
+Absorption:
+
+```math
+\text{lower energy}
+\rightarrow
+\text{higher energy}
+```
+
+Emission:
+
+```math
+\text{higher energy}
+\rightarrow
+\text{lower energy}
+```
+
+Photon energy:
+
+```math
+E_{\text{photon}}=\Delta E
+```
+
+```math
+E=hf=\frac{hc}{\lambda}
+```
+
+Useful shortcut:
+
+```math
+E(\text{eV})=\frac{1240}{\lambda(\text{nm})}
+```
+
+So:
+
+```math
+\lambda(\text{nm})=\frac{1240}{E(\text{eV})}
+```
+
+For emission:
+
+```math
+E_{\text{photon}}=E_{\text{initial}}-E_{\text{final}}
+```
+
+For absorption:
+
+```math
+E_{\text{photon}}=E_{\text{higher}}-E_{\text{lower}}
+```
+
+If photon energy exceeds ionisation energy:
+
+```math
+K=E_{\text{photon}}-E_{\text{ionisation}}
+```
+
+where $begin:math:text$K$end:math:text$ is kinetic energy of the emitted electron.
+
+---
+
+## 6. Orbitals and Electron Shells
+
+Bohr model is useful but incomplete.
+
+Quantum view:
+
+```math
+\text{electron}
+\rightarrow
+\text{wavefunction}
+\rightarrow
+\text{orbital probability cloud}
+```
+
+Orbital:
+
+```math
+\text{region where electron is likely to be found}
+```
+
+Maximum number of electrons in shell $begin:math:text$n$end:math:text$:
+
+```math
+N=2n^2
+```
+
+| Shell $begin:math:text$n$end:math:text$ | Maximum electrons |
+|---:|---:|
+| 1 | 2 |
+| 2 | 8 |
+| 3 | 18 |
+| 4 | 32 |
+| 5 | 50 |
+
+---
+
+## 7. Quantum Numbers
+
+An electron state is described by four quantum numbers.
+
+| Symbol | Name | Meaning |
+|---|---|---|
+| $begin:math:text$n$end:math:text$ | principal quantum number | shell / energy level |
+| $begin:math:text$l$end:math:text$ | orbital quantum number | orbital shape |
+| $begin:math:text$m$end:math:text$ | magnetic quantum number | orbital orientation |
+| $begin:math:text$s$end:math:text$ | spin quantum number | electron spin |
+
+Allowed values:
+
+```math
+n=1,2,3,\dots
+```
+
+```math
+l=0,1,\dots,n-1
+```
+
+```math
+m=-l,\dots,0,\dots,+l
+```
+
+```math
+s=\pm\frac12
+```
+
+Orbital labels:
+
+| $begin:math:text$l$end:math:text$ | Orbital |
+|---:|---|
+| 0 | s |
+| 1 | p |
+| 2 | d |
+| 3 | f |
+
+Each orbital holds two electrons with opposite spin.
+
+---
+
+## 8. Valence Electrons
+
+Valence electrons:
+
+```math
+\text{outermost electrons}
+```
+
+They determine:
+
+- bonding behaviour
+- chemical reactivity
+- electrical properties
+
+Key link:
+
+```math
+\text{electron configuration}
+\rightarrow
+\text{valence electrons}
+\rightarrow
+\text{bonding type}
+\rightarrow
+\text{material behaviour}
+```
+
+Atoms with completely filled shells are stable:
+
+```math
+\text{filled shell}
+\Rightarrow
+\text{large energy needed to excite electron}
+\Rightarrow
+\text{high stability}
+```
+
+---
+
+## 9. Coulomb Force and Potential Energy
+
+Coulomb force is electrostatic.
+
+```math
+F=\frac{kq_1q_2}{r^2}
+```
+
+where:
+
+```math
+k=\frac{1}{4\pi\epsilon}
+```
+
+For an electron near a positive nucleus:
+
+```math
+q_1=+e,\quad q_2=-e
+```
+
+So the interaction is attractive.
+
+Coulomb potential energy:
+
+```math
+U=\frac{kq_1q_2}{r}
+```
+
+For electron-nucleus attraction:
+
+```math
+U=-\frac{ke^2}{r}
+```
+
+Negative energy means:
+
+```math
+U<0
+\Rightarrow
+\text{electron is bound}
+```
+
+---
+
+## 10. Interatomic Force and Bond Formation
+
+When two atoms approach, both attractive and repulsive forces act.
+
+Net force:
 
 ```math
 F_N=F_A+F_R
 ```
 
-where:
-
-- $begin:math:text$F\_A$end:math:text$: attractive force
-- $begin:math:text$F\_R$end:math:text$: repulsive force
-- $begin:math:text$F\_N$end:math:text$: net force
-
----
-
-### 2.1 Attractive Force
-
-Main origin:
+Attractive force:
 
 ```math
-\text{electron of one atom}
-\leftrightarrow
-\text{nucleus of neighbouring atom}
+F_A\sim-\frac{e^2}{4\pi\epsilon_0r^2}
 ```
 
-Approximate Coulomb-type form:
+Repulsive force:
 
 ```math
-F_A=-\frac{A}{r^2}
-```
-
-The negative sign represents attraction.
-
----
-
-### 2.2 Repulsive Force
-
-Dominates at very small $begin:math:text$r$end:math:text$.
-
-Main causes:
-
-- electron cloud overlap
-- electron-electron repulsion
-- nucleus-nucleus repulsion
-- Pauli exclusion
-
-Approximate short-range form:
-
-```math
-F_R=\frac{B}{r^m}
+F_R\sim\frac{B}{r^m}
 ```
 
 where:
@@ -91,15 +418,14 @@ where:
 m>2
 ```
 
-Key reminder:
+Repulsion dominates at very small separation because of:
 
-> Both attraction and repulsion ultimately come from electromagnetic interactions. Atomic repulsion is written differently because it is an effective short-range effect involving electron-cloud overlap and Pauli exclusion.
+- electron cloud overlap
+- electron-electron repulsion
+- nucleus-nucleus repulsion
+- Pauli exclusion
 
----
-
-### 2.3 Equilibrium Separation
-
-At stable separation:
+At equilibrium separation:
 
 ```math
 F_N=0
@@ -119,7 +445,7 @@ r_0=\text{bond length}
 
 ---
 
-### 2.4 Potential Energy Curve
+## 11. Potential Energy Curve
 
 Potential energy reference:
 
@@ -127,21 +453,25 @@ Potential energy reference:
 U(\infty)=0
 ```
 
-At $begin:math:text$r\=r\_0$end:math:text$:
+At stable bond length:
+
+```math
+r=r_0
+```
+
+the energy is minimum:
 
 ```math
 U=U_{\min}
 ```
 
-So $begin:math:text$r\_0$end:math:text$ is not where $begin:math:text$U\=0$end:math:text$.
-
-Equilibrium condition:
+Force-energy relation:
 
 ```math
 F=-\frac{dU}{dr}
 ```
 
-Therefore:
+At equilibrium:
 
 ```math
 F=0
@@ -149,9 +479,21 @@ F=0
 \frac{dU}{dr}=0
 ```
 
+Important:
+
+```math
+r_0\neq \text{where }U=0
+```
+
+Instead:
+
+```math
+r_0=\text{where }U\text{ is minimum}
+```
+
 ---
 
-### 2.5 Bond Energy
+## 12. Bond Energy
 
 Bond energy:
 
@@ -171,6 +513,12 @@ then:
 E_0=-U(r_0)
 ```
 
+Meaning:
+
+```math
+E_0=\text{energy required to separate bonded atoms}
+```
+
 Deeper potential well:
 
 ```math
@@ -179,22 +527,32 @@ E_0\uparrow
 \text{stronger bond}
 ```
 
+Assessment memory:
+
+```math
+\text{bond length}=r_0
+```
+
+```math
+\text{bond energy}=E_0
+```
+
 ---
 
-## 3. Types of Bonding
+## 13. Bonding Types
 
-| Bond type | Electron behaviour | Typical materials |
-|---|---|---|
-| Ionic | electrons transferred | NaCl, MgO |
-| Covalent | electrons shared | diamond, Si, Ge |
-| Metallic | electrons delocalised | Cu, Al, Fe |
-| Van der Waals | dipole attraction | molecular / layered solids |
+| Bond type | Electron behaviour | Typical examples | Key property |
+|---|---|---|---|
+| Ionic | electrons transferred | NaCl, MgO | rigid, brittle, insulating as solid |
+| Covalent | electrons shared | diamond, Si, Ge, GaAs | directional, strong |
+| Metallic | electrons delocalised | Cu, Al, Fe | conductive, ductile |
+| Van der Waals | dipole attraction | Xe, iodine, graphite layers | weak, low melting point |
 
 ---
 
-## 4. Ionic Bonding
+## 14. Ionic Bonding
 
-Ionic bonding usually occurs between metals and non-metals.
+Ionic bonding usually occurs between a metal and a non-metal.
 
 Basic process:
 
@@ -220,9 +578,7 @@ Opposite charges attract:
 \text{ionic bond}
 ```
 
----
-
-### 4.1 NaCl Example
+Example:
 
 ```math
 \text{Na}\rightarrow\text{Na}^+ + e^-
@@ -233,45 +589,27 @@ Opposite charges attract:
 ```
 
 ```math
-\text{Na}^+ + \text{Cl}^-\rightarrow\text{NaCl}
+\text{Na}^+ + \text{Cl}^- \rightarrow \text{NaCl}
 ```
 
-Energy terms:
-
-| Term | Meaning |
-|---|---|
-| Ionisation energy | energy to remove electron |
-| Electron affinity | energy released when electron is gained |
-| Lattice energy | energy released when ionic crystal forms |
-
-Stable ionic crystal condition:
-
-```math
-\text{energy released}>\text{energy required}
-```
-
----
-
-### 4.2 Ionic Solid Properties
-
-Typical properties:
+Ionic solid properties:
 
 - high melting point
-- rigid structure
+- rigid
 - brittle
-- poor electrical conductivity in solid form
+- poor electrical conductivity as solid
 
 Reason:
 
 ```math
 \text{electrons fixed in ions}
-\rightarrow
+\Rightarrow
 \text{no free electrons}
 ```
 
 ---
 
-## 5. Covalent Bonding
+## 15. Covalent Bonding
 
 Covalent bonding means sharing valence electrons.
 
@@ -281,58 +619,42 @@ Covalent bonding means sharing valence electrons.
 \text{covalent bond}
 ```
 
-Shared electron density lies between positive nuclei.
+Shared electron density lies between two positive nuclei.
 
 ```math
 \text{electron density between nuclei}
 \rightarrow
-\text{electrostatic attraction}
+\text{electron-nucleus attraction}
 ```
-
----
-
-### 5.1 Directional Bonding
 
 Covalent bonds are directional.
 
-Tetrahedral bond angle:
+Common examples:
 
-```math
-\theta\approx109.5^\circ
-```
-
-Common covalent solids:
-
+- H$begin:math:text$\_2$end:math:text$
 - diamond
-- silicon
-- germanium
-- silicon dioxide
-
----
-
-### 5.2 Covalent Solid Properties
+- Si
+- Ge
+- GaAs
+- SiC
 
 Typical properties:
 
 - strong bonds
 - high melting point
-- high hardness
+- hard
 - low malleability
 - poor conductivity if electrons are localised
 
----
-
-### 5.3 Silicon
-
-Silicon has 4 valence electrons.
+For silicon:
 
 ```math
-\text{Si}
-\rightarrow
-\text{4 covalent bonds}
+\text{Si has 4 valence electrons}
 ```
 
-This gives:
+```math
+\text{Si forms 4 covalent bonds}
+```
 
 ```math
 \text{tetrahedral bonding}
@@ -340,42 +662,40 @@ This gives:
 \text{diamond cubic structure}
 ```
 
-Silicon is semiconducting because:
-
-```math
-\text{covalent bonding}
-+
-\text{moderate band gap}
-\rightarrow
-\text{controllable conductivity}
-```
-
 ---
 
-## 6. Metallic Bonding
+## 16. Metallic Bonding
 
 Metallic bonding:
 
 ```math
-\text{positive ion cores}
+\text{positive metal ions}
 +
-\text{delocalised electrons}
+\text{delocalised electron sea}
 \rightarrow
 \text{metallic bond}
 ```
 
----
+Metals have few valence electrons, which are easy to lose from individual atoms.
 
-### 6.1 Key Features
+```math
+\text{valence electrons}
+\rightarrow
+\text{shared by all ions}
+\rightarrow
+\text{sea of electrons}
+```
 
-Metallic bonding is:
+Key properties:
 
-- non-directional
-- conductive
+- non-directional bonding
+- good electrical conductivity
+- good thermal conductivity
 - ductile
 - malleable
+- often close-packed structures
 
-Conductivity:
+Conductivity reason:
 
 ```math
 \text{delocalised electrons}
@@ -383,56 +703,47 @@ Conductivity:
 \text{mobile charge carriers}
 ```
 
-Close packing:
-
-```math
-\text{non-directional bonding}
-\rightarrow
-\text{close-packed structures}
-```
-
-Common structures:
-
-- BCC
-- FCC
-- HCP
-
 ---
 
-## 7. Van der Waals Bonding
+## 17. Van der Waals and Hydrogen Bonding
 
-Van der Waals bonding:
+Van der Waals bonding comes from dipole attraction.
+
+Origin:
 
 ```math
-\text{dipole-dipole attraction}
+\text{instantaneous dipole}
 \rightarrow
-\text{van der Waals bond}
+\text{induced dipole}
+\rightarrow
+\text{weak attraction}
 ```
 
-Types:
-
-- permanent dipole
-- induced dipole
-- hydrogen bonding
-
-Force dependence:
+Hydrogen bonding:
 
 ```math
-F_{\text{vdW}}\propto\frac{1}{r^4}
+\text{strong special case of van der Waals-type bonding involving H}
 ```
 
 Typical properties:
 
 - weak bonding
 - low melting point
-- low elastic modulus
-- poor thermal conductivity
-- usually insulating
-- loosely packed or layered solids
+- soft or easily cleaved
+- poor conductivity
+- common in molecular / layered solids
+
+Examples:
+
+- solid Xe
+- iodine
+- dry ice
+- graphite layer interaction
+- polymers and rubber
 
 ---
 
-## 8. Crystal Structure Basics
+## 18. Crystal Structure Basics
 
 Crystalline solid:
 
@@ -443,30 +754,32 @@ Crystalline solid:
 Crystal structure:
 
 ```math
-\text{lattice}+\text{basis}=\text{crystal structure}
+\text{lattice}+\text{basis}
 ```
+
+Key terms:
 
 | Term | Meaning |
 |---|---|
 | Lattice | periodic array of points |
-| Basis | atom/group of atoms attached to each lattice point |
+| Basis | atom/group attached to each lattice point |
 | Unit cell | smallest repeating volume |
 | Lattice parameter $begin:math:text$a$end:math:text$ | unit cell length |
 
 ---
 
-## 9. Cubic Crystal Structures
+## 19. Essential Crystal Structures
 
-### 9.1 Simple Cubic / SC
-
-Arrangement:
-
-- atoms at 8 cube corners only
-
-Atoms per unit cell:
+### Simple Cubic / SC
 
 ```math
-8\times\frac{1}{8}=1
+\text{corners only}
+```
+
+Atoms per cell:
+
+```math
+1
 ```
 
 Coordination number:
@@ -475,36 +788,18 @@ Coordination number:
 6
 ```
 
-| Feature | SC |
-|---|---:|
-| Atom positions | corners only |
-| Atoms per cell | 1 |
-| Coordination number | 6 |
-| Example | Po |
-
 ---
 
-### 9.2 Body-Centred Cubic / BCC
-
-Arrangement:
-
-- 8 cube corners
-- 1 body-centre atom
-
-Atoms per unit cell:
+### Body-Centred Cubic / BCC
 
 ```math
-8\times\frac{1}{8}+1=2
+\text{corners + body centre}
 ```
 
-Lattice points:
+Atoms per cell:
 
 ```math
-(0,0,0)
-```
-
-```math
-\left(\frac12,\frac12,\frac12\right)
+2
 ```
 
 Coordination number:
@@ -513,44 +808,24 @@ Coordination number:
 8
 ```
 
-| Feature | BCC |
-|---|---:|
-| Atom positions | corners + body centre |
-| Atoms per cell | 2 |
-| Coordination number | 8 |
-| Common metals | Fe, W, Cr |
+Examples:
+
+```math
+\text{Fe, W, Cr}
+```
 
 ---
 
-### 9.3 Face-Centred Cubic / FCC
-
-Arrangement:
-
-- 8 cube corners
-- 6 face-centre atoms
-
-Atoms per unit cell:
+### Face-Centred Cubic / FCC
 
 ```math
-8\times\frac18+6\times\frac12=4
+\text{corners + face centres}
 ```
 
-Lattice points:
+Atoms per cell:
 
 ```math
-(0,0,0)
-```
-
-```math
-\left(0,\frac12,\frac12\right)
-```
-
-```math
-\left(\frac12,0,\frac12\right)
-```
-
-```math
-\left(\frac12,\frac12,0\right)
+4
 ```
 
 Coordination number:
@@ -565,44 +840,32 @@ Packing factor:
 74\%
 ```
 
-| Feature | FCC |
-|---|---:|
-| Atom positions | corners + face centres |
-| Atoms per cell | 4 |
-| Coordination number | 12 |
-| Packing factor | 74% |
-| Common metals | Cu, Al, Ni |
+Examples:
+
+```math
+\text{Cu, Al, Ni}
+```
 
 ---
 
-## 10. Hexagonal Close-Packed / HCP
+### Hexagonal Close-Packed / HCP
 
 Layer stacking:
 
 ```math
-ABABAB\cdots
+ABAB\cdots
 ```
 
-Conventional hexagonal cell:
+Conventional atoms per cell:
 
 ```math
-\text{atoms per conventional cell}=6
+6
 ```
 
-Primitive cell:
+Primitive atoms per cell:
 
 ```math
-\text{atoms per primitive cell}=2
-```
-
-Lattice points:
-
-```math
-(0,0,0)
-```
-
-```math
-\left(\frac23,\frac13,\frac12\right)
+2
 ```
 
 Coordination number:
@@ -617,49 +880,28 @@ Packing factor:
 74\%
 ```
 
-| Feature | HCP |
-|---|---:|
-| Layer stacking | ABAB |
-| Conventional atoms per cell | 6 |
-| Primitive atoms per cell | 2 |
-| Coordination number | 12 |
-| Packing factor | 74% |
-| Common metals | Mg, Ti, Zn |
+Examples:
+
+```math
+\text{Mg, Ti, Zn}
+```
 
 ---
 
-## 11. Semiconductor Crystal Structures
+## 20. Semiconductor and Ionic Crystal Structures
 
-### 11.1 Diamond Cubic
+### Diamond Cubic
 
 Common materials:
 
-- diamond
-- Si
-- Ge
+```math
+\text{diamond, Si, Ge}
+```
 
 Structure:
 
 ```math
 \text{FCC lattice}+\text{two identical atom basis}
-```
-
-FCC lattice points:
-
-```math
-(0,0,0)
-```
-
-```math
-\left(0,\frac12,\frac12\right)
-```
-
-```math
-\left(\frac12,0,\frac12\right)
-```
-
-```math
-\left(\frac12,\frac12,0\right)
 ```
 
 Basis:
@@ -675,7 +917,7 @@ Basis:
 Atoms per conventional cell:
 
 ```math
-4\times2=8
+8
 ```
 
 Coordination number:
@@ -684,31 +926,26 @@ Coordination number:
 4
 ```
 
-| Feature | Diamond cubic |
-|---|---:|
-| Lattice | FCC |
-| Basis | two identical atoms |
-| Atoms per cell | 8 |
-| Coordination number | 4 |
-| Bonding | tetrahedral covalent |
-| Materials | diamond, Si, Ge |
+Bonding:
+
+```math
+\text{tetrahedral covalent}
+```
 
 ---
 
-### 11.2 Zincblende
+### Zincblende
 
 Common materials:
 
-- GaAs
-- InP
-- ZnS
+```math
+\text{GaAs, InP, ZnS}
+```
 
 Structure:
 
 ```math
-\text{diamond cubic-like}
-+
-\text{two different atoms}
+\text{diamond-like, but two different atoms}
 ```
 
 For GaAs:
@@ -727,37 +964,26 @@ Coordination number:
 4
 ```
 
-| Feature | Zincblende |
-|---|---:|
-| Lattice | FCC-like |
-| Basis | two different atoms |
-| Coordination number | 4 |
-| Bonding | tetrahedral, partly ionic-covalent |
-| Materials | GaAs, InP, ZnS |
+Bonding:
+
+```math
+\text{partly ionic-covalent}
+```
 
 ---
 
-## 12. Rock Salt Structure
+### Rock Salt
 
 Common materials:
 
-- NaCl
-- MgO
+```math
+\text{NaCl, MgO}
+```
 
 Structure:
 
 ```math
 \text{FCC lattice}+\text{two-ion basis}
-```
-
-Basis:
-
-```math
-\text{Cl}^- \text{ at }(0,0,0)
-```
-
-```math
-\text{Na}^+ \text{ at }\left(\frac12,\frac12,\frac12\right)
 ```
 
 Arrangement:
@@ -772,31 +998,15 @@ Coordination number:
 6
 ```
 
-| Feature | Rock salt |
-|---|---:|
-| Bonding | ionic |
-| Structure | FCC with two-ion basis |
-| Arrangement | alternating cations/anions |
-| Coordination number | 6 |
-| Materials | NaCl, MgO |
+Bonding:
+
+```math
+\text{ionic}
+```
 
 ---
 
-## 13. Structure Comparison
-
-| Structure | Main material type | Arrangement | Atoms per cell | Coordination number |
-|---|---|---|---:|---:|
-| SC | rare metal | corners only | 1 | 6 |
-| BCC | metals | corners + body centre | 2 | 8 |
-| FCC | metals | corners + face centres | 4 | 12 |
-| HCP | metals | ABAB close-packed layers | 6 conventional / 2 primitive | 12 |
-| Diamond cubic | covalent semiconductors | FCC + identical two-atom basis | 8 | 4 |
-| Zincblende | compound semiconductors | diamond-like, two atom types | 8 conventional | 4 |
-| Rock salt | ionic solids | alternating cations/anions | depends on cell | 6 |
-
----
-
-## 14. Bonding, Structure and Band Behaviour
+## 21. Bonding, Structure and Electrical Behaviour
 
 ### Metals
 
@@ -805,11 +1015,27 @@ Coordination number:
 \rightarrow
 \text{delocalised electrons}
 \rightarrow
-\text{BCC/FCC/HCP}
-\rightarrow
-\text{partially filled or overlapping bands}
+\text{partially filled / overlapping bands}
 \rightarrow
 \text{conductor}
+```
+
+### Semiconductors
+
+```math
+\text{covalent bonding}
+\rightarrow
+\text{diamond cubic or zincblende}
+\rightarrow
+\text{moderate band gap}
+\rightarrow
+\text{controllable conductivity}
+```
+
+Example:
+
+```math
+E_g(\text{Si})\approx1.1\text{ eV}
 ```
 
 ### Insulators
@@ -824,58 +1050,96 @@ Coordination number:
 \text{insulator}
 ```
 
-### Semiconductors
-
-```math
-\text{covalent bonding}
-\rightarrow
-\text{diamond cubic or zincblende}
-\rightarrow
-\text{moderate band gap}
-\rightarrow
-\text{semiconductor}
-```
-
-For silicon:
-
-```math
-E_g\approx1.1\ \text{eV}
-```
-
 ---
 
-## 15. Summary
+## 22. Key Formula Chain
+
+Atomic mass:
 
 ```math
-\text{electron transfer}
-\rightarrow
-\text{ionic bonding}
+A=Z+N
 ```
 
-```math
-\text{electron sharing}
-\rightarrow
-\text{covalent bonding}
-```
+Hydrogen-like energy levels:
 
 ```math
-\text{electron delocalisation}
-\rightarrow
-\text{metallic bonding}
+E_n=-\frac{13.6Z^2}{n^2}\text{ eV}
 ```
 
-```math
-\text{dipole attraction}
-\rightarrow
-\text{van der Waals bonding}
-```
+Photon energy:
 
 ```math
-\text{bonding}
-\rightarrow
-\text{structure}
-\rightarrow
-\text{band behaviour}
-\rightarrow
-\text{electrical property}
+E=hf=\frac{hc}{\lambda}
+```
+
+Shortcut:
+
+```math
+E(\text{eV})=\frac{1240}{\lambda(\text{nm})}
+```
+
+Maximum electrons in shell:
+
+```math
+N=2n^2
+```
+
+Coulomb force:
+
+```math
+F=\frac{kq_1q_2}{r^2}
+```
+
+Coulomb potential energy:
+
+```math
+U=\frac{kq_1q_2}{r}
+```
+
+Attractive electron-nucleus energy:
+
+```math
+U_A\sim-\frac{e^2}{4\pi\epsilon_0r}
+```
+
+Repulsive energy:
+
+```math
+U_R\sim\frac{B}{r^{m+1}}
+```
+
+Force-energy relation:
+
+```math
+F=-\frac{dU}{dr}
+```
+
+Equilibrium bond condition:
+
+```math
+F_N=0
+```
+
+Bond energy:
+
+```math
+E_0=U(\infty)-U(r_0)
+```
+
+Since:
+
+```math
+U(\infty)=0
+```
+
+then:
+
+```math
+E_0=-U(r_0)
+```
+
+Crystal structure:
+
+```math
+\text{crystal structure}=\text{lattice}+\text{basis}
 ```
